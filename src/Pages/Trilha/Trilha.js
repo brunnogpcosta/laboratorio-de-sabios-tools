@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 
 import './Trilha.css'
 
@@ -7,23 +8,23 @@ export default class Trilha extends Component {
     return (
       <div id="trilhaContent">
 
-        <h3>Trilha do Sucesso</h3>
+        <h2>Trilha do Sucesso</h2>
 
         <div id="trilhaObjetivo">
           <h4>Escolha seu Objetivo:</h4>
           <ul>
-            <li><a href="">Sábio Marketeiro</a></li>
-            <li><a href="">Sábio da Psicologia</a></li>
-            <li><a href="">Sábio Sarado</a></li>
-            <li><a href="">Sábio Estóico</a></li>
-            <li><a href="">Sábio Programador</a></li>
-            <li><a href="">Sábio Músico</a></li>
-            <li><a href="">Sábio Marketeiro</a></li>
-            <li><a href="">Sábio da Psicologia</a></li>
-            <li><a href="">Sábio Sarado</a></li>
-            <li><a href="">Sábio Estóico</a></li>
-            <li><a href="">Sábio Programador</a></li>
-            <li><a href="">Sábio Músico</a></li>
+            <li><Link to="/trilhaCompleta">Sábio Marketeiro</Link></li>
+            <li><Link to="/trilhaCompleta">Sábio da Psicologia</Link></li>
+            <li><Link to="/trilhaCompleta">Sábio Sarado</Link></li>
+            <li><Link to="/trilhaCompleta">Sábio Estóico</Link></li>
+            <li><Link to="/trilhaCompleta">Sábio Programador</Link></li>
+            <li><Link to="/trilhaCompleta">Sábio Músico</Link></li>
+            <li><Link to="/trilhaCompleta">Sábio Marketeiro</Link></li>
+            <li><Link to="/trilhaCompleta">Sábio da Psicologia</Link></li>
+            <li><Link to="/trilhaCompleta">Sábio Sarado</Link></li>
+            <li><Link to="/trilhaCompleta">Sábio Estóico</Link></li>
+            <li><Link to="/trilhaCompleta">Sábio Programador</Link></li>
+            <li><Link to="/trilhaCompleta">Sábio Músico</Link></li>
           </ul>
 
 

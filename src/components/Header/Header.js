@@ -36,9 +36,9 @@ export default class Header extends Component {
               </div>
 
               <div className="bhRight">
-                <li><Link to="/pesquisa">PESQUISA</Link></li>
                 <li><Link to="/trilha">TRILHA</Link></li>
                 <li><Link to="/ranking">RANKING</Link></li>
+                <li><Link to="/pesquisa">PESQUISA</Link></li>
               </div>
             </ul>
           </div>

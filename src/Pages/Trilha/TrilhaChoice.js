@@ -9,7 +9,7 @@ export default class TrilhaChoice extends Component {
     return (
       <div id="trilhaChoiceContent">
 
-        <h3>Trilha do Sábio Estóico</h3>
+        <h2>Trilha do Sábio Estóico</h2>
 
         <div id="trilhaChoiceMetas">
           <ul>
