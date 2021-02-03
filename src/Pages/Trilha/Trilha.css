@@ -1,0 +1,50 @@
+#trilhaContent {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 60px;
+  text-align: center;
+}
+
+#trilhaContent h3 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+#trilhaObjetivo {
+  width: 100%;
+  height: auto;
+  background-color: #fff44a;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 4px rgb(161, 161, 161);
+}
+
+#trilhaObjetivo h4 {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+#trilhaObjetivo ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#trilhaObjetivo ul li {
+  display: inline;
+  margin-right: 20px;
+  margin-bottom: 60px;
+}
+
+#trilhaObjetivo ul li a {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(172, 172, 172);
+  text-decoration: none;
+  color: #000;
+}
+
+#trilhaObjetivo ul li a:hover {
+  border: 1px solid rgb(114, 114, 114);
+  font-weight: bold;
+}

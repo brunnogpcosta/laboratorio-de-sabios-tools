@@ -1,0 +1,54 @@
+#popularesContainer {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+#popularesContainer h2 {
+  margin-bottom: 20px;
+}
+
+.positionCourse {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  padding-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.popularesCursosContent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.popularesCursosContent a {
+  text-decoration: none;
+  color: #000;
+}
+
+.popularesCursosContent figure {
+  width: 280px;
+  height: 190px;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  box-shadow: 0px 0px 4px rgba(195, 195, 195, 0.6);
+  margin-right: 23px;
+  margin-bottom: 27px;
+}
+
+.popularesCursosContent figure img {
+  width: 280px;
+  height: 150px;
+  padding: 10px;
+  margin-top: -50px;
+}
+
+.popularesCursosContent figcaption {
+  text-align: center;
+}

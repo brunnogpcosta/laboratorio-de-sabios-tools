@@ -1,0 +1,84 @@
+.homePageContainer {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.pageTitleHomePage {
+  margin-bottom: 30px;
+}
+
+.melhoresCursosContent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.pageTitleHomePage h2 {
+  float: left;
+}
+
+.pageTitleHomePage img {
+  margin-top: 4px;
+  margin-left: 5px;
+}
+
+figure {
+  width: 280px;
+  height: 190px;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  box-shadow: 0px 0px 4px rgba(195, 195, 195, 0.6);
+  margin-right: 23px;
+  margin-bottom: 27px;
+}
+
+.melhoresCursosContent a {
+  text-decoration: none;
+  color: black;
+}
+
+figure img {
+  width: 280px;
+  height: 150px;
+  padding: 10px;
+}
+
+figcaption {
+  text-align: center;
+}
+
+/*
+#demaisCursos {
+  max-width: 100%;
+  display: grid;
+  grid-template-rows: 25%px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: '';
+}
+*/
+
+#demaisCursos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+#demaisCursos h3 {
+  float: left;
+  margin-right: 5px;
+}
+
+#demaisCursos figure {
+  margin-top: 20px;
+}
+
+#demaisCursos a {
+  text-decoration: none;
+  color: #000;
+}
+
+#demaisCursos img {
+  margin-top: 0px;
+}
