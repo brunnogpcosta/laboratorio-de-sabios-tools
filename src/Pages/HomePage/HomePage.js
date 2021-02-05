@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import { Link } from 'react-router-dom';
+
 import './HomePageStyle.css'
 import imgCard from './img/graficos-tabelas-sao-objetos-basicos-para-estudo-estatistica-5812154677e56.jpg'
 import plus from './img/plus-circle.svg'
@@ -21,82 +23,92 @@ export default class HomePage extends Component {
           </div>
 
           <div className="melhoresCursosContent">
-            <a href="#">
+            <Link to="/detalhe">
               <figure>
                 <img src={imgCard}></img>
                 <figcaption>
                   Estatística Fundamental
               </figcaption>
               </figure>
-            </a>
-            <a href="#">
+            </Link>
+
+            <Link to="/detalhe">
               <figure>
                 <img src={imgCard}></img>
                 <figcaption>
                   Estatística Fundamental
               </figcaption>
               </figure>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="/detalhe">
               <figure>
                 <img src={imgCard}></img>
                 <figcaption>
                   Estatística Fundamental
               </figcaption>
               </figure>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="/detalhe">
               <figure>
                 <img src={imgCard}></img>
                 <figcaption>
                   Estatística Fundamental
               </figcaption>
               </figure>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="/detalhe">
               <figure>
                 <img src={imgCard}></img>
                 <figcaption>
                   Estatística Fundamental
               </figcaption>
               </figure>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="/detalhe">
               <figure>
                 <img src={imgCard}></img>
                 <figcaption>
                   Estatística Fundamental
               </figcaption>
               </figure>
-            </a>
+            </Link>
+            <Link to="/detalhe">
+              <figure>
+                <img src={imgCard}></img>
+                <figcaption>
+                  Estatística Fundamental
+              </figcaption>
+              </figure>
+            </Link>
+
           </div>
 
           <div id="demaisCursos">
             <div id="cursoUm">
               <h3>MKT Digital</h3>
               <a href=""><img src={plus} alt="Mais Cursos" /></a>
-              <a href="#">
-                <figure>
-                  <img src={imgCard}></img>
-                  <figcaption>
-                    Estatística Fundamental
-                  </figcaption>
-                </figure>
-              </a>
-
-            </div>
-
-            <div id="cursoDois">
-              <h3>Estoicismo</h3>
-              <a href=""><img src={plus} alt="Mais Cursos" /></a>
-              <a href="#">
+              <Link to="/detalhe">
                 <figure>
                   <img src={imgCard}></img>
                   <figcaption>
                     Estatística Fundamental
               </figcaption>
                 </figure>
-              </a>
+              </Link>
+
+            </div>
+
+            <div id="cursoDois">
+              <h3>Estoicismo</h3>
+              <a href=""><img src={plus} alt="Mais Cursos" /></a>
+              <Link to="/detalhe">
+                <figure>
+                  <img src={imgCard}></img>
+                  <figcaption>
+                    Estatística Fundamental
+                  </figcaption>
+                </figure>
+              </Link>
             </div>
 
 
@@ -104,28 +116,43 @@ export default class HomePage extends Component {
             <div id="cursoTres">
               <h3>Psicologia</h3>
               <a href=""><img src={plus} alt="Mais Cursos" /></a>
-              <a href="#">
+              <Link to="/detalhe">
                 <figure>
                   <img src={imgCard}></img>
                   <figcaption>
                     Estatística Fundamental
-              </figcaption>
+                  </figcaption>
                 </figure>
-              </a>
+              </Link>
             </div>
 
             <div id="cursoQuatro">
               <h3>Desenvolvimento</h3>
               <a href=""><img src={plus} alt="Mais Cursos" /></a>
-              <a href="#">
+              <Link to="/detalhe">
                 <figure>
                   <img src={imgCard}></img>
                   <figcaption>
                     Estatística Fundamental
-              </figcaption>
+                  </figcaption>
                 </figure>
-              </a>
+              </Link>
             </div>
+
+            <div id="cursoCinco">
+              <h3>Desenvolvimento</h3>
+              <a href=""><img src={plus} alt="Mais Cursos" /></a>
+
+              <Link to="/detalhe">
+                <figure>
+                  <img src={imgCard}></img>
+                  <figcaption>
+                    Estatística Fundamental
+                  </figcaption>
+                </figure>
+              </Link>
+            </div>
+
           </div>
         </div>
       </div>

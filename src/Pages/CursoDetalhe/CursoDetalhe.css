@@ -1,0 +1,54 @@
+#detalheContainer {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding-bottom: 80px;
+}
+
+#detalheContainer h2 {
+  margin-bottom: 20px;
+}
+
+#detalheContainer #detaiBoard img {
+  width: 400px;
+  height: 250px;
+  float: left;
+  margin-right: 20px;
+}
+
+#detalheContainer #detaiBoard p {
+  text-align: justify;
+}
+
+.alignPrice {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#detailPrice {
+  width: 100%;
+  height: 50px;
+  font-size: 36px;
+  background-color: #090;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#comprarAgora {
+  width: 250px;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background-color: rgb(228, 231, 37);
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

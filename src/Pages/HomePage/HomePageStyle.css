@@ -5,7 +5,7 @@
 }
 
 .pageTitleHomePage {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .melhoresCursosContent {
@@ -37,6 +37,10 @@ figure {
 .melhoresCursosContent a {
   text-decoration: none;
   color: black;
+  width: 280px;
+  height: 150px;
+  margin-right: 23px;
+  margin-bottom: 67px;
 }
 
 figure img {
@@ -62,6 +66,7 @@ figcaption {
 #demaisCursos {
   display: flex;
   flex-wrap: wrap;
+  padding: 0px 0px 80px 0;
   margin-bottom: 40px;
 }
 

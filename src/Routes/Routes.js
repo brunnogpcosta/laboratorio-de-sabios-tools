@@ -7,7 +7,8 @@ import Barato from '../Pages/Baratos/Baratos';
 import Pesquisa from '../Pages/Pesquisa/Pesquisa';
 import Trilha from '../Pages/Trilha/Trilha';
 import TrilhaChoice from '../Pages/Trilha/TrilhaChoice';
-import Ranking from '../Pages/Ranking/Ranking'
+import Ranking from '../Pages/Ranking/Ranking';
+import Detalhe from '../Pages/CursoDetalhe/CursoDetalhe';
 
 
 
@@ -24,6 +25,7 @@ export class Routes extends Component {
         <Route path='/trilha' component={Trilha} />
         <Route path='/trilhaCompleta' component={TrilhaChoice} />
         <Route path='/ranking' component={Ranking} />
+        <Route path='/detalhe' component={Detalhe} />
         <Route component={HomePage} />
       </Switch>
 

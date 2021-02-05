@@ -1,0 +1,17 @@
+{
+  "cursos": [
+    {
+      "nomeCurso": "fasdfasd",
+      "descricaoCurso": "asfsdfsdfsd",
+      "conteudoCurso": "dfsdfsd",
+      "idioma": "asdasdas",
+      "emailProdutor": "sdasdasdas",
+      "categoria": "sdasdasdasda",
+      "divulgacao": {
+        "linkMaterial": "fgsdfgsdfgsdfg",
+        "videoExperimental": "asfasdfasd",
+        "textoDivulgacao": "fasdfasdfasdfasdf"
+      }
+    }
+  ]
+}
