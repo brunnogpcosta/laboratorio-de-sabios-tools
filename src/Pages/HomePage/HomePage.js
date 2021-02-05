@@ -18,7 +18,7 @@ export default class HomePage extends Component {
           <div className="melhoresCursos">
             <div className="pageTitleHomePage">
               <h2>Melhores Cursos </h2>
-              <a href=""><img src={plus} alt="Mais Cursos" /></a>
+              <Link to='/categoria'><img src={plus} alt="Mais Cursos" /></Link>
             </div>
           </div>
 
@@ -86,7 +86,7 @@ export default class HomePage extends Component {
           <div id="demaisCursos">
             <div id="cursoUm">
               <h3>MKT Digital</h3>
-              <a href=""><img src={plus} alt="Mais Cursos" /></a>
+              <Link to="/categoria"><img src={plus} alt="Mais Cursos" /></Link>
               <Link to="/detalhe">
                 <figure>
                   <img src={imgCard}></img>
@@ -100,7 +100,7 @@ export default class HomePage extends Component {
 
             <div id="cursoDois">
               <h3>Estoicismo</h3>
-              <a href=""><img src={plus} alt="Mais Cursos" /></a>
+              <Link to="/categoria"><img src={plus} alt="Mais Cursos" /></Link>
               <Link to="/detalhe">
                 <figure>
                   <img src={imgCard}></img>
@@ -115,7 +115,7 @@ export default class HomePage extends Component {
 
             <div id="cursoTres">
               <h3>Psicologia</h3>
-              <a href=""><img src={plus} alt="Mais Cursos" /></a>
+              <Link to="/categoria"><img src={plus} alt="Mais Cursos" /></Link>
               <Link to="/detalhe">
                 <figure>
                   <img src={imgCard}></img>
@@ -128,7 +128,7 @@ export default class HomePage extends Component {
 
             <div id="cursoQuatro">
               <h3>Desenvolvimento</h3>
-              <a href=""><img src={plus} alt="Mais Cursos" /></a>
+              <Link to="/categoria"><img src={plus} alt="Mais Cursos" /></Link>
               <Link to="/detalhe">
                 <figure>
                   <img src={imgCard}></img>
@@ -140,8 +140,8 @@ export default class HomePage extends Component {
             </div>
 
             <div id="cursoCinco">
-              <h3>Desenvolvimento</h3>
-              <a href=""><img src={plus} alt="Mais Cursos" /></a>
+              <h3>Animais</h3>
+              <Link to="/categoria"><img src={plus} alt="Mais Cursos" /></Link>
 
               <Link to="/detalhe">
                 <figure>

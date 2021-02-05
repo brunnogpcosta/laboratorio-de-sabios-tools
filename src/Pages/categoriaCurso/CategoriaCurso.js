@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import './Baratos.css';
+import './CategoriaCurso.css';
 
 import imgCard from './img/graficos-tabelas-sao-objetos-basicos-para-estudo-estatistica-5812154677e56.jpg'
 
@@ -54,7 +54,7 @@ export default class CategoriaCurso extends Component {
 
           <a href="#">
             <figure>
-              <div className="baratoCourse">R$ 59,99</div>
+              <div className="categoriaCourse">R$ 59,99</div>
               <img src={imgCard}></img>
               <figcaption>
                 Estatística Fundamental
@@ -64,7 +64,7 @@ export default class CategoriaCurso extends Component {
 
           <a href="#">
             <figure>
-              <div className="baratoCourse">R$ 99,99</div>
+              <div className="categoriaCourse">R$ 99,99</div>
               <img src={imgCard}></img>
               <figcaption>
                 Estatística Fundamental
@@ -74,7 +74,7 @@ export default class CategoriaCurso extends Component {
 
           <a href="#">
             <figure>
-              <div className="baratoCourse">R$ 199,99</div>
+              <div className="categoriaCourse">R$ 199,99</div>
               <img src={imgCard}></img>
               <figcaption>
                 Estatística Fundamental
@@ -84,7 +84,7 @@ export default class CategoriaCurso extends Component {
 
           <a href="#">
             <figure>
-              <div className="baratoCourse">R$ 199,99</div>
+              <div className="categoriaCourse">R$ 199,99</div>
               <img src={imgCard}></img>
               <figcaption>
                 Estatística Fundamental

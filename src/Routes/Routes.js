@@ -9,7 +9,9 @@ import Trilha from '../Pages/Trilha/Trilha';
 import TrilhaChoice from '../Pages/Trilha/TrilhaChoice';
 import Ranking from '../Pages/Ranking/Ranking';
 import Detalhe from '../Pages/CursoDetalhe/CursoDetalhe';
+import Categoria from '../Pages/categoriaCurso/CategoriaCurso'
 
+import Spam from '../components/MelhorEmailSpam/MelhorEmailSpam'
 
 
 
@@ -26,6 +28,8 @@ export class Routes extends Component {
         <Route path='/trilhaCompleta' component={TrilhaChoice} />
         <Route path='/ranking' component={Ranking} />
         <Route path='/detalhe' component={Detalhe} />
+        <Route path='/categoria' component={Categoria} />
+        <Route path='/spam' component={Spam} />
         <Route component={HomePage} />
       </Switch>
 

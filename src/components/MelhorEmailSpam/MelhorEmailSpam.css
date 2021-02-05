@@ -1,0 +1,64 @@
+.melhorEmail {
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.233);
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.melhorEmailTexto {
+  width: 60%;
+  height: 50%;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 4px rgb(131, 131, 131);
+  text-align: center;
+}
+
+.melhorEmailTexto h3 {
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.melhorEmailTexto p {
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.melhorEmailTexto input[type='email'] {
+  width: 60%;
+  padding: 2px;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid rgb(98, 98, 98);
+}
+
+#botoesEmail button:first-child {
+  margin-right: 20px;
+  background-color: rgb(53, 197, 53);
+  border: 1px solid #000;
+  cursor: pointer;
+}
+#botoesEmail button:hover:first-child {
+  background-color: rgb(4, 255, 4);
+}
+#botoesEmail button:hover:last-child {
+  background-color: rgb(97, 34, 29);
+}
+
+#botoesEmail button:last-child {
+  margin-right: 20px;
+  background-color: rgb(197, 65, 53);
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+#botoesEmail button {
+  padding: 5px;
+}
