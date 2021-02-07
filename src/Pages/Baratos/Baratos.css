@@ -55,3 +55,22 @@
 .baratosCursosContent figcaption {
   text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+  #rightContentComponent {
+    display: none;
+  }
+
+  .baratosCursosContent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #baratosContainer h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: -52.5px;
+  }
+}

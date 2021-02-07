@@ -77,3 +77,24 @@
 .pesquisaContainerfigcaption {
   text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+  #pesquisaContent h3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .pesquisaContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  #pesquisaContent input[type='search'] {
+    margin-left: -30px;
+  }
+
+  #pesquisaContent label img {
+    left: -2px;
+  }
+}

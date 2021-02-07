@@ -25,11 +25,11 @@ export default class Header extends Component {
               <li className="dropdown">
                 <img src={menu} alt="Menu" className="dropbtn" />
                 <div class="dropdown-content">
-                  <a href="#">Populares</a>
-                  <a href="#">Preço Baixo</a>
-                  <a href="#">Trilha</a>
-                  <a href="#">Ranking</a>
-                  <a href="#">Pesquisa</a>
+                  <Link to="/populares">Populares</Link>
+                  <Link to="/barato">Preço Baixo</Link>
+                  <Link to="/trilha">Trilha</Link>
+                  <Link to="/ranking">Ranking</Link>
+                  <Link to="/pesquisa">Pesquisa</Link>
                 </div>
               </li>
 

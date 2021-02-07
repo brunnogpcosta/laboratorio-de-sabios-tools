@@ -4,6 +4,7 @@
   margin-top: 40px;
   margin-bottom: 20px;
   display: flex;
+  padding-bottom: 80px;
 }
 
 .titulosRanking {
@@ -47,4 +48,30 @@
 #boardRanking p {
   padding: 20px;
   text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+  #rankingContent {
+    display: block;
+    justify-content: center;
+  }
+
+  #leftContent {
+    width: 100%;
+  }
+
+  #leftContent #rankeados {
+    overflow: hidden;
+    height: 100%;
+    margin-bottom: 0px;
+  }
+
+  #rightContent {
+    width: 100%;
+  }
+
+  #boardRanking {
+    overflow: hidden;
+    height: 100%;
+  }
 }
