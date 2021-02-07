@@ -1,7 +1,7 @@
 .homePageContainer {
   width: 90%;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 59px;
 }
 
 .pageTitleHomePage {
@@ -9,7 +9,7 @@
 }
 
 .melhoresCursosContent {
-  width: 100%;
+  width: 76%;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
@@ -25,8 +25,8 @@
 }
 
 figure {
-  width: 280px;
-  height: 190px;
+  width: 220px;
+  height: 165px;
   background-color: #fff;
   border: 1px solid #d3d3d3;
   box-shadow: 0px 0px 4px rgba(195, 195, 195, 0.6);
@@ -37,15 +37,15 @@ figure {
 .melhoresCursosContent a {
   text-decoration: none;
   color: black;
-  width: 280px;
-  height: 150px;
+  width: 220px;
+  height: 130px;
   margin-right: 23px;
-  margin-bottom: 67px;
+  margin-bottom: 62px;
 }
 
 figure img {
-  width: 280px;
-  height: 150px;
+  width: 220px;
+  height: 130px;
   padding: 10px;
 }
 
@@ -53,19 +53,10 @@ figcaption {
   text-align: center;
 }
 
-/*
-#demaisCursos {
-  max-width: 100%;
-  display: grid;
-  grid-template-rows: 25%px 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: '';
-}
-*/
-
 #demaisCursos {
   display: flex;
   flex-wrap: wrap;
+  width: 76%;
   padding: 0px 0px 80px 0;
   margin-bottom: 40px;
 }
@@ -89,6 +80,26 @@ figcaption {
   top: -1px;
 }
 
-#demaisCursos img {
-  margin-top: 0px;
+@media only screen and (max-width: 600px) {
+  .melhoresCursosContent {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .melhoresCursos {
+    display: flex;
+    justify-content: center;
+    margin-left: -30px;
+  }
+
+  #demaisCursos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #rightContentHPComponent {
+    display: none;
+  }
 }

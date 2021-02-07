@@ -4,7 +4,7 @@ import './Populares.css'
 
 import imgCard from './img/graficos-tabelas-sao-objetos-basicos-para-estudo-estatistica-5812154677e56.jpg'
 
-
+import RightContent from '../../components/RightContent/RightContentComponent'
 export default class Populares extends Component {
   render() {
     return (
@@ -76,7 +76,7 @@ export default class Populares extends Component {
         </div>
 
 
-
+        <RightContent />
       </div>
     )
   }

@@ -1,0 +1,24 @@
+#rightContentHPComponent {
+  width: 20%;
+  position: absolute;
+  top: 139px;
+  right: 0;
+  margin-right: 50px;
+  padding-bottom: 80px;
+}
+
+#rightContentHPComponent h2 {
+  margin-bottom: 20px;
+}
+
+#rightContentHPComponentBoard {
+  border: 1px solid #a0982e;
+  width: 100%;
+  height: 100%;
+  background-color: #fff44a;
+  text-align: justify;
+}
+
+#rightContentHPComponentBoard p {
+  padding: 10px;
+}

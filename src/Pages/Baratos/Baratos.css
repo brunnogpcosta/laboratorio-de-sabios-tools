@@ -9,7 +9,7 @@
 }
 
 .baratoCourse {
-  width: 150px;
+  width: 120px;
   height: 50px;
   background-color: rgb(255, 255, 255);
   padding-top: 15px;
@@ -23,7 +23,7 @@
 }
 
 .baratosCursosContent {
-  width: 100%;
+  width: 76%;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
@@ -36,8 +36,8 @@
 }
 
 .baratosCursosContent figure {
-  width: 280px;
-  height: 190px;
+  width: 220px;
+  height: 165px;
   background-color: #fff;
   border: 1px solid #d3d3d3;
   box-shadow: 0px 0px 4px rgba(195, 195, 195, 0.6);
@@ -46,8 +46,8 @@
 }
 
 .baratosCursosContent figure img {
-  width: 280px;
-  height: 150px;
+  width: 220px;
+  height: 130px;
   padding: 10px;
   margin-top: -50px;
 }

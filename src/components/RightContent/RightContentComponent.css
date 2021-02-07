@@ -1,0 +1,24 @@
+#rightContentComponent {
+  width: 20%;
+  position: absolute;
+  top: 139px;
+  right: 0;
+  margin-right: 50px;
+  padding-bottom: 80px;
+}
+
+#rightContentComponent h2 {
+  margin-bottom: 24px;
+}
+
+#rightContentComponentBoard {
+  border: 1px solid #a0982e;
+  width: 100%;
+  height: 100%;
+  background-color: #fff44a;
+  text-align: justify;
+}
+
+#rightContentComponentBoard p {
+  padding: 10px;
+}

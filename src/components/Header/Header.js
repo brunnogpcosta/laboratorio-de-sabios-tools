@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import './headerStyle.css'
 import logo from './img/logoFabricadeSabios.png'
 import alert from './img/alert-circle.svg'
+import menu from './img/menu.svg'
 
 
 
@@ -20,7 +21,18 @@ export default class Header extends Component {
             <ul>
               <li><Link to="/"><img src={logo} alt="Logo" /></Link></li>
               <li><h2>Laboratório de Sábios</h2></li>
-              <li><Link to="/ranking" title="Informações Importantes"><img src={alert} alt="Informação Importante" /></Link></li>
+
+              <li className="dropdown">
+                <img src={menu} alt="Menu" className="dropbtn" />
+                <div class="dropdown-content">
+                  <a href="#">Populares</a>
+                  <a href="#">Preço Baixo</a>
+                  <a href="#">Trilha</a>
+                  <a href="#">Ranking</a>
+                  <a href="#">Pesquisa</a>
+                </div>
+              </li>
+
             </ul>
 
           </div>

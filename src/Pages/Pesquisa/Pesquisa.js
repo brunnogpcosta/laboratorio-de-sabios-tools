@@ -5,10 +5,13 @@ import './Pesquisa.css'
 import imgCard from './img/graficos-tabelas-sao-objetos-basicos-para-estudo-estatistica-5812154677e56.jpg'
 import searchBt from './img/search.svg'
 
+import RightContent from '../../components/RightContent/RightContentComponent'
 export default class Pesquisa extends Component {
   render() {
     return (
       <div id="pesquisaContent">
+        <h2>Encontre seu Curso</h2>
+
         <label htmlFor="search">
           <img src={searchBt} />
           <input type="search"></input>
@@ -72,6 +75,7 @@ export default class Pesquisa extends Component {
           </a>
 
         </div>
+
 
       </div>
     )

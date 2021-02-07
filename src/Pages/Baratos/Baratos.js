@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import './Baratos.css';
 
 import imgCard from './img/graficos-tabelas-sao-objetos-basicos-para-estudo-estatistica-5812154677e56.jpg'
-
+import RightContent from '../../components/RightContent/RightContentComponent'
 
 export default class Baratos extends Component {
   render() {
@@ -95,7 +95,7 @@ export default class Baratos extends Component {
 
         </div>
 
-
+        <RightContent />
 
       </div>
     )

@@ -4,7 +4,7 @@
 }
 
 .header .topHeader {
-  height: 50px;
+  height: 46px;
   background-color: #186095;
 }
 
@@ -39,12 +39,17 @@
 }
 
 .topHeader ul li:last-child img {
-  width: 30px;
-  height: 40px;
+  width: 50px;
+  height: 42px;
+  display: none;
 }
 
 .topHeader ul li:last-child img:hover {
   color: #fff44a;
+}
+
+.dropdown-content {
+  display: none;
 }
 
 .bottomHeader {
@@ -78,4 +83,50 @@
 
 .bottomHeader ul li a:hover {
   border-bottom: 2px solid #fff44a;
+}
+
+@media only screen and (max-width: 600px) {
+  .topHeader ul li:last-child img {
+    width: 30px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .bottomHeader {
+    display: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #186095;
+    min-width: 300px;
+    min-height: 100vh;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 40.5px;
+    right: -24px;
+  }
+
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #2590dd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }
