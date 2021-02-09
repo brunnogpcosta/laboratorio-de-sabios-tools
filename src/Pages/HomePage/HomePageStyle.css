@@ -50,7 +50,7 @@ figcaption {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding: 0px 5px 10px 5px;
+  padding: 0px 10px 10px 10px;
 }
 
 #demaisCursos {
