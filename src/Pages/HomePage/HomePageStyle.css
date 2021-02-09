@@ -20,27 +20,23 @@
 }
 
 .pageTitleHomePage a img {
-  margin-top: 2px;
   margin-left: 5px;
 }
 
 figure {
   width: 220px;
-  height: 165px;
   background-color: #fff;
   border: 1px solid #d3d3d3;
   box-shadow: 0px 0px 4px rgba(195, 195, 195, 0.6);
   margin-right: 23px;
-  margin-bottom: 27px;
+  margin-bottom: 20px;
 }
 
 .melhoresCursosContent a {
   text-decoration: none;
   color: black;
   width: 220px;
-  height: 130px;
   margin-right: 23px;
-  margin-bottom: 62px;
 }
 
 figure img {
@@ -51,23 +47,21 @@ figure img {
 
 figcaption {
   text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0px 5px 10px 5px;
 }
 
 #demaisCursos {
   display: flex;
   flex-wrap: wrap;
   width: 76%;
-  padding: 0px 0px 80px 0;
-  margin-bottom: 40px;
 }
 
 #demaisCursos h3 {
   float: left;
   margin-right: 5px;
-}
-
-#demaisCursos figure {
-  margin-top: 20px;
 }
 
 #demaisCursos a {
