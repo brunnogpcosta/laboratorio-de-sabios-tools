@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 
 import api from '../../services/api'
 
@@ -37,7 +38,14 @@ export default class Baratos extends Component {
 
           {cursosBaratos.map(cursoBarato => (
 
-            <a href="#">
+            <Link to={{
+              pathname: '/detalhe',
+              state: {
+                nomeCurso: cursoBarato.nomeCurso,
+                descricaoCurso: cursoBarato.descricaoCurso,
+                preco: cursoBarato.preco
+              }
+            }}>
               <figure>
                 <div className="baratoCourse">R$ {cursoBarato.preco}</div>
                 <img src={imgCard}></img>
@@ -45,7 +53,7 @@ export default class Baratos extends Component {
                   {cursoBarato.nomeCurso}
                 </figcaption>
               </figure>
-            </a>
+            </Link>
 
           ))}
 
@@ -55,7 +63,7 @@ export default class Baratos extends Component {
 
         <RightContent />
 
-      </div>
+      </div >
     )
   }
 }

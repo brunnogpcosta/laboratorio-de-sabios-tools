@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
+
+import api from '../../services/api'
 
 import './CategoriaCurso.css';
 
@@ -6,98 +9,69 @@ import imgCard from './img/graficos-tabelas-sao-objetos-basicos-para-estudo-esta
 
 
 export default class CategoriaCurso extends Component {
+  state = {
+    cursosCategoria: [],
+    cursosNome: ""
+  };
+
+
+  async componentDidMount() {
+    const response = await api.get('http://localhost:3333/allCourses')
+    this.setState({
+      cursosNome: this.props.location.state
+    })
+
+    const cursosFiltred = response.data.cursos.filter(curso => curso.categoria.toLowerCase().indexOf(this.state.cursosNome.categoria.toLowerCase()) > -1)
+
+    if (cursosFiltred.length == 0) {
+      this.setState({ cursosCategoria: response.data.cursos })
+    } else {
+      this.setState({ cursosCategoria: cursosFiltred })
+    }
+
+
+  }
+
+
+
+
   render() {
+    const { cursosNome } = this.state
+    const { cursosCategoria } = this.state
+
     return (
       <div id="categoriaContainer">
-        <h2>Cursos de Estatística</h2>
+        <h2>{cursosNome.categoria}</h2>
 
         <div className="categoriaCursosContent">
-          <a href="#">
-            <figure>
-              <div className="categoriaCourse">R$ 19,99</div>
-              <img src={imgCard}></img>
-              <figcaption>
-                Estatística Fundamental
-            </figcaption>
-            </figure>
-          </a>
 
-          <a href="#">
-            <figure>
-              <div className="categoriaCourse">R$ 29,99</div>
-              <img src={imgCard}></img>
-              <figcaption>
-                Estatística Fundamental
-            </figcaption>
-            </figure>
-          </a>
+          {cursosCategoria.map(cursos => (
+            <Link to={{
+              pathname: '/detalhe',
+              state: {
+                nomeCurso: cursos.nomeCurso,
+                descricaoCurso: cursos.descricaoCurso,
+                preco: cursos.preco
+              }
+            }} >
+              <figure>
+                <div className="categoriaCourse">{cursos.preco}</div>
+                <img src={imgCard}></img>
+                <figcaption title={cursos.nomeCurso}>
+                  {cursos.nomeCurso}
+                </figcaption>
+              </figure>
+            </Link>
 
-          <a href="#">
-            <figure>
-              <div className="categoriaCourse">R$ 29,99</div>
-              <img src={imgCard}></img>
-              <figcaption>
-                Estatística Fundamental
-            </figcaption>
-            </figure>
-          </a>
 
-          <a href="#">
-            <figure>
-              <div className="categoriaCourse">R$ 59,99</div>
-              <img src={imgCard}></img>
-              <figcaption>
-                Estatística Fundamental
-            </figcaption>
-            </figure>
-          </a>
-
-          <a href="#">
-            <figure>
-              <div className="categoriaCourse">R$ 59,99</div>
-              <img src={imgCard}></img>
-              <figcaption>
-                Estatística Fundamental
-            </figcaption>
-            </figure>
-          </a>
-
-          <a href="#">
-            <figure>
-              <div className="categoriaCourse">R$ 99,99</div>
-              <img src={imgCard}></img>
-              <figcaption>
-                Estatística Fundamental
-            </figcaption>
-            </figure>
-          </a>
-
-          <a href="#">
-            <figure>
-              <div className="categoriaCourse">R$ 199,99</div>
-              <img src={imgCard}></img>
-              <figcaption>
-                Estatística Fundamental
-            </figcaption>
-            </figure>
-          </a>
-
-          <a href="#">
-            <figure>
-              <div className="categoriaCourse">R$ 199,99</div>
-              <img src={imgCard}></img>
-              <figcaption>
-                Estatística Fundamental
-            </figcaption>
-            </figure>
-          </a>
+          ))}
 
 
         </div>
 
 
 
-      </div>
+      </div >
     )
   }
 }

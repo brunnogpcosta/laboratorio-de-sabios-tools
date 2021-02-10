@@ -29,13 +29,16 @@ export default class HomePage extends Component {
     const { cursos } = this.state;
 
     return (
-
-
       <div className="homePageContainer">
         <div className="melhoresCursos">
           <div className="pageTitleHomePage">
             <h2>Melhores Cursos</h2>
-            <Link to='/categoria'>
+            <Link to={{
+              pathname: '/categoria',
+              state: {
+                categoria: "Melhores Cursos",
+              }
+            }}>
               <img src={plus} alt="Mais Cursos" />
             </Link>
           </div>
@@ -45,10 +48,17 @@ export default class HomePage extends Component {
 
           {cursos.map(curso => (
 
-            <Link to="/detalhe">
+            <Link to={{
+              pathname: '/detalhe',
+              state: {
+                nomeCurso: curso.nomeCurso,
+                descricaoCurso: curso.descricaoCurso,
+                preco: curso.preco
+              }
+            }} >
               <figure>
                 <img src={imgCard}></img>
-                <figcaption>
+                <figcaption Title={curso.nomeCurso}>
                   {curso.nomeCurso}
                 </figcaption>
               </figure>
@@ -62,13 +72,26 @@ export default class HomePage extends Component {
 
           {cursos.map(curso => (
 
-            <div id="cursoUm">
-              <h3>{curso.categoria}</h3>
-              <Link to="/categoria"><img src={plus} alt="Mais Cursos" /></Link>
-              <Link to="/detalhe">
+            <div id="cursoQuadrado">
+              <h3 title={curso.categoria}>{curso.categoria}</h3>
+              <Link to={{
+                pathname: '/categoria',
+                state: {
+                  categoria: curso.categoria
+                }
+              }}>
+                <img src={plus} alt="Mais Cursos" /></Link>
+              <Link to={{
+                pathname: '/detalhe',
+                state: {
+                  nomeCurso: curso.nomeCurso,
+                  descricaoCurso: curso.descricaoCurso,
+                  preco: curso.preco
+                }
+              }} >
                 <figure>
                   <img src={imgCard}></img>
-                  <figcaption>
+                  <figcaption title={curso.nomeCurso}>
                     {curso.nomeCurso}
                   </figcaption>
                 </figure>

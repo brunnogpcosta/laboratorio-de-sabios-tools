@@ -53,6 +53,11 @@ figcaption {
   padding: 0px 10px 10px 10px;
 }
 
+#cursoQuadrado {
+  width: 220px;
+  margin-right: 23px;
+}
+
 #demaisCursos {
   display: flex;
   flex-wrap: wrap;
@@ -61,6 +66,10 @@ figcaption {
 
 #demaisCursos h3 {
   float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 75%;
   margin-right: 5px;
 }
 
