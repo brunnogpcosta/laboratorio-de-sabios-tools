@@ -57,6 +57,7 @@ export default class HomePage extends Component {
               }
             }} >
               <figure>
+                <div className="baratoHPCourse">R$ {curso.preco}</div>
                 <img src={imgCard}></img>
                 <figcaption Title={curso.nomeCurso}>
                   {curso.nomeCurso}
@@ -90,6 +91,7 @@ export default class HomePage extends Component {
                 }
               }} >
                 <figure>
+                  <div className="baratoHPCourse">R$ {curso.preco}</div>
                   <img src={imgCard}></img>
                   <figcaption title={curso.nomeCurso}>
                     {curso.nomeCurso}

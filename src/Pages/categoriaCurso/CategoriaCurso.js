@@ -55,7 +55,7 @@ export default class CategoriaCurso extends Component {
               }
             }} >
               <figure>
-                <div className="categoriaCourse">{cursos.preco}</div>
+                <div className="categoriaCourse">R$ {cursos.preco}</div>
                 <img src={imgCard}></img>
                 <figcaption title={cursos.nomeCurso}>
                   {cursos.nomeCurso}

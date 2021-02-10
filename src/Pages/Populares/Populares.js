@@ -23,56 +23,6 @@ export default class Populares extends Component {
             </figure>
           </a>
 
-          <a href="#">
-            <figure>
-              <div className="positionCourse">2º</div>
-              <img src={imgCard}></img>
-              <figcaption>
-                Estatística Fundamental
-              </figcaption>
-            </figure>
-          </a>
-
-          <a href="#">
-            <figure>
-              <div className="positionCourse">3º</div>
-              <img src={imgCard}></img>
-              <figcaption>
-                Estatística Fundamental
-              </figcaption>
-            </figure>
-          </a>
-
-          <a href="#">
-            <figure>
-              <div className="positionCourse">4º</div>
-              <img src={imgCard}></img>
-              <figcaption>
-                Estatística Fundamental
-              </figcaption>
-            </figure>
-          </a>
-
-          <a href="#">
-            <figure>
-              <div className="positionCourse">5º</div>
-              <img src={imgCard}></img>
-              <figcaption>
-                Estatística Fundamental
-              </figcaption>
-            </figure>
-          </a>
-
-          <a href="#">
-            <figure>
-              <div className="positionCourse">6º</div>
-              <img src={imgCard}></img>
-              <figcaption>
-                Estatística Fundamental
-              </figcaption>
-            </figure>
-          </a>
-
         </div>
 
 

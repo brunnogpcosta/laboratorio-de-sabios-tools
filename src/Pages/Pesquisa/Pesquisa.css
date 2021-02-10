@@ -11,18 +11,9 @@
   top: 10px;
   padding: 2.1px;
   border: 1px solid rgb(0, 0, 0);
-  background-color: #186095;
-  cursor: pointer;
+  background-color: #258bd3;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-}
-
-#pesquisaContent label img:hover {
-  background-color: #258bd3;
-}
-
-#pesquisaContent label img:active {
-  background-color: #fff44a;
 }
 
 #pesquisaContent input[type='search'] {

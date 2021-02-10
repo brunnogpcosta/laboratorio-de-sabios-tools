@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import api from '../../services/api'
 
@@ -69,14 +70,22 @@ export default class Pesquisa extends Component {
         <div className="pesquisaContainer">
 
           {cursosFiltrados.map(cursoFiltrado => (
-            <a href="#">
+            <Link to={{
+              pathname: '/detalhe',
+              state: {
+                nomeCurso: cursoFiltrado.nomeCurso,
+                descricaoCurso: cursoFiltrado.descricaoCurso,
+                preco: cursoFiltrado.preco
+              }
+            }} >
               <figure>
+                <div className="baratoHPCourse">R$ {cursoFiltrado.preco}</div>
                 <img src={imgCard}></img>
                 <figcaption>
                   {cursoFiltrado.nomeCurso}
                 </figcaption>
               </figure>
-            </a>
+            </Link>
 
 
 
