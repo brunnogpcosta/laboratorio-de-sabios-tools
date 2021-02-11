@@ -23,8 +23,8 @@ export default class CursoDetalhe extends Component {
 
   tratarTexto() {
     const { curso } = this.state;
-    console.log(curso.descricaoCurso)
-    return curso.descricaoCurso
+    //console.log(curso.descricaoCurso)
+    return curso.conteudoCurso
 
   }
 

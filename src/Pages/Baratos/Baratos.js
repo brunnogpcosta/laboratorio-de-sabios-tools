@@ -42,7 +42,7 @@ export default class Baratos extends Component {
               pathname: '/detalhe',
               state: {
                 nomeCurso: cursoBarato.nomeCurso,
-                descricaoCurso: cursoBarato.descricaoCurso,
+                conteudoCurso: cursoBarato.conteudoCurso,
                 preco: cursoBarato.preco,
                 thumb: cursoBarato.thumb
               }

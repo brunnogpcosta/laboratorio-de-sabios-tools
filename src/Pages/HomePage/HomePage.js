@@ -56,7 +56,7 @@ export default class HomePage extends Component {
               pathname: '/detalhe',
               state: {
                 nomeCurso: curso.nomeCurso,
-                descricaoCurso: curso.descricaoCurso,
+                conteudoCurso: curso.conteudoCurso,
                 preco: curso.preco,
                 thumb: curso.thumb
               }
@@ -86,11 +86,11 @@ export default class HomePage extends Component {
                 }
               }}>
                 <img src={plus} alt="Mais Cursos" /></Link>
-              <Link to={{
+              <Link className="aFigure" to={{
                 pathname: '/detalhe',
                 state: {
                   nomeCurso: cursoCategoria.nomeCurso,
-                  descricaoCurso: cursoCategoria.descricaoCurso,
+                  conteudoCurso: cursoCategoria.conteudoCurso,
                   preco: cursoCategoria.preco,
                   thumb: cursoCategoria.thumb
                 }

@@ -74,7 +74,7 @@ export default class Pesquisa extends Component {
               pathname: '/detalhe',
               state: {
                 nomeCurso: cursoFiltrado.nomeCurso,
-                descricaoCurso: cursoFiltrado.descricaoCurso,
+                conteudoCurso: cursoFiltrado.conteudoCurso,
                 preco: cursoFiltrado.preco,
                 thumb: cursoFiltrado.thumb
               }

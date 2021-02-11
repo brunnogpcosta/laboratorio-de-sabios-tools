@@ -1,10 +1,10 @@
-#popularesContainer {
+#satisfacaoContainer {
   width: 90%;
   margin: 0 auto;
   margin-top: 60px;
 }
 
-#popularesContainer h2 {
+#satisfacaoContainer h2 {
   margin-bottom: 20px;
 }
 
@@ -20,7 +20,7 @@
   position: relative;
 }
 
-.popularesCursosContent {
+.satisfacaoCursosContent {
   width: 76%;
   display: flex;
   flex-wrap: wrap;
@@ -28,12 +28,12 @@
   padding-bottom: 80px;
 }
 
-.popularesCursosContent a {
+.satisfacaoCursosContent a {
   text-decoration: none;
   color: #000;
 }
 
-.popularesCursosContent figure {
+.satisfacaoCursosContent figure {
   width: 220px;
   height: 165px;
   background-color: #fff;
@@ -43,14 +43,14 @@
   margin-bottom: 27px;
 }
 
-.popularesCursosContent figure img {
+.satisfacaoCursosContent figure img {
   width: 220px;
   height: 130px;
   padding: 10px;
   margin-top: -50px;
 }
 
-.popularesCursosContent figcaption {
+.satisfacaoCursosContent figcaption {
   text-align: center;
 }
 
@@ -59,13 +59,13 @@
     display: none;
   }
 
-  .popularesCursosContent {
+  .satisfacaoCursosContent {
     display: flex;
     justify-content: center;
     width: 100%;
   }
 
-  #popularesContainer h2 {
+  #satisfacaoContainer h2 {
     display: flex;
     justify-content: center;
     width: 100%;

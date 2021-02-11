@@ -25,7 +25,7 @@ export default class Header extends Component {
               <li className="dropdown">
                 <img src={menu} alt="Menu" className="dropbtn" />
                 <div class="dropdown-content">
-                  <Link to="/populares">Populares</Link>
+                  <Link to="/satisfacao">Satisfação</Link>
                   <Link to="/barato">Preço Baixo</Link>
                   <Link to="/trilha">Trilha</Link>
                   <Link to="/ranking">Ranking</Link>
@@ -43,7 +43,7 @@ export default class Header extends Component {
           <div className="container">
             <ul>
               <div className="bhLeft">
-                <li><Link to="/populares">POPULARES</Link></li>
+                <li><Link to="/satisfacao">SATISFAÇÃO</Link></li>
                 <li><Link to="/barato">PREÇO BAIXO</Link></li>
               </div>
 

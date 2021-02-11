@@ -50,7 +50,7 @@ export default class CategoriaCurso extends Component {
               pathname: '/detalhe',
               state: {
                 nomeCurso: cursos.nomeCurso,
-                descricaoCurso: cursos.descricaoCurso,
+                conteudoCurso: cursos.conteudoCurso,
                 preco: cursos.preco,
                 thumb: cursos.thumb
               }

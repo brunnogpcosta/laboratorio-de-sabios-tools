@@ -78,6 +78,18 @@ figcaption {
   margin-right: 23px;
 }
 
+#cursoQuadrado h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#cursoQuadrado .aFigure {
+  width: 100px;
+  text-decoration: none;
+  color: #000;
+}
+
 #demaisCursos {
   display: flex;
   flex-wrap: wrap;
@@ -92,16 +104,8 @@ figcaption {
 
 #demaisCursos h3 {
   float: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   width: 80%;
   margin-right: 5px;
-}
-
-#demaisCursos a {
-  text-decoration: none;
-  color: #000;
 }
 
 #demaisCursos a img {
