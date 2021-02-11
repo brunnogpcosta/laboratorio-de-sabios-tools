@@ -14,7 +14,7 @@ export default class Baratos extends Component {
   }
 
   async componentDidMount() {
-    const response = await api.get('http://localhost:3333/allCourses')
+    const response = await api.get('http://localhost:3001/allCourses')
     const objetoOrdenado = response.data.cursos.sort((a, b) => (parseFloat(a.preco) > parseFloat(b.preco)) ? 1 : -1)
 
     console.log(objetoOrdenado)
@@ -43,12 +43,13 @@ export default class Baratos extends Component {
               state: {
                 nomeCurso: cursoBarato.nomeCurso,
                 descricaoCurso: cursoBarato.descricaoCurso,
-                preco: cursoBarato.preco
+                preco: cursoBarato.preco,
+                thumb: cursoBarato.thumb
               }
             }}>
               <figure>
                 <div className="baratoCourse">R$ {cursoBarato.preco}</div>
-                <img src={imgCard}></img>
+                <img src={cursoBarato.thumb}></img>
                 <figcaption>
                   {cursoBarato.nomeCurso}
                 </figcaption>

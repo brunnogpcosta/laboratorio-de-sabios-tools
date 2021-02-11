@@ -16,7 +16,7 @@ export default class CategoriaCurso extends Component {
 
 
   async componentDidMount() {
-    const response = await api.get('http://localhost:3333/allCourses')
+    const response = await api.get('http://localhost:3001/allCourses')
     this.setState({
       cursosNome: this.props.location.state
     })
@@ -51,12 +51,13 @@ export default class CategoriaCurso extends Component {
               state: {
                 nomeCurso: cursos.nomeCurso,
                 descricaoCurso: cursos.descricaoCurso,
-                preco: cursos.preco
+                preco: cursos.preco,
+                thumb: cursos.thumb
               }
             }} >
               <figure>
                 <div className="categoriaCourse">R$ {cursos.preco}</div>
-                <img src={imgCard}></img>
+                <img src={cursos.thumb}></img>
                 <figcaption title={cursos.nomeCurso}>
                   {cursos.nomeCurso}
                 </figcaption>

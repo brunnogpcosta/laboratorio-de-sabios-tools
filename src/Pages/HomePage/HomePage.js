@@ -14,19 +14,23 @@ import RightContentHP from '../../components/RightContentHP/RightContentHPCompon
 export default class HomePage extends Component {
   state = {
     cursos: [],
+    cursosCategoria: []
   }
 
   async componentDidMount() {
-    const response = await api.get('http://localhost:3333/allCourses')
-    this.setState({ cursos: response.data.cursos })
+    const response = await api.get('allCourses')
+    const responseCategoria = await api.get('categories')
 
-
+    this.setState({ cursos: response.data.cursos, cursosCategoria: responseCategoria.data })
   }
+
+
 
 
   render() {
 
-    const { cursos } = this.state;
+    const { cursos, cursosCategoria } = this.state;
+
 
     return (
       <div className="homePageContainer">
@@ -53,12 +57,13 @@ export default class HomePage extends Component {
               state: {
                 nomeCurso: curso.nomeCurso,
                 descricaoCurso: curso.descricaoCurso,
-                preco: curso.preco
+                preco: curso.preco,
+                thumb: curso.thumb
               }
             }} >
               <figure>
                 <div className="baratoHPCourse">R$ {curso.preco}</div>
-                <img src={imgCard}></img>
+                <img src={curso.thumb}></img>
                 <figcaption Title={curso.nomeCurso}>
                   {curso.nomeCurso}
                 </figcaption>
@@ -70,31 +75,31 @@ export default class HomePage extends Component {
         </div>
 
         <div id="demaisCursos">
-
-          {cursos.map(curso => (
+          {cursosCategoria.map(cursoCategoria => (
 
             <div id="cursoQuadrado">
-              <h3 title={curso.categoria}>{curso.categoria}</h3>
+              <h3 title={cursoCategoria.categoria}>{cursoCategoria.categoria}</h3>
               <Link to={{
                 pathname: '/categoria',
                 state: {
-                  categoria: curso.categoria
+                  categoria: cursoCategoria.categoria
                 }
               }}>
                 <img src={plus} alt="Mais Cursos" /></Link>
               <Link to={{
                 pathname: '/detalhe',
                 state: {
-                  nomeCurso: curso.nomeCurso,
-                  descricaoCurso: curso.descricaoCurso,
-                  preco: curso.preco
+                  nomeCurso: cursoCategoria.nomeCurso,
+                  descricaoCurso: cursoCategoria.descricaoCurso,
+                  preco: cursoCategoria.preco,
+                  thumb: cursoCategoria.thumb
                 }
               }} >
                 <figure>
-                  <div className="baratoHPCourse">R$ {curso.preco}</div>
-                  <img src={imgCard}></img>
-                  <figcaption title={curso.nomeCurso}>
-                    {curso.nomeCurso}
+                  <div className="baratoHPCourse">R$ {cursoCategoria.preco}</div>
+                  <img src={cursoCategoria.thumb}></img>
+                  <figcaption title={cursoCategoria.nomeCurso}>
+                    {cursoCategoria.nomeCurso}
                   </figcaption>
                 </figure>
               </Link>

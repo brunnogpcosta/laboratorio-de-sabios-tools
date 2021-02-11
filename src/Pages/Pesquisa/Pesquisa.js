@@ -27,7 +27,7 @@ export default class Pesquisa extends Component {
   }
 
   async componentDidMount() {
-    response = await api.get('http://localhost:3333/allCourses')
+    response = await api.get('http://localhost:3001/allCourses')
     this.setState({ cursos: response.data.cursos })
     this.setState({ cursosFiltrados: response.data.cursos })
   }
@@ -75,12 +75,13 @@ export default class Pesquisa extends Component {
               state: {
                 nomeCurso: cursoFiltrado.nomeCurso,
                 descricaoCurso: cursoFiltrado.descricaoCurso,
-                preco: cursoFiltrado.preco
+                preco: cursoFiltrado.preco,
+                thumb: cursoFiltrado.thumb
               }
             }} >
               <figure>
                 <div className="baratoHPCourse">R$ {cursoFiltrado.preco}</div>
-                <img src={imgCard}></img>
+                <img src={cursoFiltrado.thumb}></img>
                 <figcaption>
                   {cursoFiltrado.nomeCurso}
                 </figcaption>

@@ -28,17 +28,10 @@ figure {
   width: 220px;
   height: 165px;
   background-color: #fff;
-  border: 1px solid #d3d3d3;
+  border: 1px solid #afd5f8;
   box-shadow: 0px 0px 4px rgba(195, 195, 195, 0.6);
   margin-right: 23px;
   margin-bottom: 27px;
-}
-
-.baratosCursosContent figure img {
-  width: 220px;
-  height: 130px;
-  padding: 10px;
-  margin-top: -50px;
 }
 
 .melhoresCursosContent a {
@@ -51,8 +44,10 @@ figure {
 figure img {
   width: 220px;
   height: 130px;
+  object-fit: cover;
   padding: 10px;
   margin-top: -50px;
+  object-fit: cover;
 }
 
 figcaption {
@@ -75,7 +70,7 @@ figcaption {
   margin-left: 10px;
   position: relative;
   color: rgb(0, 177, 53);
-  z-index: 2;
+  z-index: 1;
 }
 
 #cursoQuadrado {
@@ -89,12 +84,18 @@ figcaption {
   width: 76%;
 }
 
+#cursoQuadrado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 #demaisCursos h3 {
   float: left;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 75%;
+  width: 80%;
   margin-right: 5px;
 }
 

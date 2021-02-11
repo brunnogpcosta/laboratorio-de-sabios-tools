@@ -39,7 +39,7 @@ export default class CursoDetalhe extends Component {
 
         <div id="detaiBoard">
 
-          <img src={cursoImg} />
+          <img src={curso.thumb} />
           {this.tratarTexto()}
           <div className="alignPrice">
             <div id="detailPrice">
