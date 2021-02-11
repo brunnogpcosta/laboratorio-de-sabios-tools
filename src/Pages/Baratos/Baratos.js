@@ -14,7 +14,7 @@ export default class Baratos extends Component {
   }
 
   async componentDidMount() {
-    const response = await api.get('http://localhost:3001/allCourses')
+    const response = await api.get('allCourses')
     const objetoOrdenado = response.data.cursos.sort((a, b) => (parseFloat(a.preco) > parseFloat(b.preco)) ? 1 : -1)
 
     console.log(objetoOrdenado)
@@ -28,6 +28,7 @@ export default class Baratos extends Component {
   render() {
 
     const { cursosBaratos } = this.state
+    const msg = "Esta página lista os cursos por ordem de preço. Vai do menor ao maior valor de investimento."
 
     return (
       <div id="baratosContainer">
@@ -62,7 +63,7 @@ export default class Baratos extends Component {
 
         </div>
 
-        <RightContent />
+        <RightContent mensagem={msg} />
 
       </div >
     )

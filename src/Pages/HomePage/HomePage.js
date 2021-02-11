@@ -14,14 +14,25 @@ import RightContentHP from '../../components/RightContentHP/RightContentHPCompon
 export default class HomePage extends Component {
   state = {
     cursos: [],
+    cursosTotal: "",
     cursosCategoria: []
   }
 
   async componentDidMount() {
     const response = await api.get('allCourses')
     const responseCategoria = await api.get('categories')
+    let contador = 0;
+    const cursosDisponiveisOito = [];
+    response.data.cursos.forEach(element => {
+      contador = contador + 1;
+      if (contador <= 8) {
+        cursosDisponiveisOito.push(element)
+      }
+    });
 
-    this.setState({ cursos: response.data.cursos, cursosCategoria: responseCategoria.data })
+
+
+    this.setState({ cursosTotal: response.data.cursos.length, cursos: cursosDisponiveisOito, cursosCategoria: responseCategoria.data })
   }
 
 
@@ -29,18 +40,18 @@ export default class HomePage extends Component {
 
   render() {
 
-    const { cursos, cursosCategoria } = this.state;
+    const { cursosTotal, cursos, cursosCategoria } = this.state;
 
 
     return (
       <div className="homePageContainer">
         <div className="melhoresCursos">
           <div className="pageTitleHomePage">
-            <h2>Melhores Cursos</h2>
+            <h2>Cursos Disponíveis ({cursosTotal})</h2>
             <Link to={{
               pathname: '/categoria',
               state: {
-                categoria: "Melhores Cursos",
+                categoria: "Cursos Disponíveis",
               }
             }}>
               <img src={plus} alt="Mais Cursos" />

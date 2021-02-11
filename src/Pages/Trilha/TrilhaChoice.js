@@ -1,78 +1,58 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import api from '../../services/api'
 
 import './TrilhaChoice.css'
 import imgCard from './img/graficos-tabelas-sao-objetos-basicos-para-estudo-estatistica-5812154677e56.jpg'
 import rightArrow from './img/chevrons-right_3.svg'
 
 export default class TrilhaChoice extends Component {
+  state = {
+    trilha: [],
+    trilhaTitle: ""
+  };
+
+
+  async componentDidMount() {
+    const response = await api.get('allCourses')
+    const resultTrilha = response.data.cursos.filter(curso => curso.categoria == this.props.location.state.categoria)
+    this.setState({
+      trilha: resultTrilha,
+      trilhaTitle: this.props.location.state.categoria
+    })
+  }
+
   render() {
+    const { trilha, trilhaTitle } = this.state
     return (
       <div id="trilhaChoiceContent">
 
-        <h2>Trilha do Sábio Estóico</h2>
+        <h2>Trilha do Sábio {trilhaTitle}</h2>
 
         <div id="trilhaChoiceMetas">
           <ul>
+            {trilha.map(trail => (
 
-            <li>
-              <a href="#">
-                <figure>
-                  <img src={imgCard} />
-                  <figcaption>
-                    Estatística Fundamental
-                  </figcaption>
-                </figure>
-              </a>
+              <li>
+                <Link to={{
+                  pathname: '/detalhe',
+                  state: {
+                    nomeCurso: trail.nomeCurso,
+                    conteudoCurso: trail.conteudoCurso,
+                    preco: trail.preco,
+                    thumb: trail.thumb
+                  }
+                }} >
+                  <figure>
+                    <img src={trail.thumb} />
+                    <figcaption Title={trail.nomeCurso}>
+                      {trail.nomeCurso}
+                    </figcaption>
+                  </figure>
+                </Link>
+              </li>
 
-            </li>
-            <img src={rightArrow} />
-            <li>
-              <a href="#">
-                <figure>
-                  <img src={imgCard} />
-                  <figcaption>
-                    Estatística Fundamental
-                  </figcaption>
-                </figure>
-              </a>
-
-
-            </li>
-            <img src={rightArrow} />
-            <li>
-              <a href="#">
-                <figure>
-                  <img src={imgCard} />
-                  <figcaption>
-                    Estatística Fundamental
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-
-            <img src={rightArrow} />
-            <li>
-              <a href="#">
-                <figure>
-                  <img src={imgCard} />
-                  <figcaption>
-                    Estatística Fundamental
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-
-            <img src={rightArrow} />
-            <li>
-              <a href="#">
-                <figure>
-                  <img src={imgCard} />
-                  <figcaption>
-                    Estatística Fundamental
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
+            ))}
 
           </ul>
 

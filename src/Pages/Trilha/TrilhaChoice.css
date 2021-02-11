@@ -14,7 +14,7 @@
 #trilhaChoiceMetas {
   width: 100%;
   background-color: #fff44a;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   box-shadow: 0px 0px 4px rgb(161, 161, 161);
   display: flex;
   flex-wrap: wrap;
@@ -23,13 +23,14 @@
 }
 
 #trilhaChoiceMetas img {
-  padding: 35px;
+  padding-right: 20px;
 }
 
 #trilhaChoiceMetas ul li {
   list-style: none;
   display: inline-block;
-  margin-bottom: 30px;
+  width: 220px;
+  margin-right: 20px;
 }
 
 #trilhaChoiceMetas a {
@@ -38,21 +39,25 @@
 }
 
 #trilhaChoiceMetas figure {
-  width: 280px;
-  height: 190px;
+  width: 220px;
+  height: 165px;
   background-color: #fff;
   border: 1px solid #d3d3d3;
   box-shadow: 0px 0px 4px rgba(195, 195, 195, 0.6);
 }
 
 #trilhaChoiceMetas figure img {
-  width: 280px;
-  height: 150px;
+  width: 220px;
+  height: 130px;
   padding: 10px;
+  position: relative;
+  top: 50px;
 }
 
 #trilhaChoiceMetas figcaption {
   text-align: center;
+  position: relative;
+  top: 50px;
 }
 
 #informativoFormacao {

@@ -32,6 +32,7 @@
 #trilhaObjetivo ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #trilhaObjetivo ul li {
