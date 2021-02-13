@@ -1,0 +1,14 @@
+.infoContent {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 60px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.infoContent h2,
+p,
+h3 {
+  text-align: left;
+  margin-bottom: 20px;
+}

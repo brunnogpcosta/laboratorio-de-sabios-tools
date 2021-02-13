@@ -25,7 +25,7 @@ export default class Satisfacao extends Component {
 
   render() {
     const { cursos } = this.state
-    const msg = "Esta página ordena o cursos de acordo com a pontuação atual, sendo 0 (Zero) a menor e 5 (Cinco) a maior."
+    const msg = "Esta página ordena os cursos de acordo com a pontuação atual, sendo 0 (Zero) a menor e 5 (Cinco) a maior."
     return (
 
       <div id="satisfacaoContainer">

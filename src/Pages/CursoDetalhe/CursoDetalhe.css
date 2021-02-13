@@ -29,6 +29,17 @@
   align-items: center;
 }
 
+#detailPriceRed {
+  width: 100%;
+  height: 50px;
+  font-size: 36px;
+  background-color: rgb(240, 36, 36);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #detailPrice {
   width: 100%;
   height: 50px;

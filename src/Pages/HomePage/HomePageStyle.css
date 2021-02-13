@@ -114,6 +114,10 @@ figcaption {
 }
 
 @media only screen and (max-width: 600px) {
+  .pageTitleHomePage h2 {
+    margin-left: 30px;
+  }
+
   .melhoresCursosContent {
     display: flex;
     width: 100%;

@@ -45,3 +45,18 @@
 .categoriaCursosContent figcaption {
   text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+  .categoriaCursosContent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  #categoriaContainer h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}

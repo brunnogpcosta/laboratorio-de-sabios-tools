@@ -16,16 +16,10 @@ export default class CursoDetalhe extends Component {
       curso: this.props.location.state
     })
 
-
-
   }
 
-
-  tratarTexto() {
-    const { curso } = this.state;
-    //console.log(curso.descricaoCurso)
-    return curso.conteudoCurso
-
+  descontoCurso(preco) {
+    return (parseFloat(preco) + (parseFloat(preco) * 40 / 100)).toFixed(2)
   }
 
 
@@ -40,10 +34,15 @@ export default class CursoDetalhe extends Component {
         <div id="detaiBoard">
 
           <img src={curso.thumb} />
-          {this.tratarTexto()}
+          {curso.conteudoCurso}
           <div className="alignPrice">
+
+            <div id="detailPriceRed">
+              <s>De: R$ {this.descontoCurso(curso.preco)}</s>
+
+            </div>
             <div id="detailPrice">
-              R$ {curso.preco}
+              Por:  R$ {curso.preco}
 
             </div>
 

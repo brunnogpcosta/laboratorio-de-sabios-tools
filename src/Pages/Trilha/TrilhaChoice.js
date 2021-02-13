@@ -66,7 +66,7 @@ export default class TrilhaChoice extends Component {
           <p>
             Parabéns!!!!<br /><br />
 
-            Você é digno de fazer pate da nossa lista de sábios.  Caso queira, nos mande seus nome e comprovante de compra para verificarmos se a compra
+            Você é digno de fazer pate da nossa lista de sábios.  Caso queira, nos mande seu nome e comprovante de compra para verificarmos se a compra
             foi feita através de nossos links ao email johndee@gmail.com para que a nossa equipe te inclua em nosso ranking de sábios.<br /><br />
 
             <strong>Lembre-se</strong>, um sábio não se satisfaz, continue estudando, praticando e de brinde acumule pontos em nosso site.
