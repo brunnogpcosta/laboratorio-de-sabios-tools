@@ -56,20 +56,21 @@ export default class CursoDetalhe extends Component {
               Por:  R$ {curso.preco}
             </div>
           </div>
+        </div>
 
-          <div className="formasPagamento">
-            <img src={formaP} />
-          </div>
 
-          <p><strong>Imperdível não é mesmo? </strong>
+        <div className="formasPagamento">
+
+          <img src={formaP} />
+        </div>
+
+        <p><strong>Imperdível não é mesmo? </strong>
           Clique no botão abaixo para efetuar sua compra.</p>
 
-          <div className="alignPrice">
-            <div id="comprarAgora">
-              <a href="https://pay.hotmart.com/W3620259P?lang=pt-BR&sck=HOTMART_PLATFORM&checkoutMode=0&bid=1613230394540" target="_blank"> Comprar</a>
-            </div>
+        <div className="alignPrice">
+          <div id="comprarAgora">
+            <a href="https://pay.hotmart.com/W3620259P?lang=pt-BR&sck=HOTMART_PLATFORM&checkoutMode=0&bid=1613230394540" target="_blank"> Comprar</a>
           </div>
-
         </div>
 
       </div>
