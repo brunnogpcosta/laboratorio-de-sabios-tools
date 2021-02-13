@@ -51,7 +51,7 @@ export default class Baratos extends Component {
               <figure>
                 <div className="baratoCourse">R$ {cursoBarato.preco}</div>
                 <img src={cursoBarato.thumb}></img>
-                <figcaption>
+                <figcaption title={cursoBarato.nomeCurso}>
                   {cursoBarato.nomeCurso}
                 </figcaption>
               </figure>

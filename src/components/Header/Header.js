@@ -28,8 +28,8 @@ export default class Header extends Component {
                   <Link to="/satisfacao">Satisfação</Link>
                   <Link to="/barato">Preço Baixo</Link>
                   <Link to="/trilha">Trilha</Link>
-                  <Link to="/pesquisa">Pesquisa</Link>
-                  <Link to="/info">Informação</Link>
+                  <Link to="/pesquisa">Pesquisar</Link>
+                  <Link to="/info">Dúvidas</Link>
                 </div>
               </li>
 
@@ -49,8 +49,8 @@ export default class Header extends Component {
 
               <div className="bhRight">
                 <li><Link to="/trilha">TRILHA</Link></li>
-                <li><Link to="/pesquisa">PESQUISA</Link></li>
-                <li><Link to="/info">INFORMAÇÃO</Link></li>
+                <li><Link to="/pesquisa">PESQUISAR</Link></li>
+                <li><Link to="/info">DÚVIDAS</Link></li>
               </div>
             </ul>
           </div>

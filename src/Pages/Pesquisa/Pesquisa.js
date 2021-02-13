@@ -82,7 +82,7 @@ export default class Pesquisa extends Component {
               <figure>
                 <div className="baratoHPCourse">R$ {cursoFiltrado.preco}</div>
                 <img src={cursoFiltrado.thumb}></img>
-                <figcaption>
+                <figcaption Title={cursoFiltrado.nomeCurso}>
                   {cursoFiltrado.nomeCurso}
                 </figcaption>
               </figure>

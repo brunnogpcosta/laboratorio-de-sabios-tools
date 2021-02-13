@@ -22,6 +22,18 @@ export default class Satisfacao extends Component {
 
   }
 
+  saberCor(satisfacao) {
+    if (satisfacao >= 4) {
+      return "green";
+    }
+    if (satisfacao < 4 && satisfacao > 3) {
+      return "orange";
+    }
+    if (satisfacao < 3 && satisfacao > 2) {
+      return "darkyellow";
+    }
+  }
+
 
   render() {
     const { cursos } = this.state
@@ -45,9 +57,9 @@ export default class Satisfacao extends Component {
               }
             }} >
               <figure>
-                <div className="positionCourse">{curso.satisfacao}</div>
+                <div style={{ color: this.saberCor(curso.satisfacao) }} className="positionCourse">{curso.satisfacao}</div>
                 <img src={curso.thumb}></img>
-                <figcaption>
+                <figcaption Title={curso.nomeCurso}>
                   {curso.nomeCurso}
                 </figcaption>
               </figure>
