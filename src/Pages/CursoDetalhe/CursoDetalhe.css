@@ -52,12 +52,10 @@
 }
 
 #comprarAgora {
-  width: 250px;
+  width: 100%;
   height: 50px;
   font-size: 30px;
-  border-radius: 5px;
   border: 1px solid #000;
-  background-color: rgb(228, 231, 37);
   color: #000;
   display: flex;
   justify-content: center;
@@ -66,13 +64,33 @@
 }
 
 #comprarAgora a {
+  text-align: center;
+  padding-top: 4px;
+  width: 100%;
+  height: 48.2px;
   list-style: none;
   text-decoration: none;
+  background-color: #fff44a;
   color: #000;
+
+  transition: 0.5s;
+}
+
+#comprarAgora a:hover {
+  background-color: #fdef26;
 }
 
 .msg-wrapper {
   white-space: pre-wrap;
+}
+
+.parceleCredito {
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  padding: 5px;
+  bottom: 25px;
+  background-color: #cac859;
 }
 
 #detalheContainer .formasPagamento {

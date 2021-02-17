@@ -58,6 +58,10 @@ export default class CursoDetalhe extends Component {
           </div>
         </div>
 
+        <div className="parceleCredito">
+          Parcele em até 12 vezes no cartão de crédito. *
+        </div>
+
 
         <div className="formasPagamento">
 
@@ -73,6 +77,7 @@ export default class CursoDetalhe extends Component {
           </div>
         </div>
 
+        <small>* A quantidade de parcelas varia de acordo com o valor do produto.</small>
       </div>
     )
   }
