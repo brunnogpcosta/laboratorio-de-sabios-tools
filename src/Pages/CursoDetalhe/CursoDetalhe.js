@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import './CursoDetalhe.css'
-import cursoImg from './img/graficos-tabelas-sao-objetos-basicos-para-estudo-estatistica-5812154677e56.jpg'
+
 import formaP from './img/formas_pgamento.jpg'
 
 
@@ -41,7 +41,7 @@ export default class CursoDetalhe extends Component {
         <h2>{curso.nomeCurso}</h2>
 
         <div id="detaiBoard" >
-          <img src={curso.thumb} />
+          <img src={curso.thumb} alt={`imagem do curso ${curso.nomeCurso}`} />
 
           <div className="msg-wrapper ">
             {this.tratarTexto(curso.conteudoCurso)}
@@ -65,7 +65,7 @@ export default class CursoDetalhe extends Component {
 
         <div className="formasPagamento">
 
-          <img src={formaP} />
+          <img src={formaP} alt="imagem formas de pagamento" />
         </div>
 
         <p><strong>Imperdível não é mesmo? </strong>
@@ -73,7 +73,7 @@ export default class CursoDetalhe extends Component {
 
         <div className="alignPrice">
           <div id="comprarAgora">
-            <a href="https://pay.hotmart.com/W3620259P?lang=pt-BR&sck=HOTMART_PLATFORM&checkoutMode=0&bid=1613230394540" target="_blank"> Comprar</a>
+            <a href="https://pay.hotmart.com/W3620259P?lang=pt-BR&sck=HOTMART_PLATFORM&checkoutMode=0&bid=1613230394540" target="_blank" rel="noreferrer" > Comprar</a>
           </div>
         </div>
 

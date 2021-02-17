@@ -5,7 +5,6 @@ import api from '../../services/api'
 
 import './CategoriaCurso.css';
 
-import imgCard from './img/graficos-tabelas-sao-objetos-basicos-para-estudo-estatistica-5812154677e56.jpg'
 
 
 export default class CategoriaCurso extends Component {
@@ -23,7 +22,7 @@ export default class CategoriaCurso extends Component {
 
     const cursosFiltred = response.data.cursos.filter(curso => curso.categoria.toLowerCase().indexOf(this.state.cursosNome.categoria.toLowerCase()) > -1)
 
-    if (cursosFiltred.length == 0) {
+    if (cursosFiltred.length === 0) {
       this.setState({ cursosCategoria: response.data.cursos })
     } else {
       this.setState({ cursosCategoria: cursosFiltred })
@@ -55,9 +54,9 @@ export default class CategoriaCurso extends Component {
                 thumb: cursos.thumb
               }
             }} >
-              <figure>
+              <figure key={cursos.id}>
                 <div className="categoriaCourse">R$ {cursos.preco}</div>
-                <img src={cursos.thumb}></img>
+                <img src={cursos.thumb} alt={`Foto do Curso ${cursos.nomeCurso}`}></img>
                 <figcaption title={cursos.nomeCurso}>
                   {cursos.nomeCurso}
                 </figcaption>

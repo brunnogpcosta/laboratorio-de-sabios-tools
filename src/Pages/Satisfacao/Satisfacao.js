@@ -5,7 +5,6 @@ import api from '../../services/api'
 
 import './Satisfacao.css'
 
-import imgCard from './img/graficos-tabelas-sao-objetos-basicos-para-estudo-estatistica-5812154677e56.jpg'
 
 import RightContent from '../../components/RightContent/RightContentComponent'
 export default class Satisfacao extends Component {
@@ -56,10 +55,10 @@ export default class Satisfacao extends Component {
                 thumb: curso.thumb
               }
             }} >
-              <figure>
+              <figure key={curso.id}>
                 <div style={{ color: this.saberCor(curso.satisfacao) }} className="positionCourse">{curso.satisfacao}</div>
-                <img src={curso.thumb}></img>
-                <figcaption Title={curso.nomeCurso}>
+                <img src={curso.thumb} alt={`Foto do Curso ${curso.nomeCurso}`}></img>
+                <figcaption title={curso.nomeCurso}>
                   {curso.nomeCurso}
                 </figcaption>
               </figure>

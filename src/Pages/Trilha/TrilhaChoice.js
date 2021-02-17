@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 import api from '../../services/api'
 
 import './TrilhaChoice.css'
-import imgCard from './img/graficos-tabelas-sao-objetos-basicos-para-estudo-estatistica-5812154677e56.jpg'
-import rightArrow from './img/chevrons-right_3.svg'
 
 export default class TrilhaChoice extends Component {
   state = {
@@ -15,7 +13,7 @@ export default class TrilhaChoice extends Component {
 
   async componentDidMount() {
     const response = await api.get('allCourses')
-    const resultTrilha = response.data.cursos.filter(curso => curso.categoria == this.props.location.state.categoria)
+    const resultTrilha = response.data.cursos.filter(curso => curso.categoria === this.props.location.state.categoria)
     this.setState({
       trilha: resultTrilha,
       trilhaTitle: this.props.location.state.categoria
@@ -44,8 +42,8 @@ export default class TrilhaChoice extends Component {
                   }
                 }} >
                   <figure>
-                    <img src={trail.thumb} />
-                    <figcaption Title={trail.nomeCurso}>
+                    <img src={trail.thumb} alt={`Foto do Curso ${trail.cursoNome}`} />
+                    <figcaption title={trail.nomeCurso} key={trail.id}>
                       {trail.nomeCurso}
                     </figcaption>
                   </figure>

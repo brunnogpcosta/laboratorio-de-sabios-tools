@@ -20,34 +20,11 @@ export default class Ranking extends Component {
             <ul>
               <li>
                 <p><strong>Brunno Costa [SM] [SS] [SP]</strong></p>
-                <img src={start} />
-                <img src={start} />
-                <img src={start} />
+                <img src={start} alt="Foto de Estrela" />
+                <img src={start} alt="Foto de Estrela" />
+                <img src={start} alt="Foto de Estrela" />
               </li>
-              <li>
-                <p><strong>Brunno Costa [SM] [SS] [SP]</strong></p>
-                <img src={start} />
-                <img src={start} />
-                <img src={start} />
-              </li>
-              <li>
-                <p><strong>Brunno Costa [SM] [SS] [SP]</strong></p>
-                <img src={start} />
-                <img src={start} />
-                <img src={start} />
-              </li>
-              <li>
-                <p><strong>Brunno Costa [SM] [SS] [SP]</strong></p>
-                <img src={start} />
-                <img src={start} />
-                <img src={start} />
-              </li>
-              <li>
-                <p><strong>Brunno Costa [SM] [SS] [SP]</strong></p>
-                <img src={start} />
-                <img src={start} />
-                <img src={start} />
-              </li>
+
             </ul>
 
           </div>

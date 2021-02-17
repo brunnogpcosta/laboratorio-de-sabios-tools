@@ -5,7 +5,6 @@ import api from '../../services/api'
 
 import './Baratos.css';
 
-import imgCard from './img/graficos-tabelas-sao-objetos-basicos-para-estudo-estatistica-5812154677e56.jpg'
 import RightContent from '../../components/RightContent/RightContentComponent'
 
 export default class Baratos extends Component {
@@ -48,9 +47,9 @@ export default class Baratos extends Component {
                 thumb: cursoBarato.thumb
               }
             }}>
-              <figure>
+              <figure key={cursoBarato.id}>
                 <div className="baratoCourse">R$ {cursoBarato.preco}</div>
-                <img src={cursoBarato.thumb}></img>
+                <img src={cursoBarato.thumb} alt={`foto ${cursoBarato.nomeCurso}`} />
                 <figcaption title={cursoBarato.nomeCurso}>
                   {cursoBarato.nomeCurso}
                 </figcaption>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import './headerStyle.css'
 import logo from './img/logoFabricadeSabios.png'
-import alert from './img/alert-circle.svg'
+
 import menu from './img/menu.svg'
 
 
@@ -33,7 +33,7 @@ export default class Header extends Component {
 
               <li className="dropdown">
                 <img src={menu} alt="Menu" className="dropbtn" />
-                <div class="dropdown-content">
+                <div className="dropdown-content">
                   <Link to="/satisfacao">Satisfação</Link>
                   <Link to="/barato">Preço Baixo</Link>
                   <Link to="/trilha">Trilha</Link>

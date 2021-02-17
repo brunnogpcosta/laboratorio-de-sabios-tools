@@ -5,10 +5,8 @@ import api from '../../services/api'
 
 import './Pesquisa.css'
 
-import imgCard from './img/graficos-tabelas-sao-objetos-basicos-para-estudo-estatistica-5812154677e56.jpg'
-import searchBt from './img/search.svg'
 
-import RightContent from '../../components/RightContent/RightContentComponent'
+import searchBt from './img/search.svg'
 
 let response;
 
@@ -33,8 +31,8 @@ export default class Pesquisa extends Component {
   }
 
   handleSearch(termo) {
-    console.log("Termo: ", termo)
-    const arrayCursos = this.state.cursos;
+    //console.log("Termo: ", termo)
+
     this.setState({
       cursosFiltrados: this.state.cursos.filter(curso => curso.nomeCurso.toLowerCase().indexOf(termo.toLowerCase()) > -1)
 
@@ -62,7 +60,7 @@ export default class Pesquisa extends Component {
         <h2>Encontre seu Curso</h2>
 
         <label htmlFor="search">
-          <img src={searchBt} />
+          <img src={searchBt} alt="imagem de Pesquisa" />
           <input type="search" value={this.state.value} onChange={this.handleChange}></input>
         </label>
         <h3>{cursosFiltrados.length} Resultado(s) Encontrado(s)</h3>
@@ -79,10 +77,10 @@ export default class Pesquisa extends Component {
                 thumb: cursoFiltrado.thumb
               }
             }} >
-              <figure>
+              <figure key={cursoFiltrado.id}>
                 <div className="baratoHPCourse">R$ {cursoFiltrado.preco}</div>
-                <img src={cursoFiltrado.thumb}></img>
-                <figcaption Title={cursoFiltrado.nomeCurso}>
+                <img src={cursoFiltrado.thumb} alt={`foto do curso ${cursoFiltrado.nomeCurso}`}></img>
+                <figcaption title={cursoFiltrado.nomeCurso}>
                   {cursoFiltrado.nomeCurso}
                 </figcaption>
               </figure>

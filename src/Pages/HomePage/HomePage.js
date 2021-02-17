@@ -4,12 +4,8 @@ import { Link } from 'react-router-dom';
 import api from '../../services/api'
 
 import './HomePageStyle.css'
-import imgCard from './img/graficos-tabelas-sao-objetos-basicos-para-estudo-estatistica-5812154677e56.jpg'
 import plus from './img/plus-circle.svg'
-
 import RightContentHP from '../../components/RightContentHP/RightContentHPComponent'
-
-
 
 export default class HomePage extends Component {
   state = {
@@ -72,10 +68,10 @@ export default class HomePage extends Component {
                 thumb: curso.thumb
               }
             }} >
-              <figure>
+              <figure key={curso.id}>
                 <div className="baratoHPCourse">R$ {curso.preco}</div>
-                <img src={curso.thumb}></img>
-                <figcaption Title={curso.nomeCurso}>
+                <img src={curso.thumb} alt={`foto do curso ${curso.nomeCurso}`}></img>
+                <figcaption title={curso.nomeCurso}>
                   {curso.nomeCurso}
                 </figcaption>
               </figure>
@@ -88,7 +84,7 @@ export default class HomePage extends Component {
         <div id="demaisCursos">
           {cursosCategoria.map(cursoCategoria => (
 
-            <div id="cursoQuadrado">
+            <div id="cursoQuadrado" key={cursosCategoria.categoria}>
               <h3 title={cursoCategoria.categoria}>{cursoCategoria.categoria}</h3>
               <Link to={{
                 pathname: '/categoria',
@@ -106,9 +102,9 @@ export default class HomePage extends Component {
                   thumb: cursoCategoria.thumb
                 }
               }} >
-                <figure>
+                <figure >
                   <div className="baratoHPCourse">R$ {cursoCategoria.preco}</div>
-                  <img src={cursoCategoria.thumb}></img>
+                  <img src={cursoCategoria.thumb} alt={`foto do curso ${cursoCategoria.nomeCurso}`}></img>
                   <figcaption title={cursoCategoria.nomeCurso}>
                     {cursoCategoria.nomeCurso}
                   </figcaption>

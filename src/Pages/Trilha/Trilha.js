@@ -22,7 +22,7 @@ export default class Trilha extends Component {
 
   render() {
     const { trilhas } = this.state
-    const msg = "Um dos motivos da procrastinação é enxergar um grande desafio como um todo. E se ao invés de enxergarmos nossa meta de forma geral, a reduzissemos a pequenos pedaços, ou seja, micro metas?" + "Esse é o intuito de nossas trilhas, ao invés de você pensar quão longe está do seu objetivo, você pensa o quanto você evoluiu."
+    const msg = "Um dos motivos da procrastinação é enxergar um grande desafio como um todo. E se ao invés de enxergarmos nossa meta de forma geral, a reduzissemos a pequenos pedaços, ou seja, micro metas? Esse é o intuito de nossas trilhas, ao invés de você pensar quão longe está do seu objetivo, você pensa o quanto você evoluiu."
     return (
       <div id="trilhaContent">
 
@@ -33,7 +33,7 @@ export default class Trilha extends Component {
             <h4>Escolha seu Objetivo:</h4>
             <ul>
               {trilhas.map(trilha => (
-                <li><Link to={{
+                <li key={trilha.id}><Link to={{
                   pathname: '/trilhaCompleta',
                   state: {
                     categoria: trilha,
