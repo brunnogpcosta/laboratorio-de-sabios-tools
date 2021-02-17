@@ -85,6 +85,11 @@
   border-bottom: 2px solid #fff44a;
 }
 
+.bottomHeader ul li a:focus {
+  color: #000;
+  border-bottom: 2px solid #186095;
+}
+
 @media only screen and (max-width: 600px) {
   .topHeader ul li:last-child img {
     width: 30px;
@@ -125,6 +130,11 @@
 
   .dropdown-content a:hover {
     background-color: #2590dd;
+  }
+
+  .dropdown-content a:focus {
+    background-color: #fff44a;
+    color: black;
   }
 
   .dropdown:hover .dropdown-content {

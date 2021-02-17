@@ -17,7 +17,7 @@ export default class Baratos extends Component {
     const response = await api.get('allCourses')
     const objetoOrdenado = response.data.cursos.sort((a, b) => (parseFloat(a.preco) > parseFloat(b.preco)) ? 1 : -1)
 
-    console.log(objetoOrdenado)
+    //console.log(objetoOrdenado)
     this.setState({
       cursosBaratos: objetoOrdenado
     })

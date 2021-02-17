@@ -10,6 +10,15 @@ import menu from './img/menu.svg'
 
 
 export default class Header extends Component {
+
+  componentDidMount() {
+    //console.log("Movie", window.location.pathname)
+  }
+
+
+
+
+
   render() {
     return (
 
