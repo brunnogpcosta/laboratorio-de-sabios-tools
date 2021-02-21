@@ -45,6 +45,12 @@ export default class CursoDetalhe extends Component {
 
           <div className="msg-wrapper ">
             {this.tratarTexto(curso.conteudoCurso)}
+
+
+            <br /><br />
+
+            <a className="saibaMais" href={curso.divulgacao} target="_blank">Leia Mais</a>
+
           </div>
 
           <div className="alignPrice">
@@ -73,7 +79,7 @@ export default class CursoDetalhe extends Component {
 
         <div className="alignPrice">
           <div id="comprarAgora">
-            <a href="https://pay.hotmart.com/W3620259P?lang=pt-BR&sck=HOTMART_PLATFORM&checkoutMode=0&bid=1613230394540" target="_blank" rel="noreferrer" > Comprar</a>
+            <a href={curso.pagamento} target="_blank" rel="noreferrer" > Comprar</a>
           </div>
         </div>
 

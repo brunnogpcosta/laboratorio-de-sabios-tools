@@ -74,7 +74,9 @@ export default class Pesquisa extends Component {
                 nomeCurso: cursoFiltrado.nomeCurso,
                 conteudoCurso: cursoFiltrado.conteudoCurso,
                 preco: cursoFiltrado.preco,
-                thumb: cursoFiltrado.thumb
+                thumb: cursoFiltrado.thumb,
+                divulgacao: cursoFiltrado.divulgacao.site,
+                pagamento: cursoFiltrado.comprar.hotlink
               }
             }} >
               <figure key={cursoFiltrado.id}>

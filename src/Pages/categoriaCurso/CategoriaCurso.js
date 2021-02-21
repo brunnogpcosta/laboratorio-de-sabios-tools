@@ -51,7 +51,9 @@ export default class CategoriaCurso extends Component {
                 nomeCurso: cursos.nomeCurso,
                 conteudoCurso: cursos.conteudoCurso,
                 preco: cursos.preco,
-                thumb: cursos.thumb
+                thumb: cursos.thumb,
+                divulgacao: cursos.divulgacao.site,
+                pagamento: cursos.comprar.hotlink
               }
             }} >
               <figure key={cursos.id}>

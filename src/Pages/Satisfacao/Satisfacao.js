@@ -52,7 +52,9 @@ export default class Satisfacao extends Component {
                 nomeCurso: curso.nomeCurso,
                 conteudoCurso: curso.conteudoCurso,
                 preco: curso.preco,
-                thumb: curso.thumb
+                thumb: curso.thumb,
+                divulgacao: curso.divulgacao.site,
+                pagamento: curso.comprar.hotlink
               }
             }} >
               <figure key={curso.id}>

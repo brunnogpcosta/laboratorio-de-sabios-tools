@@ -44,7 +44,9 @@ export default class Baratos extends Component {
                 nomeCurso: cursoBarato.nomeCurso,
                 conteudoCurso: cursoBarato.conteudoCurso,
                 preco: cursoBarato.preco,
-                thumb: cursoBarato.thumb
+                thumb: cursoBarato.thumb,
+                divulgacao: cursoBarato.divulgacao.site,
+                pagamento: cursoBarato.comprar.hotlink
               }
             }}>
               <figure key={cursoBarato.id}>

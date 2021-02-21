@@ -38,7 +38,9 @@ export default class TrilhaChoice extends Component {
                     nomeCurso: trail.nomeCurso,
                     conteudoCurso: trail.conteudoCurso,
                     preco: trail.preco,
-                    thumb: trail.thumb
+                    thumb: trail.thumb,
+                    divulgacao: trail.divulgacao.site,
+                    pagamento: trail.comprar.hotlink
                   }
                 }} >
                   <figure>
