@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
+import Skeleton from '@material-ui/lab/Skeleton';
 
 import { Link } from 'react-router-dom';
 import api from '../../services/api'
@@ -11,7 +12,8 @@ export default class HomePage extends Component {
   state = {
     cursos: [],
     cursosTotal: "",
-    cursosCategoria: []
+    cursosCategoria: [],
+    vazio: true
   }
 
   async componentDidMount() {
@@ -28,7 +30,7 @@ export default class HomePage extends Component {
 
 
 
-    this.setState({ cursosTotal: response.data.cursos.length, cursos: cursosDisponiveisOito, cursosCategoria: responseCategoria.data })
+    this.setState({ cursosTotal: response.data.cursos.length, cursos: cursosDisponiveisOito, cursosCategoria: responseCategoria.data, vazio: false })
   }
 
 
@@ -36,7 +38,7 @@ export default class HomePage extends Component {
 
   render() {
 
-    const { cursosTotal, cursos, cursosCategoria } = this.state;
+    const { cursosTotal, cursos, cursosCategoria, vazio } = this.state;
 
 
     return (
@@ -56,34 +58,49 @@ export default class HomePage extends Component {
           </div>
         </div>
 
-        <div className="melhoresCursosContent">
 
-          {cursos.map(curso => (
 
-            <Link to={{
-              pathname: '/detalhe',
-              state: {
-                nomeCurso: curso.nomeCurso,
-                conteudoCurso: curso.conteudoCurso,
-                preco: curso.preco,
-                thumb: curso.thumb,
-                divulgacao: curso.divulgacao.site,
-                pagamento: curso.comprar.hotlink,
-                formato: curso.formato
-              }
-            }} >
-              <figure key={curso.id}>
-                <div className="baratoHPCourse">R$ {curso.preco}</div>
-                <img src={curso.thumb} alt={`foto do curso ${curso.nomeCurso}`}></img>
-                <figcaption title={curso.nomeCurso}>
-                  {curso.nomeCurso}
-                </figcaption>
-              </figure>
-            </Link>
 
-          ))}
 
+        <div>
+          {vazio ? (
+            <Fragment>
+              <Skeleton className="configuraSkt" variant="rect" width="76%" height={165} />
+              <Skeleton className="configuraSkt" variant="rect" width="76%" height={165} />
+            </Fragment>
+          ) : (
+              <div className="melhoresCursosContent">
+
+                {cursos.map(curso => (
+
+                  <Link to={{
+                    pathname: '/detalhe',
+                    state: {
+                      nomeCurso: curso.nomeCurso,
+                      conteudoCurso: curso.conteudoCurso,
+                      preco: curso.preco,
+                      thumb: curso.thumb,
+                      divulgacao: curso.divulgacao.site,
+                      pagamento: curso.comprar.hotlink,
+                      formato: curso.formato
+                    }
+                  }} >
+
+                    <figure key={curso.id}>
+                      <div className="baratoHPCourse">R$ {curso.preco}</div>
+                      <img src={curso.thumb} alt={`foto do curso ${curso.nomeCurso}`}></img>
+                      <figcaption title={curso.nomeCurso}>
+                        {curso.nomeCurso}
+                      </figcaption>
+                    </figure>
+                  </Link>
+
+                ))}
+              </div>
+            )}
         </div>
+
+
 
 
         <div id="demaisCursos">
