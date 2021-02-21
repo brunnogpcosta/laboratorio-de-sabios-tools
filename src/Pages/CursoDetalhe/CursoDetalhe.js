@@ -38,7 +38,13 @@ export default class CursoDetalhe extends Component {
     return (
 
       <div id="detalheContainer">
-        <h2>{curso.nomeCurso}</h2>
+
+        <div id="titleDetalhe">
+          <h2>{curso.nomeCurso}</h2>
+          <h3>{curso.formato}</h3>
+
+        </div>
+
 
         <div id="detaiBoard" >
           <img src={curso.thumb} alt={`imagem do curso ${curso.nomeCurso}`} />
@@ -47,7 +53,8 @@ export default class CursoDetalhe extends Component {
             {this.tratarTexto(curso.conteudoCurso)}
 
 
-            <br /><br />
+
+            <br /><br /><br />
 
             <a className="saibaMais" href={curso.divulgacao} target="_blank">Leia Mais</a>
 

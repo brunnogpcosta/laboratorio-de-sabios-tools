@@ -10,6 +10,7 @@ import TrilhaChoice from '../Pages/Trilha/TrilhaChoice';
 import Ranking from '../Pages/Ranking/Ranking';
 import Detalhe from '../Pages/CursoDetalhe/CursoDetalhe';
 import Categoria from '../Pages/categoriaCurso/CategoriaCurso'
+import Formato from '../Pages/FormatoCurso/FormatoCurso'
 import Info from '../Pages/Info/Info'
 import NotFound from '../Pages/NotFound/NotFound'
 
@@ -31,6 +32,7 @@ export class Routes extends Component {
         <Route path='/ranking' component={Ranking} />
         <Route path='/detalhe' component={Detalhe} />
         <Route path='/categoria' component={Categoria} />
+        <Route path='/formato' component={Formato} />
         <Route path='/info' component={Info} />
         <Route path='/spam' component={Spam} />
         <Route component={NotFound} />

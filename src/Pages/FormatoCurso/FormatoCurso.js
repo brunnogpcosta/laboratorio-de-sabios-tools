@@ -3,14 +3,15 @@ import { Link } from 'react-router-dom';
 
 import api from '../../services/api'
 
-import './CategoriaCurso.css';
+import './FormatoCurso.css';
 
 
 
-export default class CategoriaCurso extends Component {
+export default class FormatoCurso extends Component {
   state = {
-    cursosCategoria: [],
-    cursosNome: ""
+    cursosFormato: [],
+    cursosNome: "",
+    vazio: ""
   };
 
 
@@ -20,15 +21,19 @@ export default class CategoriaCurso extends Component {
       cursosNome: this.props.location.state
     })
 
-    const cursosFiltred = response.data.cursos.filter(curso => curso.categoria.toLowerCase().indexOf(this.state.cursosNome.categoria.toLowerCase()) > -1)
+    const cursosFiltred = response.data.cursos.filter(curso => curso.formato.toLowerCase().indexOf(this.state.cursosNome.formato.toLowerCase()) > -1)
 
     if (cursosFiltred.length === 0) {
-      this.setState({ cursosCategoria: response.data.cursos })
+      this.setState({ vazio: "block" })
     } else {
-      this.setState({ cursosCategoria: cursosFiltred })
+      this.setState({ cursosFormato: cursosFiltred, vazio: "none" })
     }
 
+    this.estaVazio(this.vazio);
+  }
 
+  estaVazio(vazio) {
+    return vazio;
   }
 
 
@@ -36,15 +41,21 @@ export default class CategoriaCurso extends Component {
 
   render() {
     const { cursosNome } = this.state
-    const { cursosCategoria } = this.state
+    const { cursosFormato } = this.state
+    const { vazio } = this.state
 
     return (
-      <div id="categoriaContainer">
-        <h2>{cursosNome.categoria}</h2>
+      <div id="formatoContainer">
+        <h2>{cursosNome.formato}</h2>
 
-        <div className="categoriaCursosContent">
 
-          {cursosCategoria.map(cursos => (
+
+        <div className="formatoCursosContent">
+          <div className="spamMessage" style={{ display: vazio }}>
+            Nenhum Curso Encontrado.
+          </div>
+
+          {cursosFormato.map(cursos => (
             <Link to={{
               pathname: '/detalhe',
               state: {
@@ -58,7 +69,7 @@ export default class CategoriaCurso extends Component {
               }
             }} >
               <figure key={cursos.id}>
-                <div className="categoriaCourse">R$ {cursos.preco}</div>
+                <div className="formatoCourse">R$ {cursos.preco}</div>
                 <img src={cursos.thumb} alt={`Foto do Curso ${cursos.nomeCurso}`}></img>
                 <figcaption title={cursos.nomeCurso}>
                   {cursos.nomeCurso}

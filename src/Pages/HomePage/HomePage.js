@@ -41,6 +41,7 @@ export default class HomePage extends Component {
 
     return (
       <div className="homePageContainer">
+
         <div className="melhoresCursos">
           <div className="pageTitleHomePage">
             <h2>Cursos Disponíveis ({cursosTotal})</h2>
@@ -67,7 +68,8 @@ export default class HomePage extends Component {
                 preco: curso.preco,
                 thumb: curso.thumb,
                 divulgacao: curso.divulgacao.site,
-                pagamento: curso.comprar.hotlink
+                pagamento: curso.comprar.hotlink,
+                formato: curso.formato
               }
             }} >
               <figure key={curso.id}>
@@ -83,7 +85,9 @@ export default class HomePage extends Component {
 
         </div>
 
+
         <div id="demaisCursos">
+          <h2>Por Categoria</h2>
           {cursosCategoria.map(cursoCategoria => (
 
             <div id="cursoQuadrado" key={cursosCategoria.categoria}>
@@ -103,7 +107,8 @@ export default class HomePage extends Component {
                   preco: cursoCategoria.preco,
                   thumb: cursoCategoria.thumb,
                   divulgacao: cursoCategoria.divulgacao.site,
-                  pagamento: cursoCategoria.comprar.hotlink
+                  pagamento: cursoCategoria.comprar.hotlink,
+                  formato: cursoCategoria.formato
                 }
               }} >
                 <figure >
@@ -118,6 +123,119 @@ export default class HomePage extends Component {
             </div>
 
           ))}
+
+
+        </div>
+
+
+
+        <div id="demaisCursos">
+          <h2>Por Formato</h2>
+
+          <div className="cursoQuadradoFormato" key={cursosCategoria.categoria}>
+
+            <Link to={{
+              pathname: '/formato',
+              state: {
+                formato: "Cursos online, Área de Membros, Serviços de Assinatura"
+              }
+            }}>
+              <h3 title="Cursos online, Área de Membros, Serviços de Assinatura">Cursos online, Área de Membros, Serviços de Assinatura</h3>
+            </Link>
+
+            <Link to={{
+              pathname: '/formato',
+              state: {
+                formato: "eBooks, Documentos"
+              }
+            }}>
+              <h3 title="eBooks, Documentos">eBooks, Documentos</h3>
+            </Link>
+
+            <Link to={{
+              pathname: '/formato',
+              state: {
+                formato: "Ingressos para eventos"
+              }
+            }}>
+              <h3 title="Ingressos para eventos">Ingressos para eventos</h3>
+            </Link>
+
+            <Link to={{
+              pathname: '/formato',
+              state: {
+                formato: "Screencasts, Filmes, Clipes"
+              }
+            }}>
+              <h3 title="Screencasts, Filmes, Clipes">Screencasts, Filmes, Clipes</h3>
+            </Link>
+
+            <Link to={{
+              pathname: '/formato',
+              state: {
+                formato: "Áudios, Músicas, Ringtones"
+              }
+            }}>
+              <h3 title="Áudios, Músicas, Ringtones">Áudios, Músicas, Ringtones</h3>
+            </Link>
+
+
+            <Link to={{
+              pathname: '/formato',
+              state: {
+                formato: "Software, Programas para baixar"
+              }
+            }}>
+              <h3 title="Software, Programas para baixar">Software, Programas para baixar</h3>
+            </Link>
+
+            <Link to={{
+              pathname: '/formato',
+              state: {
+                formato: "Imagens, Ícones, Fotos"
+              }
+            }}>
+              <h3 title="Imagens, Ícones, Fotos">Imagens, Ícones, Fotos</h3>
+            </Link>
+
+            <Link to={{
+              pathname: '/formato',
+              state: {
+                formato: "Números de Série, Cupons de Desconto"
+              }
+            }}>
+              <h3 title="Números de Série, Cupons de Desconto">Números de Série, Cupons de Desconto</h3>
+            </Link>
+
+            <Link to={{
+              pathname: '/formato',
+              state: {
+                formato: "Aplicativos para Celular"
+              }
+            }}>
+              <h3 title="Aplicativos para Celular">Aplicativos para Celular</h3>
+            </Link>
+
+            <Link to={{
+              pathname: '/formato',
+              state: {
+                formato: "Templates, Códigos Fonte"
+              }
+            }}>
+              <h3 title="Templates, Códigos Fonte">Templates, Códigos Fonte</h3>
+            </Link>
+
+
+
+
+
+
+
+
+
+          </div>
+
+
 
 
         </div>

@@ -98,6 +98,18 @@ figcaption {
   display: flex;
   flex-wrap: wrap;
   width: 76%;
+  margin-bottom: 40px;
+}
+
+#demaisCursos h2 {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(
+    to right,
+    #186195,
+    rgba(0, 153, 255, 0.342)
+  );
 }
 
 #cursoQuadrado {
@@ -106,7 +118,32 @@ figcaption {
   justify-content: space-between;
 }
 
-#demaisCursos h3 {
+.cursoQuadradoFormato {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cursoQuadradoFormato a {
+  border: 1px solid rgb(95, 95, 95);
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgb(238, 238, 238);
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.cursoQuadradoFormato h3 {
+  padding: 16px 15px 0px 15px;
+}
+
+.cursoQuadradoFormato a:hover {
+  background-color: rgb(245, 250, 199);
+}
+
+#demaisCursos #cursoQuadrado h3 {
   float: left;
   width: 80%;
   margin-right: 5px;
@@ -142,5 +179,11 @@ figcaption {
 
   #rightContentHPComponent {
     display: none;
+  }
+
+  #demaisCursos h2 {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 15px;
   }
 }

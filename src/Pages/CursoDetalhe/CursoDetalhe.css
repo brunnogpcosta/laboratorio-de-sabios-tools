@@ -5,6 +5,11 @@
   padding-bottom: 70px;
 }
 
+#titleDetalhe {
+  display: flex;
+  justify-content: space-between;
+}
+
 #detalheContainer h2 {
   margin-bottom: 20px;
 }
