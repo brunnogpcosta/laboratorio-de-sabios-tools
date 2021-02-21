@@ -63,11 +63,12 @@
   #trilhaObjetivo ul li {
     display: inline;
     margin-right: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     width: 100%;
   }
 
   #trilhaObjetivo ul li a {
     width: 100%;
+    padding: 10px 5px;
   }
 }

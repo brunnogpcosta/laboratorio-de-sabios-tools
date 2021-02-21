@@ -25,7 +25,7 @@ export default class Pesquisa extends Component {
   }
 
   async componentDidMount() {
-    response = await api.get('http://localhost:3001/allCourses')
+    response = await api.get('allCourses')
     this.setState({ cursos: response.data.cursos })
     this.setState({ cursosFiltrados: response.data.cursos })
   }

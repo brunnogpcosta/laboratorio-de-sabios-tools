@@ -14,7 +14,7 @@ export default class Satisfacao extends Component {
   }
 
   async componentDidMount() {
-    const response = await api.get('http://localhost:3001/allCourses')
+    const response = await api.get('allCourses')
     this.setState({
       cursos: response.data.cursos.sort((b, a) => (parseFloat(a.satisfacao) > parseFloat(b.satisfacao)) ? 1 : -1)
     })

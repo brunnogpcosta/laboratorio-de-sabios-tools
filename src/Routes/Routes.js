@@ -16,7 +16,7 @@ import NotFound from '../Pages/NotFound/NotFound'
 
 import Spam from '../components/MelhorEmailSpam/MelhorEmailSpam'
 
-let loggedIn = false;
+
 
 export class Routes extends Component {
 

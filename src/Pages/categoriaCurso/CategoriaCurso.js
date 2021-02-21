@@ -15,7 +15,7 @@ export default class CategoriaCurso extends Component {
 
 
   async componentDidMount() {
-    const response = await api.get('http://localhost:3001/allCourses')
+    const response = await api.get('allCourses')
 
 
     if (typeof this.props.location.state !== 'undefined') {

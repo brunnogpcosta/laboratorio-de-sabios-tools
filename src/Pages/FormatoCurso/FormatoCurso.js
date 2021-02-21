@@ -16,7 +16,7 @@ export default class FormatoCurso extends Component {
 
 
   async componentDidMount() {
-    const response = await api.get('http://localhost:3001/allCourses')
+    const response = await api.get('allCourses')
     this.setState({
       cursosNome: this.props.location.state
     })

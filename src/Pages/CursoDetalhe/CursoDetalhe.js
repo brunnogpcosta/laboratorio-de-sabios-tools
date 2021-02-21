@@ -56,7 +56,11 @@ export default class CursoDetalhe extends Component {
 
             <br /><br /><br />
 
-            <a className="saibaMais" href={curso.divulgacao} target="_blank">Leia Mais</a>
+            <div id="containerSaibaMais">
+              <a className="saibaMais" href={curso.divulgacao} target="_blank">Leia Mais</a>
+
+            </div>
+
 
           </div>
 
