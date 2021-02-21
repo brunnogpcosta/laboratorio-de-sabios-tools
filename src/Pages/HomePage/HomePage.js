@@ -65,8 +65,8 @@ export default class HomePage extends Component {
         <div>
           {vazio ? (
             <Fragment>
-              <Skeleton className="configuraSkt" variant="rect" width="76%" height={165} />
-              <Skeleton className="configuraSkt" variant="rect" width="76%" height={165} />
+              <Skeleton className="configuraSkt" variant="rect" width="74%" height={165} />
+              <Skeleton className="configuraSkt" variant="rect" width="74%" height={165} />
             </Fragment>
           ) : (
               <div className="melhoresCursosContent">
@@ -102,49 +102,58 @@ export default class HomePage extends Component {
 
 
 
-
-        <div id="demaisCursos">
+        <div id="demaisCursoTopo">
           <h2>Por Categoria</h2>
-          {cursosCategoria.map(cursoCategoria => (
 
-            <div id="cursoQuadrado" key={cursosCategoria.categoria}>
-              <h3 title={cursoCategoria.categoria}>{cursoCategoria.categoria}</h3>
-              <Link to={{
-                pathname: '/categoria',
-                state: {
-                  categoria: cursoCategoria.categoria
-                }
-              }}>
-                <img src={plus} alt="Mais Cursos" /></Link>
-              <Link className="aFigure" to={{
-                pathname: '/detalhe',
-                state: {
-                  nomeCurso: cursoCategoria.nomeCurso,
-                  conteudoCurso: cursoCategoria.conteudoCurso,
-                  preco: cursoCategoria.preco,
-                  thumb: cursoCategoria.thumb,
-                  divulgacao: cursoCategoria.divulgacao.site,
-                  pagamento: cursoCategoria.comprar.hotlink,
-                  formato: cursoCategoria.formato
-                }
-              }} >
-                <figure >
-                  <div className="baratoHPCourse">R$ {cursoCategoria.preco}</div>
-                  <img src={cursoCategoria.thumb} alt={`foto do curso ${cursoCategoria.nomeCurso}`}></img>
-                  <figcaption title={cursoCategoria.nomeCurso}>
-                    {cursoCategoria.nomeCurso}
-                  </figcaption>
-                </figure>
-              </Link>
-
-            </div>
-
-          ))}
+          {vazio ? (
+            <Fragment>
+              <Skeleton className="configuraSkt" variant="rect" width="74%" height={165} />
+              <Skeleton className="configuraSkt" variant="rect" width="74%" height={165} />
+            </Fragment>
+          ) : (
 
 
+              <div id="demaisCursos">
+                {cursosCategoria.map(cursoCategoria => (
+
+                  <div id="cursoQuadrado" key={cursosCategoria.categoria}>
+                    <h3 title={cursoCategoria.categoria}>{cursoCategoria.categoria}</h3>
+                    <Link to={{
+                      pathname: '/categoria',
+                      state: {
+                        categoria: cursoCategoria.categoria
+                      }
+                    }}>
+                      <img src={plus} alt="Mais Cursos" /></Link>
+                    <Link className="aFigure" to={{
+                      pathname: '/detalhe',
+                      state: {
+                        nomeCurso: cursoCategoria.nomeCurso,
+                        conteudoCurso: cursoCategoria.conteudoCurso,
+                        preco: cursoCategoria.preco,
+                        thumb: cursoCategoria.thumb,
+                        divulgacao: cursoCategoria.divulgacao.site,
+                        pagamento: cursoCategoria.comprar.hotlink,
+                        formato: cursoCategoria.formato
+                      }
+                    }} >
+                      <figure >
+                        <div className="baratoHPCourse">R$ {cursoCategoria.preco}</div>
+                        <img src={cursoCategoria.thumb} alt={`foto do curso ${cursoCategoria.nomeCurso}`}></img>
+                        <figcaption title={cursoCategoria.nomeCurso}>
+                          {cursoCategoria.nomeCurso}
+                        </figcaption>
+                      </figure>
+                    </Link>
+
+                  </div>
+
+                ))}
+
+
+              </div>
+            )}
         </div>
-
-
 
         <div id="demaisCursos">
           <h2>Por Formato</h2>
@@ -242,18 +251,7 @@ export default class HomePage extends Component {
               <h3 title="Templates, Códigos Fonte">Templates, Códigos Fonte</h3>
             </Link>
 
-
-
-
-
-
-
-
-
           </div>
-
-
-
 
         </div>
         <RightContentHP />
