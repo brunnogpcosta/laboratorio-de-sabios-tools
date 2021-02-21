@@ -16,14 +16,24 @@ export default class CategoriaCurso extends Component {
 
   async componentDidMount() {
     const response = await api.get('http://localhost:3001/allCourses')
-    this.setState({
-      cursosNome: this.props.location.state
-    })
+
+
+    if (typeof this.props.location.state !== 'undefined') {
+      this.setState({
+        cursosNome: this.props.location.state,
+      })
+    } else {
+      this.setState({
+        cursosNome: { categoria: "Todos as Categorias" },
+      })
+    }
+
+
 
     const cursosFiltred = response.data.cursos.filter(curso => curso.categoria.toLowerCase().indexOf(this.state.cursosNome.categoria.toLowerCase()) > -1)
 
     if (cursosFiltred.length === 0) {
-      this.setState({ cursosCategoria: response.data.cursos })
+      this.setState({ cursosCategoria: response.data.cursos, cursosNome: { categoria: "Todas as Categorias" } })
     } else {
       this.setState({ cursosCategoria: cursosFiltred })
     }
