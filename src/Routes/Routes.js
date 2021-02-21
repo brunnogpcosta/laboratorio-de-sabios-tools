@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 import HomePage from '../Pages/HomePage/HomePage';
 import Satisfacao from '../Pages/Satisfacao/Satisfacao';
@@ -16,10 +16,12 @@ import NotFound from '../Pages/NotFound/NotFound'
 
 import Spam from '../components/MelhorEmailSpam/MelhorEmailSpam'
 
-
+let loggedIn = false;
 
 export class Routes extends Component {
+
   render() {
+
     return (
 
       <Switch>

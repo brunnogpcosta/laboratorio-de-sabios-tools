@@ -12,12 +12,15 @@ export default class TrilhaChoice extends Component {
 
 
   async componentDidMount() {
-    const response = await api.get('allCourses')
-    const resultTrilha = response.data.cursos.filter(curso => curso.categoria === this.props.location.state.categoria)
-    this.setState({
-      trilha: resultTrilha,
-      trilhaTitle: this.props.location.state.categoria
-    })
+    if (typeof this.props.location.state !== 'undefined') {
+      const response = await api.get('allCourses')
+      const resultTrilha = response.data.cursos.filter(curso => curso.categoria === this.props.location.state.categoria)
+      this.setState({
+        trilha: resultTrilha,
+        trilhaTitle: this.props.location.state.categoria
+      })
+    }
+
   }
 
   render() {
