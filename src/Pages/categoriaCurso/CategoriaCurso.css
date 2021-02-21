@@ -42,6 +42,13 @@
   margin-top: -50px;
 }
 
+.categoriaCursosContent figure img:hover {
+  padding-top: 0px;
+  padding-right: 2px;
+  padding-left: 0px;
+  transition: 0.5s;
+}
+
 .categoriaCursosContent figcaption {
   text-align: center;
 }

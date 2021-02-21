@@ -78,6 +78,10 @@ figcaption {
   margin-right: 23px;
 }
 
+#cursoQuadrado .baratoHPCourse {
+  height: 51px;
+}
+
 #cursoQuadrado h3 {
   overflow: hidden;
   text-overflow: ellipsis;
