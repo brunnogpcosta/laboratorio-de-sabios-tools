@@ -11,7 +11,7 @@ import RightContentHP from '../../components/RightContentHP/RightContentHPCompon
 export default class HomePage extends Component {
   state = {
     cursos: [],
-    cursosTotal: "",
+    cursosTotal: "0",
     cursosCategoria: [],
     vazio: true
   }
@@ -60,13 +60,19 @@ export default class HomePage extends Component {
 
 
 
-
-
         <div>
           {vazio ? (
-            <Fragment>
-              <Skeleton className="configuraSkt" variant="rect" width="74%" height={165} />
-              <Skeleton className="configuraSkt" variant="rect" width="74%" height={165} />
+            <Fragment className="containerSkt">
+              <div className="containerSkt">
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={165} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={165} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={165} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={165} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={165} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={165} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={165} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={165} />
+              </div>
             </Fragment>
           ) : (
               <div className="melhoresCursosContent">
@@ -106,9 +112,41 @@ export default class HomePage extends Component {
           <h2>Por Categoria</h2>
 
           {vazio ? (
-            <Fragment>
-              <Skeleton className="configuraSkt" variant="rect" width="74%" height={165} />
-              <Skeleton className="configuraSkt" variant="rect" width="74%" height={165} />
+            <Fragment className="containerSkt">
+              <div className="containerSkt">
+                <div className="configuraSkt">
+                  <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
+                  <Skeleton variant="rect" width={220} height={165} />
+                </div>
+                <div className="configuraSkt">
+                  <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
+                  <Skeleton variant="rect" width={220} height={165} />
+                </div>
+                <div className="configuraSkt">
+                  <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
+                  <Skeleton variant="rect" width={220} height={165} />
+                </div>
+                <div className="configuraSkt">
+                  <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
+                  <Skeleton variant="rect" width={220} height={165} />
+                </div>
+                <div className="configuraSkt">
+                  <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
+                  <Skeleton variant="rect" width={220} height={165} />
+                </div>
+                <div className="configuraSkt">
+                  <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
+                  <Skeleton variant="rect" width={220} height={165} />
+                </div>
+                <div className="configuraSkt">
+                  <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
+                  <Skeleton variant="rect" width={220} height={165} />
+                </div>
+                <div className="configuraSkt">
+                  <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
+                  <Skeleton variant="rect" width={220} height={165} />
+                </div>
+              </div>
             </Fragment>
           ) : (
 

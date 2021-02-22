@@ -15,6 +15,21 @@
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
+.containerSkt {
+  width: 76%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.configuraSkt {
+  margin-right: 23px;
+  margin-bottom: 27px;
+}
+
+.sktDemais {
+  margin-bottom: 10px;
+}
 
 .pageTitleHomePage h2 {
   float: left;
@@ -39,10 +54,6 @@ figure {
   color: black;
   width: 220px;
   margin-right: 23px;
-}
-
-.configuraSkt {
-  margin-bottom: 30px;
 }
 
 figure img {
@@ -180,6 +191,12 @@ figcaption {
     justify-content: center;
   }
 
+  .containerSkt {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
   .melhoresCursos {
     display: flex;
     justify-content: center;
@@ -197,6 +214,11 @@ figcaption {
   }
 
   #demaisCursos h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  #demaisCursoTopo h2 {
     text-align: center;
     width: 100%;
   }
