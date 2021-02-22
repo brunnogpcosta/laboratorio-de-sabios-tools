@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-
+import Skeleton from '@material-ui/lab/Skeleton';
 import api from '../../services/api'
 
 import './FormatoCurso.css';
@@ -46,7 +46,14 @@ export default class FormatoCurso extends Component {
 
     return (
       <div id="formatoContainer">
-        <h2>{cursosNome.formato}</h2>
+        <div>
+          {cursosNome ? (
+            <h2>{cursosNome.formato}</h2>
+
+          ) : (
+              <h2><Skeleton variant="rect" width={300} height={30} /></h2>
+            )}
+        </div>
 
 
 
@@ -76,14 +83,8 @@ export default class FormatoCurso extends Component {
                 </figcaption>
               </figure>
             </Link>
-
-
           ))}
-
-
         </div>
-
-
 
       </div >
     )

@@ -24,7 +24,7 @@ export default class CategoriaCurso extends Component {
       })
     } else {
       this.setState({
-        cursosNome: { categoria: "Todos as Categorias" },
+        cursosNome: { categoria: "Todos os Cursos" },
       })
     }
 
@@ -33,7 +33,7 @@ export default class CategoriaCurso extends Component {
     const cursosFiltred = response.data.cursos.filter(curso => curso.categoria.toLowerCase().indexOf(this.state.cursosNome.categoria.toLowerCase()) > -1)
 
     if (cursosFiltred.length === 0) {
-      this.setState({ cursosCategoria: response.data.cursos, cursosNome: { categoria: "Todas as Categorias" } })
+      this.setState({ cursosCategoria: response.data.cursos, cursosNome: { categoria: "Todas os Cursos" } })
     } else {
       this.setState({ cursosCategoria: cursosFiltred })
     }
