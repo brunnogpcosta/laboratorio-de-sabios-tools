@@ -40,7 +40,11 @@ export default class Satisfacao extends Component {
     return (
 
       <div id="satisfacaoContainer">
-        <h2>Satisfação</h2>
+
+        <div id="titleContent">
+          <h2>Satisfação</h2>
+        </div>
+
 
 
         <div className="satisfacaoCursosContent">

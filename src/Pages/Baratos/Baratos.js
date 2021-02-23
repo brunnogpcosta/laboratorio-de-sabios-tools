@@ -31,7 +31,11 @@ export default class Baratos extends Component {
 
     return (
       <div id="baratosContainer">
-        <h2>Mais Baratos</h2>
+
+        <div id="titleContent">
+          <h2>Mais Baratos</h2>
+        </div>
+
 
         <div className="baratosCursosContent">
 

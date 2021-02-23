@@ -12,11 +12,15 @@ export default class CursoDetalhe extends Component {
 
 
   async componentDidMount() {
+    window.scrollTo(0, 0)
+
     this.setState({
       curso: this.props.location.state
     })
 
   }
+
+
 
 
   tratarTexto(texto) {

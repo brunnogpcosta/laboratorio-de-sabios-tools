@@ -4,7 +4,7 @@
   margin-top: 60px;
 }
 
-#baratosContainer h2 {
+#titleContent {
   margin-bottom: 20px;
 }
 
@@ -51,13 +51,11 @@
   .baratosCursosContent {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 105%;
   }
 
-  #baratosContainer h2 {
+  #titleContent {
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin-left: -52.5px;
   }
 }
