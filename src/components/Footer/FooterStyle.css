@@ -33,3 +33,8 @@
   text-decoration: none;
   color: #fff;
 }
+@media only screen and (max-width: 600px) {
+  #footer ul li {
+    font-size: 12px;
+  }
+}

@@ -8,10 +8,12 @@
 #titleDetalhe {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 #detalheContainer h2 {
   margin-bottom: 20px;
+  margin-right: 40px;
 }
 
 #detalheContainer #detaiBoard img {
@@ -119,8 +121,9 @@
   text-align: center;
 }
 
-.msg-wrapper .saibaMais {
-  padding: 10px 20px;
+a.saibaMais {
+  padding: 10px 90px;
+  width: 100%;
   cursor: pointer;
   border: 1px solid rgb(122, 122, 122);
   background-color: rgb(238, 238, 238);
@@ -130,7 +133,7 @@
   transition: 0.4s;
 }
 
-.msg-wrapper .saibaMais:hover {
+.saibaMais:hover {
   background-color: rgb(226, 226, 226);
 }
 
@@ -145,5 +148,16 @@
   #detalheContainer .formasPagamento img {
     width: 80%;
     background-size: cover;
+  }
+
+  #titleDetalhe {
+    display: block;
+    text-align: center;
+  }
+
+  #titleDetalhe h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: lighter;
   }
 }

@@ -70,7 +70,7 @@ export default class TrilhaChoice extends Component {
           <p>
             Parabéns!!!!<br /><br />
 
-            Você é digno de ser chamado sábio.  Aqui nós fazemos a venda e você compra, mas só você saberá se realmente se dedicou e aprendeu o que foi ensinado. Isso Depende de você!<br /><br />
+            Você é digno de ser chamado sábio.  Aqui nós fazemos a venda e você compra, mas só você saberá se realmente se dedicou e aprendeu o que foi ensinado. Isso depende de você!<br /><br />
 
             <strong>Lembre-se</strong>, um sábio não se satisfaz, continue estudando, praticando até chegar no seu melhor e ser referência no que faz.
           </p>

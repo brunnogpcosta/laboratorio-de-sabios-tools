@@ -41,7 +41,7 @@ export default class CursoDetalhe extends Component {
 
         <div id="titleDetalhe">
           <h2>{curso.nomeCurso}</h2>
-          <h3>{curso.formato}</h3>
+          <h3>({curso.formato})</h3>
 
         </div>
 
