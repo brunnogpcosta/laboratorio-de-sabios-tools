@@ -69,4 +69,11 @@
   #trilhaChoiceMetas {
     text-align: center;
   }
+
+  #trilhaChoiceMetas ul li {
+    list-style: none;
+    display: inline-block;
+    width: 220px;
+    margin-right: 0px;
+  }
 }
