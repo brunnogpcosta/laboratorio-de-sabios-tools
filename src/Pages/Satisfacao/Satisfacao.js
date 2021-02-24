@@ -42,7 +42,7 @@ export default class Satisfacao extends Component {
       <div id="satisfacaoContainer">
 
         <div id="titleContent">
-          <h2>Satisfação</h2>
+          <h2>Avaliação</h2>
         </div>
 
 
@@ -59,7 +59,7 @@ export default class Satisfacao extends Component {
                 thumb: curso.thumb,
                 divulgacao: curso.divulgacao.site,
                 pagamento: curso.comprar.hotlink,
-                formato: curso.forato
+                formato: curso.formato
               }
             }} >
               <figure key={curso.id}>

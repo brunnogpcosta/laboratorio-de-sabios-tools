@@ -141,6 +141,11 @@ a.saibaMais {
     font-size: 20px;
   }
 
+  #detalheContainer #detaiBoard img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
   #detailPriceRed {
     font-size: 20px;
   }
