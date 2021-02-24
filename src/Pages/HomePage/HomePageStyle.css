@@ -205,7 +205,7 @@ figcaption {
 
   #demaisCursos {
     display: flex;
-    width: 105%;
+    width: 100%;
     justify-content: center;
   }
 
