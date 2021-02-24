@@ -136,10 +136,11 @@
     background-color: #fff44a;
     color: black;
   }
-
+  /*
   .dropdown:hover .dropdown-content {
     display: block;
   }
+*/
   .topHeader ul li h2 {
     font-size: 20px;
     margin-right: 30px;

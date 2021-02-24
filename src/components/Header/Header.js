@@ -10,16 +10,39 @@ import menu from './img/menu.svg'
 
 
 export default class Header extends Component {
+  state = {
+    meuMenu: false
+  }
+
+  constructor(props) {
+    super(props);
+
+
+    this.selecionouMenu = this.selecionouMenu.bind(this);
+  }
+
 
   componentDidMount() {
     //console.log("Movie", window.location.pathname)
   }
 
 
+  selecionouMenu() {
+    const { meuMenu } = this.state
 
+    if (meuMenu === false) {
+      this.setState({ meuMenu: true })
+
+    } else {
+      this.setState({ meuMenu: false })
+
+    }
+  }
 
 
   render() {
+    const { meuMenu } = this.state
+
     return (
 
       <div className="header">
@@ -32,13 +55,13 @@ export default class Header extends Component {
               <li><h2>Laboratório de Sábios</h2></li>
 
               <li className="dropdown">
-                <img src={menu} alt="Menu" className="dropbtn" />
-                <div className="dropdown-content">
-                  <Link to="/avaliacao">Satisfação</Link>
-                  <Link to="/barato">Preço Baixo</Link>
-                  <Link to="/trilha">Trilha</Link>
-                  <Link to="/pesquisa">Pesquisar</Link>
-                  <Link to="/info">Dúvidas</Link>
+                <img src={menu} alt="Menu" onClick={this.selecionouMenu} />
+                <div className="dropdown-content" style={meuMenu ? { display: 'block' } : { display: 'none' }} >
+                  <Link to="/satisfacao" onClick={this.selecionouMenu}>Avaliação</Link>
+                  <Link to="/barato" onClick={this.selecionouMenu}>Preço Baixo</Link>
+                  <Link to="/trilha" onClick={this.selecionouMenu}>Trilha</Link>
+                  <Link to="/pesquisa" onClick={this.selecionouMenu}>Pesquisar</Link>
+                  <Link to="/info" onClick={this.selecionouMenu}>Dúvidas</Link>
                 </div>
               </li>
 
@@ -64,7 +87,7 @@ export default class Header extends Component {
             </ul>
           </div>
         </div>
-      </div>
+      </div >
     )
   }
 }
