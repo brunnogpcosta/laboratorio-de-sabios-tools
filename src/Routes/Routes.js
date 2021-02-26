@@ -13,6 +13,7 @@ import Categoria from '../Pages/categoriaCurso/CategoriaCurso'
 import Formato from '../Pages/FormatoCurso/FormatoCurso'
 import Info from '../Pages/Info/Info'
 import NotFound from '../Pages/NotFound/NotFound'
+import Crud from '../Pages/Crud/Crud'
 
 import Spam from '../components/MelhorEmailSpam/MelhorEmailSpam'
 
@@ -32,11 +33,12 @@ export class Routes extends Component {
         <Route path='/trilha' component={Trilha} />
         <Route path='/trilhaCompleta' component={TrilhaChoice} />
         <Route path='/ranking' component={Ranking} />
-        <Route path='/detalhe' component={Detalhe} />
+        <Route path='/detalhe/:id' component={Detalhe} />
         <Route path='/categoria' component={Categoria} />
         <Route path='/formato' component={Formato} />
         <Route path='/info' component={Info} />
         <Route path='/spam' component={Spam} />
+        <Route path='/admin/crud' component={Crud} />
         <Route component={NotFound} />
       </Switch>
 

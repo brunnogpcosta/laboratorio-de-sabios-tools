@@ -51,7 +51,7 @@ export default class Satisfacao extends Component {
 
           {cursos.map(curso => (
             <Link to={{
-              pathname: '/detalhe',
+              pathname: `/detalhe/${curso.id}`,
               state: {
                 nomeCurso: curso.nomeCurso,
                 conteudoCurso: curso.conteudoCurso,

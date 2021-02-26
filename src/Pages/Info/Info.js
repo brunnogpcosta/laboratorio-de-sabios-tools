@@ -35,7 +35,7 @@ export default class Info extends Component {
 
         <br />
         <h2>Contato</h2>
-        <p>Qualquer dúvida em relação ao funcionamento do site, pode ser esclarecida através do email <strong>john.dee@email.com</strong></p>
+        <p>Qualquer dúvida em relação ao funcionamento ou sugestões ao site, pode ser esclarecida através do email <strong>contato@laboratoriodesabios.com</strong></p>
       </div>
     )
   }

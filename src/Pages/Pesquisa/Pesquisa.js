@@ -69,7 +69,7 @@ export default class Pesquisa extends Component {
 
           {cursosFiltrados.map(cursoFiltrado => (
             <Link to={{
-              pathname: '/detalhe',
+              pathname: `/detalhe/${cursoFiltrado.id}`,
               state: {
                 nomeCurso: cursoFiltrado.nomeCurso,
                 conteudoCurso: cursoFiltrado.conteudoCurso,

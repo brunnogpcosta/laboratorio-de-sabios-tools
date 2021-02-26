@@ -56,7 +56,7 @@ export default class CategoriaCurso extends Component {
 
           {cursosCategoria.map(cursos => (
             <Link to={{
-              pathname: '/detalhe',
+              pathname: `/detalhe/${cursos.id}`,
               state: {
                 nomeCurso: cursos.nomeCurso,
                 conteudoCurso: cursos.conteudoCurso,

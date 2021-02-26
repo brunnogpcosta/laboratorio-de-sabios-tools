@@ -64,7 +64,7 @@ export default class FormatoCurso extends Component {
 
           {cursosFormato.map(cursos => (
             <Link to={{
-              pathname: '/detalhe',
+              pathname: `/detalhe/${cursos.id}`,
               state: {
                 nomeCurso: cursos.nomeCurso,
                 conteudoCurso: cursos.conteudoCurso,

@@ -43,7 +43,7 @@ export default class Baratos extends Component {
           {cursosBaratos.map(cursoBarato => (
 
             <Link to={{
-              pathname: '/detalhe',
+              pathname: `/detalhe/${cursoBarato.id}`,
               state: {
                 nomeCurso: cursoBarato.nomeCurso,
                 conteudoCurso: cursoBarato.conteudoCurso,

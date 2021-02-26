@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import api from '../../services/api';
 
 import './CursoDetalhe.css'
 
@@ -14,9 +15,19 @@ export default class CursoDetalhe extends Component {
   async componentDidMount() {
     window.scrollTo(0, 0)
 
-    this.setState({
-      curso: this.props.location.state
-    })
+    if (typeof this.props.location.state === "undefined") {
+      const idCourse = window.location.pathname.replace('/detalhe/', '')
+      const curso = await api.get(`course/${idCourse}`)
+      this.setState({
+        curso: ({ conteudoCurso: curso.data.conteudoCurso, divulgacao: curso.data.divulgacao.site, formato: curso.data.formato, nomeCurso: curso.data.nomeCurso, pagamento: curso.data.comprar.hotlink, preco: curso.data.preco, thumb: curso.data.thumb })
+      })
+      console.log("objeto : ", curso.data)
+    } else {
+      this.setState({
+        curso: this.props.location.state
+      })
+      console.log("objeto link: ", this.props.location.state)
+    }
 
   }
 

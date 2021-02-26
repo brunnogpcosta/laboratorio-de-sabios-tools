@@ -80,7 +80,7 @@ export default class HomePage extends Component {
                 {cursos.map(curso => (
 
                   <Link to={{
-                    pathname: '/detalhe',
+                    pathname: `/detalhe/${curso.id}`,
                     state: {
                       nomeCurso: curso.nomeCurso,
                       conteudoCurso: curso.conteudoCurso,
@@ -164,7 +164,7 @@ export default class HomePage extends Component {
                     }}>
                       <img src={plus} alt="Mais Cursos" /></Link>
                     <Link className="aFigure" to={{
-                      pathname: '/detalhe',
+                      pathname: `/detalhe/${cursoCategoria.id}`,
                       state: {
                         nomeCurso: cursoCategoria.nomeCurso,
                         conteudoCurso: cursoCategoria.conteudoCurso,
