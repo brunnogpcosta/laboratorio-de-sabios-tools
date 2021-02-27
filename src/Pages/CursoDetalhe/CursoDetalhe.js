@@ -90,6 +90,7 @@ export default class CursoDetalhe extends Component {
                 <a href="" target="_blank" rel="noreferrer" > Comprar</a>
               </div>
             </div>
+
             <small>* A quantidade de parcelas varia de acordo com o valor do produto.</small>
           </div>
 
@@ -132,6 +133,7 @@ export default class CursoDetalhe extends Component {
                 </div>
               </div>
               <small>* A quantidade de parcelas varia de acordo com o valor do produto.</small>
+
             </div>
 
           )}

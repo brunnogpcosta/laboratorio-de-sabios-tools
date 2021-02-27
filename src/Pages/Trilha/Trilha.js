@@ -35,7 +35,7 @@ export default class Trilha extends Component {
               {trilhas.map(trilha => (
                 <li>
                   <Link to={{
-                    pathname: `/cursos/trilha/${trilha}`,
+                    pathname: `/cursos/trilha/${trilha.normalize("NFD")}`,
                     state: {
                       categoria: trilha,
                     }
