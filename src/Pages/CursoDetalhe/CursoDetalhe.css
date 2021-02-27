@@ -90,6 +90,10 @@
   white-space: pre-wrap;
 }
 
+#Skeleton {
+  width: 100%;
+}
+
 .parceleCredito {
   text-align: center;
   font-weight: bold;

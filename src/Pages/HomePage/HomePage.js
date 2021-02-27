@@ -1,5 +1,12 @@
 import React, { Component, Fragment } from 'react'
 import Skeleton from '@material-ui/lab/Skeleton';
+import { Icon } from '@material-ui/core';
+
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+
+import ArrowLeftRoundedIcon from '@material-ui/icons/ArrowLeftRounded';
+import ArrowRightRoundedIcon from '@material-ui/icons/ArrowRightRounded';
 
 import { Link } from 'react-router-dom';
 import api from '../../services/api'
@@ -163,6 +170,9 @@ export default class HomePage extends Component {
                       }
                     }}>
                       <img src={plus} alt="Mais Cursos" /></Link>
+
+
+
                     <Link className="aFigure" to={{
                       pathname: `/detalhe/${cursoCategoria.id}`,
                       state: {
@@ -175,15 +185,24 @@ export default class HomePage extends Component {
                         formato: cursoCategoria.formato
                       }
                     }} >
+
+
+
                       <figure >
+
                         <div className="baratoHPCourse">R$ {cursoCategoria.preco}</div>
                         <img src={cursoCategoria.thumb} alt={`foto do curso ${cursoCategoria.nomeCurso}`}></img>
                         <figcaption title={cursoCategoria.nomeCurso}>
                           {cursoCategoria.nomeCurso}
                         </figcaption>
+
                       </figure>
                     </Link>
-
+                    `${ /*<div id="arrows">
+                      <ArrowLeftRoundedIcon className="ajeitaSetas" style={{ color: "#ff7" }} />
+                      <ArrowRightRoundedIcon className="ajeitaSetas" style={{ color: "#ff7" }} />
+                  </div>*/}`
+                  
                   </div>
 
                 ))}

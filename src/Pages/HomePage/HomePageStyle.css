@@ -180,6 +180,21 @@ figcaption {
   top: -1px;
 }
 
+#arrows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#arrows .ajeitaSetas {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  bottom: 28px;
+  background-color: rgb(255, 208, 0);
+  border: 1px solid rgb(238, 185, 9);
+}
+
 @media only screen and (max-width: 600px) {
   .pageTitleHomePage h2 {
     margin-left: 30px;

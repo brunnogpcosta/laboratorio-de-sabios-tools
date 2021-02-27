@@ -36,7 +36,7 @@ export default class TrilhaChoice extends Component {
 
               <li>
                 <Link to={{
-                  pathname: '/detalhe',
+                  pathname: `/detalhe/${trail.id}`,
                   state: {
                     nomeCurso: trail.nomeCurso,
                     conteudoCurso: trail.conteudoCurso,
