@@ -100,7 +100,7 @@ export default class HomePage extends Component {
                   }} >
 
                     <figure key={curso.id}>
-                      <div className="baratoHPCourse">R$ {curso.preco}</div>
+                      <div className="cardPriceCourse">R$ {curso.preco}</div>
                       <img src={curso.thumb} alt={`foto do curso ${curso.nomeCurso}`}></img>
                       <figcaption title={curso.nomeCurso}>
                         {curso.nomeCurso}
@@ -190,7 +190,7 @@ export default class HomePage extends Component {
 
                       <figure >
 
-                        <div className="baratoHPCourse">R$ {cursoCategoria.preco}</div>
+                        <div className="cardPriceCourse">R$ {cursoCategoria.preco}</div>
                         <img src={cursoCategoria.thumb} alt={`foto do curso ${cursoCategoria.nomeCurso}`}></img>
                         <figcaption title={cursoCategoria.nomeCurso}>
                           {cursoCategoria.nomeCurso}

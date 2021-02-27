@@ -26,9 +26,11 @@ export default class TrilhaChoice extends Component {
   render() {
     const { trilha, trilhaTitle } = this.state
     return (
-      <div id="trilhaChoiceContent">
+      <div id="container">
+        <div id="titleContent">
+          <h2>Trilha do Sábio {trilhaTitle}</h2>
+        </div>
 
-        <h2>Trilha do Sábio {trilhaTitle}</h2>
 
         <div id="trilhaChoiceMetas">
           <ul>

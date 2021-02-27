@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom';
 
 import api from '../../services/api'
 
-import './CategoriaCurso.css';
-
-
-
 export default class CategoriaCurso extends Component {
   state = {
     cursosCategoria: [],
@@ -49,10 +45,14 @@ export default class CategoriaCurso extends Component {
     const { cursosCategoria } = this.state
 
     return (
-      <div id="categoriaContainer">
-        <h2>{cursosNome.categoria}</h2>
+      <div id="container">
 
-        <div className="categoriaCursosContent">
+        <div id="titleContent">
+          <h2>{cursosNome.categoria}</h2>
+        </div>
+
+
+        <div id="cursosContent">
 
           {cursosCategoria.map(cursos => (
             <Link to={{
@@ -68,7 +68,7 @@ export default class CategoriaCurso extends Component {
               }
             }} >
               <figure key={cursos.id}>
-                <div className="categoriaCourse">R$ {cursos.preco}</div>
+                <div className="cardPriceCourse">R$ {cursos.preco}</div>
                 <img src={cursos.thumb} alt={`Foto do Curso ${cursos.nomeCurso}`}></img>
                 <figcaption title={cursos.nomeCurso}>
                   {cursos.nomeCurso}

@@ -13,3 +13,78 @@ body {
 body {
   background: #f9f9f9;
 }
+
+#container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+#titleContent {
+  margin-bottom: 20px;
+}
+
+#cursosContent {
+  width: 76%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  padding-bottom: 80px;
+}
+
+#cursosContent a {
+  text-decoration: none;
+  color: #000;
+}
+
+#cursosContent figure img {
+  width: 220px;
+  height: 130px;
+  padding: 10px;
+  margin-top: -50px;
+}
+
+#cursosContent figure img:hover {
+  padding-top: 0px;
+  padding-right: 2px;
+  padding-left: 0px;
+  transition: 0.5s;
+}
+
+#cursosContent figcaption {
+  text-align: center;
+}
+
+.cardPriceCourse {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  padding-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  float: right;
+  margin-left: 10px;
+  position: relative;
+  border-top-right-radius: 3px;
+  color: rgb(0, 177, 53);
+}
+
+@media only screen and (max-width: 600px) {
+  #cursosContent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  #container h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #rightContentComponent {
+    display: none;
+  }
+}

@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import Skeleton from '@material-ui/lab/Skeleton';
 import api from '../../services/api'
 
-import './FormatoCurso.css';
-
-
 
 export default class FormatoCurso extends Component {
   state = {
@@ -40,13 +37,11 @@ export default class FormatoCurso extends Component {
 
 
   render() {
-    const { cursosNome } = this.state
-    const { cursosFormato } = this.state
-    const { vazio } = this.state
+    const { cursosNome, cursosFormato, vazio } = this.state
 
     return (
-      <div id="formatoContainer">
-        <div>
+      <div id="container">
+        <div id="titleContent">
           {cursosNome ? (
             <h2>{cursosNome.formato}</h2>
 
@@ -57,7 +52,8 @@ export default class FormatoCurso extends Component {
 
 
 
-        <div className="formatoCursosContent">
+        <div id="cursosContent">
+
           <div className="spamMessage" style={{ display: vazio }}>
             Nenhum Curso Encontrado.
           </div>
@@ -76,7 +72,7 @@ export default class FormatoCurso extends Component {
               }
             }} >
               <figure key={cursos.id}>
-                <div className="formatoCourse">R$ {cursos.preco}</div>
+                <div className="cardPriceCourse">R$ {cursos.preco}</div>
                 <img src={cursos.thumb} alt={`Foto do Curso ${cursos.nomeCurso}`}></img>
                 <figcaption title={cursos.nomeCurso}>
                   {cursos.nomeCurso}

@@ -15,8 +15,8 @@
   border: 1px solid #a0982e;
   width: 100%;
   height: 100%;
-  background-color: #fff34a96;
-
+  background-color: #fff34a75;
+  border-radius: 10px;
   text-align: justify;
 }
 

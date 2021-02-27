@@ -33,12 +33,13 @@ export default class Trilha extends Component {
             <h4>Escolha seu Objetivo:</h4>
             <ul>
               {trilhas.map(trilha => (
-                <li key={trilha.id}><Link to={{
-                  pathname: '/trilhaCompleta',
-                  state: {
-                    categoria: trilha,
-                  }
-                }}>Sábio {trilha}</Link></li>
+                <li>
+                  <Link to={{
+                    pathname: `/cursos/trilha/${trilha}`,
+                    state: {
+                      categoria: trilha,
+                    }
+                  }}>Sábio {trilha}</Link></li>
               ))}
 
             </ul>

@@ -81,7 +81,7 @@ export default class Pesquisa extends Component {
               }
             }} >
               <figure key={cursoFiltrado.id}>
-                <div className="baratoHPCourse">R$ {cursoFiltrado.preco}</div>
+                <div className="cardPriceCourse">R$ {cursoFiltrado.preco}</div>
                 <img src={cursoFiltrado.thumb} alt={`foto do curso ${cursoFiltrado.nomeCurso}`}></img>
                 <figcaption title={cursoFiltrado.nomeCurso}>
                   {cursoFiltrado.nomeCurso}

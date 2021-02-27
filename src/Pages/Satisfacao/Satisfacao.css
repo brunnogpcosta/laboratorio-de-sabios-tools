@@ -1,13 +1,3 @@
-#satisfacaoContainer {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 60px;
-}
-
-#titleContent {
-  margin-bottom: 20px;
-}
-
 .positionCourse {
   width: 60px;
   height: 50px;
@@ -18,42 +8,4 @@
   font-size: 20px;
   margin-left: 9px;
   position: relative;
-}
-
-.satisfacaoCursosContent {
-  width: 76%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-  padding-bottom: 80px;
-}
-
-.satisfacaoCursosContent a {
-  text-decoration: none;
-  color: #000;
-  width: 220px;
-  height: 165px;
-  margin-right: 23px;
-  margin-bottom: 23px;
-}
-
-.satisfacaoCursosContent figcaption {
-  text-align: center;
-}
-
-@media only screen and (max-width: 600px) {
-  #rightContentComponent {
-    display: none;
-  }
-
-  .satisfacaoCursosContent {
-    display: flex;
-    justify-content: center;
-    width: 105%;
-  }
-
-  #titleContent {
-    display: flex;
-    justify-content: center;
-  }
 }

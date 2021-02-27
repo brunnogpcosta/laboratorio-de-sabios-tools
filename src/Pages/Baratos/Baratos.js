@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 import api from '../../services/api'
 
-import './Baratos.css';
-
 import RightContent from '../../components/RightContent/RightContentComponent'
 
 export default class Baratos extends Component {
@@ -30,14 +28,14 @@ export default class Baratos extends Component {
     const msg = "Esta página lista os cursos por ordem de preço. Vai do menor ao maior valor de investimento."
 
     return (
-      <div id="baratosContainer">
+      <div id="container">
 
         <div id="titleContent">
           <h2>Mais Baratos</h2>
         </div>
 
 
-        <div className="baratosCursosContent">
+        <div id="cursosContent">
 
 
           {cursosBaratos.map(cursoBarato => (
@@ -55,7 +53,7 @@ export default class Baratos extends Component {
               }
             }}>
               <figure key={cursoBarato.id}>
-                <div className="baratoCourse">R$ {cursoBarato.preco}</div>
+                <div className="cardPriceCourse">R$ {cursoBarato.preco}</div>
                 <img src={cursoBarato.thumb} alt={`foto ${cursoBarato.nomeCurso}`} />
                 <figcaption title={cursoBarato.nomeCurso}>
                   {cursoBarato.nomeCurso}
@@ -64,9 +62,6 @@ export default class Baratos extends Component {
             </Link>
 
           ))}
-
-
-
         </div>
 
         <RightContent mensagem={msg} />

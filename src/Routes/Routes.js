@@ -31,7 +31,7 @@ export class Routes extends Component {
         <Route path='/barato' component={Barato} />
         <Route path='/pesquisa' component={Pesquisa} />
         <Route path='/trilha' component={Trilha} />
-        <Route path='/trilhaCompleta' component={TrilhaChoice} />
+        <Route path='/cursos/trilha/:id' component={TrilhaChoice} />
         <Route path='/ranking' component={Ranking} />
         <Route path='/detalhe/:id' component={Detalhe} />
         <Route path='/categoria' component={Categoria} />

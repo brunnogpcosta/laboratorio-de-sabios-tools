@@ -39,7 +39,7 @@ export default class Satisfacao extends Component {
     const msg = "Esta página ordena os cursos de acordo com a pontuação atual, sendo 0 (Zero) a menor e 5 (Cinco) a maior."
     return (
 
-      <div id="satisfacaoContainer">
+      <div id="container">
 
         <div id="titleContent">
           <h2>Avaliação</h2>
@@ -47,7 +47,7 @@ export default class Satisfacao extends Component {
 
 
 
-        <div className="satisfacaoCursosContent">
+        <div id="cursosContent">
 
           {cursos.map(curso => (
             <Link to={{
