@@ -14,6 +14,7 @@ import Formato from '../Pages/FormatoCurso/FormatoCurso'
 import Info from '../Pages/Info/Info'
 import NotFound from '../Pages/NotFound/NotFound'
 import Crud from '../Pages/Crud/Crud'
+import Login from '../Pages/login/login'
 
 import Spam from '../components/MelhorEmailSpam/MelhorEmailSpam'
 
@@ -38,6 +39,7 @@ export class Routes extends Component {
         <Route path='/formato' component={Formato} />
         <Route path='/info' component={Info} />
         <Route path='/spam' component={Spam} />
+        <Route path='/admin/' component={Login} />
         <Route path='/admin/crud' component={Crud} />
         <Route component={NotFound} />
       </Switch>
