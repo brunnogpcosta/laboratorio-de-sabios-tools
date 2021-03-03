@@ -24,10 +24,10 @@ export default class HomePage extends Component {
   }
 
   async componentDidMount() {
-    const response = await api.get('courses/limit/10')
+    const response = await api.get('courses/limit/8')
     const responseCategoria = await api.get('categories')
    
-    this.setState({ cursosTotal: response.data.cursos.length, cursos: cursosDisponiveisOito, cursosCategoria: responseCategoria.data, vazio: false })
+    this.setState({ cursos: response.data, cursosCategoria: responseCategoria.data, vazio: false })
   }
 
 
@@ -35,7 +35,7 @@ export default class HomePage extends Component {
 
   render() {
 
-    const { cursosTotal, cursos, cursosCategoria, vazio } = this.state;
+    const {  cursos, cursosCategoria, vazio } = this.state;
 
 
     return (
@@ -43,7 +43,7 @@ export default class HomePage extends Component {
 
         <div className="melhoresCursos">
           <div className="pageTitleHomePage">
-            <h2>Cursos Disponíveis ({cursosTotal})</h2>
+            <h2>Cursos Disponíveis</h2>
             <Link to={{
               pathname: '/categoria',
               state: {
