@@ -26,7 +26,6 @@ export default class HomePage extends Component {
   async componentDidMount() {
     const response = await api.get('courses/limit/8')
     const responseCategoria = await api.get('categories')
-   
     this.setState({ cursos: response.data, cursosCategoria: responseCategoria.data, vazio: false })
   }
 
@@ -34,9 +33,7 @@ export default class HomePage extends Component {
 
 
   render() {
-
     const {  cursos, cursosCategoria, vazio } = this.state;
-
 
     return (
       <div className="homePageContainer">
