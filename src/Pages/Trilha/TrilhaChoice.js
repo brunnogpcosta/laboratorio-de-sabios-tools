@@ -15,7 +15,7 @@ export default class TrilhaChoice extends Component {
     const response = await api.get('allCourses')
     if (typeof this.props.location.state !== 'undefined') {
       const resultTrilha = response.data.cursos.filter(curso => curso.categoria === this.props.location.state.categoria)
-      console.log("Categoria Buscada: ", this.props.location.state.categoria)
+      //console.log("Categoria Buscada: ", this.props.location.state.categoria)
 
       this.setState({
         trilha: resultTrilha,
@@ -25,7 +25,8 @@ export default class TrilhaChoice extends Component {
 
       const nomeTrilha = window.location.pathname.replace('/cursos/trilha/', '')
       const armazenaAssunto = decodeURI(nomeTrilha)
-      console.log("Categoria Buscada decode: ", armazenaAssunto)
+      //console.log("Categoria Buscada decode: ", armazenaAssunto)
+
       const resultTrilha = response.data.cursos.filter(curso => curso.categoria === armazenaAssunto)
       this.setState({
         trilha: resultTrilha,

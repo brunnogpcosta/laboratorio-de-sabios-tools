@@ -24,19 +24,9 @@ export default class HomePage extends Component {
   }
 
   async componentDidMount() {
-    const response = await api.get('allCourses')
+    const response = await api.get('courses/limit/10')
     const responseCategoria = await api.get('categories')
-    let contador = 0;
-    const cursosDisponiveisOito = [];
-    response.data.cursos.forEach(element => {
-      contador = contador + 1;
-      if (contador <= 8) {
-        cursosDisponiveisOito.push(element)
-      }
-    });
-
-
-
+   
     this.setState({ cursosTotal: response.data.cursos.length, cursos: cursosDisponiveisOito, cursosCategoria: responseCategoria.data, vazio: false })
   }
 
