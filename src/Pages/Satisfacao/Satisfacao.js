@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import Skeleton from '@material-ui/lab/Skeleton';
+
 
 import api from '../../services/api'
 
@@ -10,13 +12,15 @@ import RightContent from '../../components/RightContent/RightContentComponent'
 export default class Satisfacao extends Component {
   state = {
     cursos: [],
+    vazio: true
 
   }
 
   async componentDidMount() {
     const response = await api.get('allCourses')
     this.setState({
-      cursos: response.data.cursos.sort((b, a) => (parseFloat(a.satisfacao) > parseFloat(b.satisfacao)) ? 1 : -1)
+      cursos: response.data.cursos.sort((b, a) => (parseFloat(a.satisfacao) > parseFloat(b.satisfacao)) ? 1 : -1),
+      vazio: false
     })
 
   }
@@ -35,7 +39,7 @@ export default class Satisfacao extends Component {
 
 
   render() {
-    const { cursos } = this.state
+    const { cursos, vazio } = this.state
     const msg = "Esta página ordena os cursos de acordo com a pontuação atual, sendo 0 (Zero) a menor e 5 (Cinco) a maior."
     return (
 
@@ -46,34 +50,55 @@ export default class Satisfacao extends Component {
         </div>
 
 
+        <div >
+          {vazio ? (
+            <div className="containerSkt">
+              <div className="containerSkt">
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+              </div>
+            </div>
+          ) : (
+              <div id="cursosContent">
 
-        <div id="cursosContent">
+                {cursos.map(curso => (
+                  <Link to={{
+                    pathname: `/detalhe/${curso.id}`,
+                    state: {
+                      nomeCurso: curso.nomeCurso,
+                      conteudoCurso: curso.conteudoCurso,
+                      preco: curso.preco,
+                      thumb: curso.thumb,
+                      divulgacao: curso.divulgacao.site,
+                      pagamento: curso.comprar.hotlink,
+                      formato: curso.formato
+                    }
+                  }} >
+                    <figure key={curso.id}>
 
-          {cursos.map(curso => (
-            <Link to={{
-              pathname: `/detalhe/${curso.id}`,
-              state: {
-                nomeCurso: curso.nomeCurso,
-                conteudoCurso: curso.conteudoCurso,
-                preco: curso.preco,
-                thumb: curso.thumb,
-                divulgacao: curso.divulgacao.site,
-                pagamento: curso.comprar.hotlink,
-                formato: curso.formato
-              }
-            }} >
-              <figure key={curso.id}>
-                <div style={{ color: this.saberCor(curso.satisfacao) }} className="positionCourse">{curso.satisfacao}</div>
-                <img src={curso.thumb} alt={`Foto do Curso ${curso.nomeCurso}`}></img>
-                <figcaption title={curso.nomeCurso}>
-                  {curso.nomeCurso}
-                </figcaption>
-              </figure>
-            </Link>
-          ))}
+                      <img src={curso.thumb} alt={`Foto do Curso ${curso.nomeCurso}`}></img>
+                      <figcaption title={curso.nomeCurso}>
+                        <strong>{curso.nomeCurso}</strong>
+                        <div id="infoComplementa" style={{ color: "#444" }}>
+                          <div className="priceTag">
+                            R$ {curso.preco}<br />
+                          </div>
+                        </div>
+                        <div style={{ color: this.saberCor(curso.satisfacao) }} >Satisfação: {curso.satisfacao}</div>
+                      </figcaption>
+                    </figure>
+                  </Link>
+                ))}
 
+              </div>
+            )}
         </div>
-
 
         <RightContent mensagem={msg} />
       </div>

@@ -8,10 +8,11 @@ html,
 body {
   height: 100vh;
   font-family: 'Roboto', sans-serif;
+  background: #f9f9f9;
 }
 
-body {
-  background: #f9f9f9;
+p {
+  color: #000000;
 }
 
 #container {
@@ -37,23 +38,34 @@ body {
   color: #000;
 }
 
-#cursosContent figure img {
+figure {
   width: 220px;
-  height: 130px;
-  padding: 10px;
-  margin-top: -50px;
+  height: 200px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #afd5f8;
+  margin-right: 21px;
+  margin-bottom: 27px;
+  border-radius: 5px;
 }
 
-#cursosContent figure img:hover {
-  padding-top: 0px;
-  padding-right: 2px;
-  padding-left: 0px;
-  transition: 0.5s;
+.priceTag {
+  font-weight: bold;
+  text-align: center;
+  padding: 2px;
+}
+
+figure img {
+  width: 220px;
+  height: 130px;
+  object-fit: cover;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
 }
 
 #cursosContent figcaption {
   text-align: center;
 }
+/*
 
 .cardPriceCourse {
   width: 60%;
@@ -66,12 +78,15 @@ body {
   float: right;
   margin-left: 10px;
   position: relative;
-  border-top-right-radius: 3px;
-  border: 4px solid green;
-  background-color: rgb(253, 246, 206);
+  border-top-right-radius: 2%;
+  border-bottom-left-radius: 3px;
+  border-top: none;
+  border-right: none;
+  background-color: rgb(255, 255, 255);
   color: rgb(0, 177, 53);
   z-index: 2;
 }
+*/
 
 @media only screen and (max-width: 600px) {
   #cursosContent {

@@ -36,14 +36,14 @@
 }
 
 #pesquisaContent h3 {
-  text-align: left;
-  margin-bottom: 30px;
+  text-align: center;
 }
 
 .pesquisaContainer {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding-bottom: 80px;
 }
 
@@ -53,7 +53,7 @@
   width: 220px;
   height: 165px;
   margin-right: 23px;
-  margin-bottom: 23px;
+  margin-bottom: 60px;
 }
 
 .pesquisaContainerfigcaption {
@@ -62,9 +62,7 @@
 
 @media only screen and (max-width: 600px) {
   #pesquisaContent h3 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    font-size: 14px;
   }
 
   .pesquisaContainer {

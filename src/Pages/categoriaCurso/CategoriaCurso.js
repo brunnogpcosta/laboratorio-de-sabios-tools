@@ -68,10 +68,15 @@ export default class CategoriaCurso extends Component {
               }
             }} >
               <figure key={cursos.id}>
-                <div className="cardPriceCourse">R$ {cursos.preco}</div>
                 <img src={cursos.thumb} alt={`Foto do Curso ${cursos.nomeCurso}`}></img>
                 <figcaption title={cursos.nomeCurso}>
-                  {cursos.nomeCurso}
+                  <strong>{cursos.nomeCurso}</strong>
+                  <div id="infoComplementa" style={{ color: "#444" }}>
+                    <div className="priceTag">
+                      R$ {cursos.preco}<br />
+                    </div>
+                  </div>
+                  {cursos.formato}
                 </figcaption>
               </figure>
             </Link>

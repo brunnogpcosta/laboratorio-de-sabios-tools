@@ -33,7 +33,7 @@ export default class HomePage extends Component {
 
 
   render() {
-    const {  cursos, cursosCategoria, vazio } = this.state;
+    const { cursos, cursosCategoria, vazio } = this.state;
 
     return (
       <div className="homePageContainer">
@@ -58,14 +58,14 @@ export default class HomePage extends Component {
           {vazio ? (
             <Fragment className="containerSkt">
               <div className="containerSkt">
-                <Skeleton className="configuraSkt" variant="rect" width={220} height={165} />
-                <Skeleton className="configuraSkt" variant="rect" width={220} height={165} />
-                <Skeleton className="configuraSkt" variant="rect" width={220} height={165} />
-                <Skeleton className="configuraSkt" variant="rect" width={220} height={165} />
-                <Skeleton className="configuraSkt" variant="rect" width={220} height={165} />
-                <Skeleton className="configuraSkt" variant="rect" width={220} height={165} />
-                <Skeleton className="configuraSkt" variant="rect" width={220} height={165} />
-                <Skeleton className="configuraSkt" variant="rect" width={220} height={165} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
               </div>
             </Fragment>
           ) : (
@@ -87,10 +87,16 @@ export default class HomePage extends Component {
                   }} >
 
                     <figure key={curso.id}>
-                      <div className="cardPriceCourse">R$ {curso.preco}</div>
+
                       <img src={curso.thumb} alt={`foto do curso ${curso.nomeCurso}`}></img>
                       <figcaption title={curso.nomeCurso}>
-                        {curso.nomeCurso}
+                        <strong> {curso.nomeCurso}</strong><br />
+                        <div id="infoComplementa" style={{ color: "#444" }}>
+                          <div className="priceTag">
+                            R$ {curso.preco}<br />
+                          </div>
+                        </div>
+                        {curso.formato}
                       </figcaption>
                     </figure>
                   </Link>
@@ -110,35 +116,35 @@ export default class HomePage extends Component {
               <div className="containerSkt">
                 <div className="configuraSkt">
                   <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
-                  <Skeleton variant="rect" width={220} height={165} />
+                  <Skeleton variant="rect" width={220} height={200} />
                 </div>
                 <div className="configuraSkt">
                   <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
-                  <Skeleton variant="rect" width={220} height={165} />
+                  <Skeleton variant="rect" width={220} height={200} />
                 </div>
                 <div className="configuraSkt">
                   <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
-                  <Skeleton variant="rect" width={220} height={165} />
+                  <Skeleton variant="rect" width={220} height={200} />
                 </div>
                 <div className="configuraSkt">
                   <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
-                  <Skeleton variant="rect" width={220} height={165} />
+                  <Skeleton variant="rect" width={220} height={200} />
                 </div>
                 <div className="configuraSkt">
                   <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
-                  <Skeleton variant="rect" width={220} height={165} />
+                  <Skeleton variant="rect" width={220} height={200} />
                 </div>
                 <div className="configuraSkt">
                   <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
-                  <Skeleton variant="rect" width={220} height={165} />
+                  <Skeleton variant="rect" width={220} height={200} />
                 </div>
                 <div className="configuraSkt">
                   <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
-                  <Skeleton variant="rect" width={220} height={165} />
+                  <Skeleton variant="rect" width={220} height={200} />
                 </div>
                 <div className="configuraSkt">
                   <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
-                  <Skeleton variant="rect" width={220} height={165} />
+                  <Skeleton variant="rect" width={220} height={200} />
                 </div>
               </div>
             </Fragment>
@@ -176,20 +182,20 @@ export default class HomePage extends Component {
 
 
                       <figure >
-
-                        <div className="cardPriceCourse">R$ {cursoCategoria.preco}</div>
                         <img src={cursoCategoria.thumb} alt={`foto do curso ${cursoCategoria.nomeCurso}`}></img>
                         <figcaption title={cursoCategoria.nomeCurso}>
-                          {cursoCategoria.nomeCurso}
+                          <strong> {cursoCategoria.nomeCurso}</strong><br />
+                          <div id="infoComplementa" style={{ color: "#444" }}>
+                            <div className="priceTag">
+                              R$ {cursoCategoria.preco}<br />
+                            </div>
+                          </div>
+                          {cursoCategoria.formato}
                         </figcaption>
 
                       </figure>
                     </Link>
-                    `${ /*<div id="arrows">
-                      <ArrowLeftRoundedIcon className="ajeitaSetas" style={{ color: "#ff7" }} />
-                      <ArrowRightRoundedIcon className="ajeitaSetas" style={{ color: "#ff7" }} />
-                  </div>*/}`
-                  
+
                   </div>
 
                 ))}
