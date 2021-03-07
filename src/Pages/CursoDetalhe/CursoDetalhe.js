@@ -107,7 +107,7 @@ export default class CursoDetalhe extends Component {
                   {this.tratarTexto(curso.conteudoCurso)}
                   <br /><br /><br />
                   <div id="containerSaibaMais">
-                    <a className="saibaMais" href={curso.divulgacao} target="_blank">Leia Mais</a>
+                    <a className="saibaMais" href={curso.divulgacao} target="_blank">Saber Tudo Sobre o Curso</a>
                   </div>
                 </div>
                 <div className="alignPrice">
