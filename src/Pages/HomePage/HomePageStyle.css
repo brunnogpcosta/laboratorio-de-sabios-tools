@@ -158,6 +158,16 @@ figcaption {
   border: 1px solid rgb(238, 185, 9);
 }
 
+.disabilitarFormato {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+
+.disabilitarFormatoBotao {
+  color: rgb(173, 173, 173);
+}
+
 @media only screen and (max-width: 600px) {
   .pageTitleHomePage h2 {
     margin-left: 30px;

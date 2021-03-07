@@ -228,77 +228,77 @@ export default class HomePage extends Component {
               <h3 title="eBooks, Documentos">eBooks, Documentos</h3>
             </Link>
 
-            <Link to={{
+            <Link className="disabilitarFormato" to={{
               pathname: '/formato',
               state: {
                 formato: "Ingressos para eventos"
               }
             }}>
-              <h3 title="Ingressos para eventos">Ingressos para eventos</h3>
+              <h3 title="Ingressos para eventos" className="disabilitarFormatoBotao">Ingressos para eventos</h3>
             </Link>
 
-            <Link to={{
+            <Link className="disabilitarFormato" to={{
               pathname: '/formato',
               state: {
                 formato: "Screencasts, Filmes, Clipes"
               }
             }}>
-              <h3 title="Screencasts, Filmes, Clipes">Screencasts, Filmes, Clipes</h3>
+              <h3 title="Screencasts, Filmes, Clipes" className="disabilitarFormatoBotao">Screencasts, Filmes, Clipes</h3>
             </Link>
 
-            <Link to={{
+            <Link className="disabilitarFormato" to={{
               pathname: '/formato',
               state: {
                 formato: "Áudios, Músicas, Ringtones"
               }
             }}>
-              <h3 title="Áudios, Músicas, Ringtones">Áudios, Músicas, Ringtones</h3>
+              <h3 title="Áudios, Músicas, Ringtones" className="disabilitarFormatoBotao">Áudios, Músicas, Ringtones</h3>
             </Link>
 
 
-            <Link to={{
+            <Link className="disabilitarFormato" to={{
               pathname: '/formato',
               state: {
                 formato: "Software, Programas para baixar"
               }
             }}>
-              <h3 title="Software, Programas para baixar">Software, Programas para baixar</h3>
+              <h3 title="Software, Programas para baixar" className="disabilitarFormatoBotao">Software, Programas para baixar</h3>
             </Link>
 
-            <Link to={{
+            <Link className="disabilitarFormato" to={{
               pathname: '/formato',
               state: {
                 formato: "Imagens, Ícones, Fotos"
               }
             }}>
-              <h3 title="Imagens, Ícones, Fotos">Imagens, Ícones, Fotos</h3>
+              <h3 title="Imagens, Ícones, Fotos" className="disabilitarFormatoBotao">Imagens, Ícones, Fotos</h3>
             </Link>
 
-            <Link to={{
+            <Link className="disabilitarFormato" to={{
               pathname: '/formato',
               state: {
                 formato: "Números de Série, Cupons de Desconto"
               }
             }}>
-              <h3 title="Números de Série, Cupons de Desconto">Números de Série, Cupons de Desconto</h3>
+              <h3 title="Números de Série, Cupons de Desconto" className="disabilitarFormatoBotao">Números de Série, Cupons de Desconto</h3>
             </Link>
 
-            <Link to={{
+            <Link className="disabilitarFormato" to={{
               pathname: '/formato',
               state: {
                 formato: "Aplicativos para Celular"
               }
             }}>
-              <h3 title="Aplicativos para Celular">Aplicativos para Celular</h3>
+              <h3 title="Aplicativos para Celular" className="disabilitarFormatoBotao">Aplicativos para Celular</h3>
             </Link>
 
-            <Link to={{
+            <Link className="disabilitarFormato" to={{
               pathname: '/formato',
               state: {
                 formato: "Templates, Códigos Fonte"
               }
             }}>
-              <h3 title="Templates, Códigos Fonte">Templates, Códigos Fonte</h3>
+              <h3 title="Templates, Códigos Fonte" className="disabilitarFormatoBotao">Templates, Códigos Fonte</h3>
             </Link>
 
           </div>
