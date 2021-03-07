@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './FooterStyle.css'
 
+import insta from './img/instagram.svg'
+
 export default class Footer extends Component {
   render() {
     return (
@@ -8,6 +10,7 @@ export default class Footer extends Component {
         <div className="containerFooter">
           <ul>
             <li>© Copyright 2021 | Laboratório de Sábios</li>
+            <li><a href="https://www.instagram.com/laboratoriodesabios/" target="_blank"><img src={insta} alt="instagram" title="instagram" /></a></li>
           </ul>
         </div>
       </div>

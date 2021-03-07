@@ -52,7 +52,7 @@ export default class Header extends Component {
 
             <ul>
               <li><Link to="/"><img src={logo} alt="Logo" /></Link></li>
-              <li><h2>Laboratório de Sábios</h2></li>
+              <li><Link to="/"><h2>Laboratório de Sábios</h2></Link></li>
 
               <li className="dropdown">
                 <img src={menu} alt="Menu" onClick={this.selecionouMenu} />

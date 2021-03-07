@@ -11,8 +11,9 @@ export default class CategoriaCurso extends Component {
 
 
   async componentDidMount() {
-    const response = await api.get('allCourses')
+    window.scrollTo(0, 0)
 
+    const response = await api.get('allCourses')
 
     if (typeof this.props.location.state !== 'undefined') {
       this.setState({

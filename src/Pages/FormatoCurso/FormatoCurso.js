@@ -13,6 +13,8 @@ export default class FormatoCurso extends Component {
 
 
   async componentDidMount() {
+    window.scrollTo(0, 0)
+
     const response = await api.get('allCourses')
     this.setState({
       cursosNome: this.props.location.state
