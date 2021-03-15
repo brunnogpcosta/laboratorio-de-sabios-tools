@@ -30,7 +30,7 @@ export default class CategoriaCurso extends Component {
     const cursosFiltred = response.data.cursos.filter(curso => curso.categoria.toLowerCase().indexOf(this.state.cursosNome.categoria.toLowerCase()) > -1)
 
     if (cursosFiltred.length === 0) {
-      this.setState({ cursosCategoria: response.data.cursos, cursosNome: { categoria: "Todas os Cursos" } })
+      this.setState({ cursosCategoria: response.data.cursos, cursosNome: { categoria: "Todos os Cursos" } })
     } else {
       this.setState({ cursosCategoria: cursosFiltred })
     }
