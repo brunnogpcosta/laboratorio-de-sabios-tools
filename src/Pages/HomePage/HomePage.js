@@ -13,7 +13,7 @@ import api from '../../services/api'
 
 import './HomePageStyle.css'
 import plus from './img/plus-circle.svg'
-import RightContentHP from '../../components/RightContentHP/RightContentHPComponent'
+
 
 export default class HomePage extends Component {
   state = {
@@ -24,7 +24,7 @@ export default class HomePage extends Component {
   }
 
   async componentDidMount() {
-    const response = await api.get('courses/limit/8')
+    const response = await api.get('courses/limit/10')
     const responseCategoria = await api.get('categories')
     this.setState({ cursos: response.data, cursosCategoria: responseCategoria.data, vazio: false })
   }
@@ -58,6 +58,8 @@ export default class HomePage extends Component {
           {vazio ? (
             <Fragment className="containerSkt">
               <div className="containerSkt">
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
                 <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
                 <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
                 <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
@@ -114,6 +116,26 @@ export default class HomePage extends Component {
           {vazio ? (
             <Fragment className="containerSkt">
               <div className="containerSkt">
+                <div className="configuraSkt">
+                  <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
+                  <Skeleton variant="rect" width={220} height={200} />
+                </div>
+                <div className="configuraSkt">
+                  <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
+                  <Skeleton variant="rect" width={220} height={200} />
+                </div>
+                <div className="configuraSkt">
+                  <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
+                  <Skeleton variant="rect" width={220} height={200} />
+                </div>
+                <div className="configuraSkt">
+                  <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
+                  <Skeleton variant="rect" width={220} height={200} />
+                </div>
+                <div className="configuraSkt">
+                  <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
+                  <Skeleton variant="rect" width={220} height={200} />
+                </div>
                 <div className="configuraSkt">
                   <Skeleton className="sktDemais" variant="rect" width={220} height={30} />
                   <Skeleton variant="rect" width={220} height={200} />
@@ -304,7 +326,7 @@ export default class HomePage extends Component {
           </div>
 
         </div>
-        <RightContentHP />
+
       </div>
 
 

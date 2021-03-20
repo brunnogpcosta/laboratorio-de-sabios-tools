@@ -9,7 +9,7 @@ export default class Info extends Component {
 
         <p>O site <strong>Laboratório de Sábios</strong> disponibiliza cursos de terceiros que são produções independente e de responsabilidade de seus idealizadores.</p>
 
-        <p>Todas as informações dos cursos estão dispníveis para consulta, cabendo ao usuário análisar e tirar o melhor proveito dos cursos apresentados.</p>
+        <p>Todas as informações dos cursos estão disponíveis para consulta, cabendo ao usuário análisar e tirar o melhor proveito dos cursos apresentados.</p>
         <br />
 
         <h2>Perguntas Frequentes</h2>

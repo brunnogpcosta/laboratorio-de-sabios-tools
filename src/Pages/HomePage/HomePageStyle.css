@@ -9,27 +9,6 @@
   margin-bottom: 15.5px;
 }
 
-.melhoresCursosContent {
-  width: 76%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.containerSkt {
-  width: 76%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-}
-
-.configuraSkt {
-  margin-right: 23px;
-  margin-bottom: 27px;
-}
-
-.sktDemais {
-  margin-bottom: 10px;
-}
-
 .pageTitleHomePage h2 {
   float: left;
 }
@@ -38,11 +17,32 @@
   margin-left: 5px;
 }
 
+.melhoresCursosContent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.containerSkt {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.configuraSkt {
+  margin-bottom: 27px;
+}
+
+.sktDemais {
+  margin-bottom: 10px;
+}
+
 .melhoresCursosContent a {
   text-decoration: none;
   color: black;
   width: 220px;
-  margin-right: 23px;
 }
 
 figcaption {
@@ -50,7 +50,7 @@ figcaption {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding: 0px 10px 10px 10px;
+  padding: 0px 15px 15px 15px;
 }
 
 #cursoQuadrado {
@@ -77,30 +77,21 @@ figcaption {
 #demaisCursos {
   display: flex;
   flex-wrap: wrap;
-  width: 76%;
+  justify-content: space-between;
+  width: 100%;
 }
 
 #demaisCursoTopo h2 {
-  width: 74%;
-  padding: 5px;
+  width: 100%;
   margin-bottom: 20px;
-  background-image: linear-gradient(
-    to right,
-    #186195,
-    rgba(0, 153, 255, 0.342)
-  );
+  margin-top: 40px;
+  color: rgb(0, 0, 0);
 }
 
 #demaisCursos h2 {
   width: 100%;
-  padding: 5px;
+  margin-top: 40px;
   margin-bottom: 20px;
-
-  background-image: linear-gradient(
-    to right,
-    #186195,
-    rgba(0, 153, 255, 0.342)
-  );
 }
 
 #cursoQuadrado {
