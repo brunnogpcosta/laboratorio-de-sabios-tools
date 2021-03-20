@@ -161,18 +161,18 @@ figcaption {
 
 @media only screen and (max-width: 600px) {
   .pageTitleHomePage h2 {
-    margin-left: 30px;
+    margin-left: 45px;
   }
 
   .melhoresCursosContent {
     display: flex;
-    width: 105%;
+    width: 100%;
     justify-content: center;
   }
 
   .containerSkt {
     display: flex;
-    width: 105%;
+    width: 100%;
     justify-content: center;
   }
 
@@ -184,8 +184,12 @@ figcaption {
 
   #demaisCursos {
     display: flex;
-    width: 100%;
+    width: 106%;
     justify-content: center;
+  }
+
+  .cursoQuadradoFormato {
+    padding-right: 15px;
   }
 
   #rightContentHPComponent {
