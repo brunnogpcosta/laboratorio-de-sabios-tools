@@ -5,7 +5,7 @@
 
 .header .topHeader {
   height: 46px;
-  background-color: #186095;
+  background-color: #034;
 }
 
 .container {
@@ -111,7 +111,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #186095;
+    background-color: #034;
     min-width: 200px;
     min-height: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -129,7 +129,7 @@
   }
 
   .dropdown-content a:hover {
-    background-color: #2590dd;
+    background-color: rgb(2, 100, 133);
   }
 
   .dropdown-content a:focus {
