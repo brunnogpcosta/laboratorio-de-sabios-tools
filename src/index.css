@@ -44,7 +44,7 @@ figure {
   width: 220px;
   height: 200px;
   background-color: #fff;
-  box-shadow: 0px 0px 4px #afd5f8;
+  border: 1px solid rgb(1, 77, 102);
   margin-right: 21px;
   margin-bottom: 27px;
   border-radius: 5px;
@@ -57,7 +57,7 @@ figure {
 }
 
 figure img {
-  width: 220px;
+  width: 218px;
   height: 130px;
   object-fit: cover;
   border-top-left-radius: 2%;
