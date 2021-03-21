@@ -45,14 +45,6 @@
   width: 220px;
 }
 
-figcaption {
-  text-align: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding: 0px 15px 15px 15px;
-}
-
 #cursoQuadrado {
   width: 220px;
   margin-right: 23px;
@@ -133,20 +125,6 @@ figcaption {
 
 #demaisCursos a img {
   position: relative;
-}
-
-#arrows {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-#arrows .ajeitaSetas {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  background-color: rgb(255, 208, 0);
-  border: 1px solid rgb(238, 185, 9);
 }
 
 .disabilitarFormato {

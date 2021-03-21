@@ -4,11 +4,6 @@ import Skeleton from '@material-ui/lab/Skeleton';
 
 
 import api from '../../services/api'
-
-import './Satisfacao.css'
-
-
-import RightContent from '../../components/RightContent/RightContentComponent'
 export default class Satisfacao extends Component {
   state = {
     cursos: [],
@@ -52,18 +47,20 @@ export default class Satisfacao extends Component {
 
         <div >
           {vazio ? (
+
             <div className="containerSkt">
-              <div className="containerSkt">
-                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
-                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
-                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
-                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
-                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
-                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
-                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
-                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
-              </div>
+              <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+              <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+              <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+              <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+              <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+              <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+              <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+              <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+              <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+              <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
             </div>
+
           ) : (
               <div id="cursosContent">
 
@@ -85,13 +82,14 @@ export default class Satisfacao extends Component {
                       <img src={curso.thumb} alt={`Foto do Curso ${curso.nomeCurso}`}></img>
                       <figcaption title={curso.nomeCurso}>
                         <strong>{curso.nomeCurso}</strong>
-                        <div id="infoComplementa" style={{ color: "#444" }}>
-                          <div className="priceTag">
-                            R$ {curso.preco}<br />
-                          </div>
-                        </div>
+
                         <div style={{ color: this.saberCor(curso.satisfacao) }} >Satisfação: {curso.satisfacao}</div>
                       </figcaption>
+                      <div id="infoComplementa" style={{ color: "#444" }}>
+                        <div className="priceTag">
+                          R$ {curso.preco}<br />
+                        </div>
+                      </div>
                     </figure>
                   </Link>
                 ))}
@@ -99,8 +97,6 @@ export default class Satisfacao extends Component {
               </div>
             )}
         </div>
-
-        <RightContent mensagem={msg} />
       </div>
     )
   }

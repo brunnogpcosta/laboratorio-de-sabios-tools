@@ -84,14 +84,14 @@ export default class Pesquisa extends Component {
 
                 <img src={cursoFiltrado.thumb} alt={`foto do curso ${cursoFiltrado.nomeCurso}`}></img>
                 <figcaption title={cursoFiltrado.nomeCurso}>
-                  <strong>{cursoFiltrado.nomeCurso}</strong>
-                  <div id="infoComplementa" style={{ color: "#444" }}>
-                    <div className="priceTag">
-                      R$ {cursoFiltrado.preco}<br />
-                    </div>
-                  </div>
+                  <strong>{cursoFiltrado.nomeCurso}</strong><br />
                   {cursoFiltrado.formato}
                 </figcaption>
+                <div id="infoComplementa" style={{ color: "#444" }}>
+                  <div className="priceTag">
+                    R$ {cursoFiltrado.preco}<br />
+                  </div>
+                </div>
               </figure>
             </Link>
 

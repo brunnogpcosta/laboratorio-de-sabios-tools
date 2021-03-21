@@ -4,7 +4,6 @@ import Skeleton from '@material-ui/lab/Skeleton';
 
 import api from '../../services/api'
 
-import RightContent from '../../components/RightContent/RightContentComponent'
 
 export default class Baratos extends Component {
   state = {
@@ -50,6 +49,8 @@ export default class Baratos extends Component {
                 <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
                 <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
                 <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
+                <Skeleton className="configuraSkt" variant="rect" width={220} height={200} />
               </div>
             </div>
           ) : (
@@ -71,17 +72,19 @@ export default class Baratos extends Component {
                       }
                     }}>
                       <figure key={cursoBarato.id}>
-
                         <img src={cursoBarato.thumb} alt={`foto ${cursoBarato.nomeCurso}`} />
+
                         <figcaption title={cursoBarato.nomeCurso}>
-                          <strong> {cursoBarato.nomeCurso}</strong>
-                          <div id="infoComplementa" style={{ color: "#444" }}>
-                            <div className="priceTag">
-                              R$ {cursoBarato.preco}<br />
-                            </div>
-                          </div>
+                          <strong> {cursoBarato.nomeCurso}</strong><br />
                           {cursoBarato.formato}
                         </figcaption>
+
+                        <div id="infoComplementa" style={{ color: "#444" }}>
+                          <div className="priceTag">
+                            R$ {cursoBarato.preco}<br />
+                          </div>
+                        </div>
+
                       </figure>
                     </Link>
 
@@ -90,8 +93,6 @@ export default class Baratos extends Component {
               </div>
             )}
         </div>
-
-        <RightContent mensagem={msg} />
 
       </div >
     )

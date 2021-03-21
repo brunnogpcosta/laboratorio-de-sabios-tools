@@ -1,12 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import Skeleton from '@material-ui/lab/Skeleton';
-import { Icon } from '@material-ui/core';
 
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 
-import ArrowLeftRoundedIcon from '@material-ui/icons/ArrowLeftRounded';
-import ArrowRightRoundedIcon from '@material-ui/icons/ArrowRightRounded';
 
 import { Link } from 'react-router-dom';
 import api from '../../services/api'
@@ -93,13 +88,15 @@ export default class HomePage extends Component {
                       <img src={curso.thumb} alt={`foto do curso ${curso.nomeCurso}`}></img>
                       <figcaption title={curso.nomeCurso}>
                         <strong> {curso.nomeCurso}</strong><br />
-                        <div id="infoComplementa" style={{ color: "#444" }}>
-                          <div className="priceTag">
-                            R$ {curso.preco}<br />
-                          </div>
-                        </div>
+
                         {curso.formato}
+
                       </figcaption>
+                      <div id="infoComplementa" style={{ color: "#444" }}>
+                        <div className="priceTag">
+                          R$ {curso.preco}<br />
+                        </div>
+                      </div>
                     </figure>
                   </Link>
 
@@ -204,17 +201,20 @@ export default class HomePage extends Component {
 
 
                       <figure >
+
+
                         <img src={cursoCategoria.thumb} alt={`foto do curso ${cursoCategoria.nomeCurso}`}></img>
                         <figcaption title={cursoCategoria.nomeCurso}>
                           <strong> {cursoCategoria.nomeCurso}</strong><br />
-                          <div id="infoComplementa" style={{ color: "#444" }}>
-                            <div className="priceTag">
-                              R$ {cursoCategoria.preco}<br />
-                            </div>
-                          </div>
-                          {cursoCategoria.formato}
-                        </figcaption>
 
+                          {cursoCategoria.formato}
+
+                        </figcaption>
+                        <div id="infoComplementa" style={{ color: "#444" }}>
+                          <div className="priceTag">
+                            R$ {cursoCategoria.preco}<br />
+                          </div>
+                        </div>
                       </figure>
                     </Link>
 

@@ -28,9 +28,10 @@ p {
 }
 
 #cursosContent {
-  width: 76%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 40px;
   padding-bottom: 80px;
 }
@@ -42,23 +43,34 @@ p {
 
 figure {
   width: 220px;
-  height: 200px;
+  height: 230px;
   background-color: #fff;
   border: 1px solid rgb(1, 77, 102);
-  margin-right: 21px;
   margin-bottom: 27px;
   border-radius: 5px;
+}
+
+figcaption {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 10px 10px 0px 10px;
 }
 
 .priceTag {
   font-weight: bold;
   text-align: center;
-  padding: 2px;
+  background-color: rgba(167, 255, 126, 0.507);
+  margin-top: 7px;
+  padding: 10px;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
 }
 
 figure img {
   width: 218px;
-  height: 130px;
+  height: 130.5px;
   object-fit: cover;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;

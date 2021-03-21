@@ -43,7 +43,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   padding-bottom: 80px;
 }
 
@@ -53,7 +53,7 @@
   width: 220px;
   height: 165px;
   margin-right: 23px;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 .pesquisaContainerfigcaption {
