@@ -32,7 +32,7 @@ export default class FerramentasGeraCV extends Component {
     const novoInput = document.createElement('input')
 
     novoInput.setAttribute("name", "formacao");
-    novoInput.setAttribute("placeholder", "Ex.: Ensino Médio completo no Colégio Laboratório de Sábios – Meu Bairro – Minha Cidade - UF , concluído em XXXX");
+    novoInput.setAttribute("placeholder", "Ex.: Ensino Médio completo no Colégio Laboratório de Sábios – Bairro – Cidade - UF , concluído em XXXX");
     formation.insertBefore(novoInput, botaoFormacao);
   }
 
@@ -138,11 +138,9 @@ export default class FerramentasGeraCV extends Component {
     });
 
     const sobreMim = document.querySelector('input[name="sobreMim"]').value
-    if (sobreMim === "") {
 
-    } else {
-      this.setState({ nome: nome, nacionalidade: nacionalidade, estadoCivil: estadoCivil, idade: idade, endereco: endereco, telefone: telefone, email: email, objetivo: objetivo, formacao: formacaoArray, cursos: cursosArray, experiencia: experienciaArray, sobreMim: sobreMim })
-    }
+    this.setState({ nome: nome, nacionalidade: nacionalidade, estadoCivil: estadoCivil, idade: idade, endereco: endereco, telefone: telefone, email: email, objetivo: objetivo, formacao: formacaoArray, cursos: cursosArray, experiencia: experienciaArray, sobreMim: sobreMim })
+
 
 
   }
@@ -173,7 +171,7 @@ export default class FerramentasGeraCV extends Component {
                 <input type="text" name="name" placeholder="Nome" />
 
                 <div className="tresInputs">
-                  <input type="text" name="nacionalidade" placeholder="Nacionalidade" />
+                  <input type="text" name="nacionalidade" placeholder="Nacionalidade" required />
                   <select id="estadoCivil" name="estadoCivil">
                     <option value="solteiro">Solteiro(a)</option>
                     <option value="casado">Casado(a)</option>
@@ -183,7 +181,7 @@ export default class FerramentasGeraCV extends Component {
 
                 </div>
 
-                <input type="text" name="endereco" placeholder="Ex.: Rua Laboratório de Sábios, 777 - Taquara - Rio de Janeiro - CEP: XXXXX-XXX" />
+                <input type="text" name="endereco" placeholder="Ex.: Rua Laboratório de Sábios, 777 - Meu Bairro - Minha Cidade - CEP: XXXXX-XXX" />
                 <div className="tresInputs">
                   <input type="tel" required="required" maxlength="15" name="telefone" placeholder="(21) XXXXX-XXXX" />
                   <input type="email" required="required" class="input-text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="email@email.com" />
@@ -201,7 +199,7 @@ export default class FerramentasGeraCV extends Component {
             <div id="formacao">
               <label>
                 <strong>Formação</strong>
-                <input type="text" name="formacao" placeholder="Ex.: Ensino Médio completo no Colégio Laboratório de Sábios – Meu Bairro – Minha Cidade - UF , concluído em XXXX" />
+                <input type="text" name="formacao" placeholder="Ex.: Ensino Médio completo no Colégio Laboratório de Sábios – Bairro – Cidade - UF , concluído em XXXX" />
                 <div className="botaoFormacao" onClick={() => this.insertFormation()}>+</div>
               </label>
             </div>
@@ -256,7 +254,7 @@ export default class FerramentasGeraCV extends Component {
                 sobreMim: sobreMim
               }
             }} >
-              <input type="button" value="Visualizar PDF" />
+              <input type="submit" value="Visualizar PDF" />
             </Link>
 
           </form>
