@@ -45,7 +45,7 @@ export default class Header extends Component {
 
     return (
 
-      <div className="header">
+      <div className="header no-print">
 
         <div className="topHeader">
           <div className="container">
@@ -61,6 +61,7 @@ export default class Header extends Component {
                   <Link to="/barato" onClick={this.selecionouMenu}>Preço Baixo</Link>
                   <Link to="/trilha" onClick={this.selecionouMenu}>Trilha</Link>
                   <Link to="/pesquisa" onClick={this.selecionouMenu}>Pesquisar</Link>
+                  <Link to="/ferramentas" onClick={this.selecionouMenu}>Ferramentas</Link>
                   <Link to="/info" onClick={this.selecionouMenu}>Dúvidas</Link>
                 </div>
               </li>
@@ -77,12 +78,14 @@ export default class Header extends Component {
               <div className="bhLeft">
                 <li><Link to="/satisfacao">AVALIAÇÃO</Link></li>
                 <li><Link to="/barato">PREÇO BAIXO</Link></li>
+                <li><Link to="/trilha">TRILHA</Link></li>
+                <li><Link to="/pesquisa">PESQUISAR</Link></li>
               </div>
 
               <div className="bhRight">
-                <li><Link to="/trilha">TRILHA</Link></li>
-                <li><Link to="/pesquisa">PESQUISAR</Link></li>
+                <li><Link to="/ferramentas">FERRAMENTAS</Link></li>
                 <li><Link to="/info">DÚVIDAS</Link></li>
+
               </div>
             </ul>
           </div>

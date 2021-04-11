@@ -1,0 +1,128 @@
+#cursosContentFerramentasCV {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.tresInputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#cabecalho {
+  margin-bottom: 20px;
+}
+
+input[name^='name'] {
+  margin-top: 5px;
+}
+
+input[name^='nacionalidade'] {
+  width: 33%;
+}
+
+select[name='estadoCivil'] {
+  width: 33%;
+  height: 30px;
+}
+
+input[name^='idade'] {
+  width: 200px;
+}
+
+input[name='telefone'] {
+  width: 50%;
+}
+
+input[name='email'] {
+  width: 47%;
+}
+
+input[type='button'] {
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+#objetivo input {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+#formacao input {
+  margin-bottom: -25px;
+  margin-top: 5px;
+}
+
+.botaoFormacao {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: rgb(230, 230, 230);
+  margin-top: 15px;
+  text-align: center;
+  border: 1px solid rgb(105, 105, 105);
+  cursor: pointer;
+}
+
+.botaoExperiencia {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: rgb(230, 230, 230);
+  margin-top: 0px;
+  text-align: center;
+  border: 1px solid rgb(105, 105, 105);
+  cursor: pointer;
+}
+.botaoConhecimento {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: rgb(230, 230, 230);
+  margin-top: 15px;
+  text-align: center;
+  border: 1px solid rgb(105, 105, 105);
+  cursor: pointer;
+}
+
+#conhecimentos label input {
+  margin-bottom: -25px;
+  margin-top: 5px;
+}
+
+#conhecimentos label button {
+  margin-bottom: 20px;
+}
+
+.experienciaContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#experiencia input[name^='empresa'] {
+  margin-top: 5px;
+  width: 45%;
+  height: 30px;
+}
+
+#experiencia input[name^='anoInicio'] {
+  width: 25%;
+  margin-top: 5px;
+  height: 30px;
+}
+
+#experiencia input[name^='anoFim'] {
+  width: 25%;
+  margin-top: 5px;
+}
+
+#experiencia label button {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+#sobreMim input {
+  margin-top: 5px;
+}

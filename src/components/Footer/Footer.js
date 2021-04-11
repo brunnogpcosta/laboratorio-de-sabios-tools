@@ -7,7 +7,7 @@ export default class Footer extends Component {
   render() {
     return (
       <div id="footer">
-        <div className="containerFooter">
+        <div className="containerFooter no-print">
           <ul>
             <li>© Copyright 2021 | Laboratório de Sábios</li>
             <li><a href="https://www.instagram.com/laboratoriodesabios/" target="_blank"><img src={insta} alt="instagram" title="instagram" /></a></li>

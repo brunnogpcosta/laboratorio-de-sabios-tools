@@ -107,7 +107,6 @@ figure img {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-left: 10px;
   }
 
   #container h2 {
@@ -119,4 +118,19 @@ figure img {
   #rightContentComponent {
     display: none;
   }
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+
+  div {
+    page-break-inside: avoid;
+  }
+}
+
+@page {
+  size: auto;
+  margin: 0mm;
 }

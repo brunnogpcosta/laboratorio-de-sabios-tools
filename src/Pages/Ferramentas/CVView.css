@@ -1,0 +1,106 @@
+#containerCV {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: table;
+}
+
+#headerCV {
+  text-align: center;
+}
+
+#headerCV h1 {
+  margin-bottom: 15px;
+}
+
+#headerCV p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+#objective {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+#objective h2 {
+  border-bottom: 1px solid rgb(155, 155, 155);
+  padding-bottom: 5px;
+}
+
+#objective p {
+  padding-top: 5px;
+}
+
+#formation {
+  margin-bottom: 40px;
+}
+
+#formation h2 {
+  border-bottom: 1px solid rgb(155, 155, 155);
+  padding-bottom: 5px;
+}
+
+#formation ul {
+  padding-top: 5px;
+  padding-left: 25px;
+}
+
+#formation ul li {
+  padding-top: 5px;
+  list-style: disc;
+}
+
+#courses {
+  margin-bottom: 40px;
+}
+
+#courses h2 {
+  border-bottom: 1px solid rgb(155, 155, 155);
+  padding-bottom: 5px;
+}
+
+#courses ul {
+  padding-top: 5px;
+  padding-left: 25px;
+}
+
+#courses ul li {
+  padding-top: 5px;
+  list-style: disc;
+}
+
+#experience {
+  margin-bottom: 40px;
+}
+
+#experience h2 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(155, 155, 155);
+}
+
+#experience p {
+  padding-top: 5px;
+  margin: 0;
+}
+
+#experience ul {
+  padding-top: 5px;
+}
+
+#experience ul li {
+  margin-bottom: 20px;
+}
+
+#about h2 {
+  border-bottom: 1px solid rgb(155, 155, 155);
+  padding-bottom: 5px;
+}
+
+#about p {
+  padding-top: 5px;
+}
+#formCv input {
+  margin-top: 20px;
+}

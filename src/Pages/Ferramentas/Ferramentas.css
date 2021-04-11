@@ -1,0 +1,19 @@
+button {
+  padding: 15px;
+  cursor: pointer;
+}
+
+#cursosContentFerramentas {
+  width: 60%;
+}
+
+.bt-cv {
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  #cursosContentFerramentas {
+    width: 100%;
+    text-align: center;
+  }
+}
