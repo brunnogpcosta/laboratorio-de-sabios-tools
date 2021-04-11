@@ -126,3 +126,10 @@ input[type='submit'] {
 #sobreMim input {
   margin-top: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+  #cursosContentFerramentasCV {
+    width: 90%;
+    text-align: center;
+  }
+}
