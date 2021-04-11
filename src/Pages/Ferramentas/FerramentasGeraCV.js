@@ -30,20 +30,33 @@ export default class FerramentasGeraCV extends Component {
     const formation = document.querySelector('#formacao label')
     const botaoFormacao = document.querySelector('.botaoFormacao')
     const novoInput = document.createElement('input')
+    const formationInput = document.querySelector('input[name="formacao"]').value
 
-    novoInput.setAttribute("name", "formacao");
-    novoInput.setAttribute("placeholder", "Ex.: Ensino Médio completo no Colégio Laboratório de Sábios – Bairro – Cidade - UF , concluído em XXXX");
-    formation.insertBefore(novoInput, botaoFormacao);
+    if (formationInput == "") {
+      alert("É necessário preencher o campo 'Formação' atual para adicionar outra formação.")
+    } else {
+
+      novoInput.setAttribute("name", "formacao");
+      novoInput.setAttribute("placeholder", "Ex.: Ensino Médio completo no Colégio Laboratório de Sábios – Bairro – Cidade - UF , concluído em XXXX");
+      formation.insertBefore(novoInput, botaoFormacao);
+
+    }
   }
 
   insertCourses() {
     const courses = document.querySelector('#conhecimentos label')
     const botaoConhecimento = document.querySelector('.botaoConhecimento')
     const novoInputConhecimento = document.createElement('input')
+    const cursos = document.querySelector('input[name="conhecimentos"]').value
 
-    novoInputConhecimento.setAttribute("name", "conhecimentos");
-    novoInputConhecimento.setAttribute("placeholder", "Ex.: Curso de Programação FullStack - Allura");
-    courses.insertBefore(novoInputConhecimento, botaoConhecimento);
+    if (cursos == "") {
+      alert("É necessário preencher todos os campos de 'Cursos e Conhecimentos' para adicionar outros.")
+    } else {
+
+      novoInputConhecimento.setAttribute("name", "conhecimentos");
+      novoInputConhecimento.setAttribute("placeholder", "Ex.: Curso de Programação FullStack - Allura");
+      courses.insertBefore(novoInputConhecimento, botaoConhecimento);
+    }
   }
 
   insertExperiencia() {
@@ -54,7 +67,7 @@ export default class FerramentasGeraCV extends Component {
     const experiencia = document.querySelector('input[name="experiencia"]').value
 
     if ((empresa || anoInicio || anoFim || cargo || experiencia) == "") {
-      alert("É necerrário preencher todos os campos da experiencia atual para adionar outra experiência.")
+      alert("É necessário preencher todos os campos da experiencia atual para adicionar outra experiência.")
     } else {
       const experienciaLabel = document.querySelector('#experiencia label')
       const inputExperiencia = document.querySelector('input[name="experiencia"]')
