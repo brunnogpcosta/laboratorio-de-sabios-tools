@@ -57,10 +57,7 @@ export default class Header extends Component {
               <li className="dropdown">
                 <img src={menu} alt="Menu" onClick={this.selecionouMenu} />
                 <div className="dropdown-content" style={meuMenu ? { display: 'block' } : { display: 'none' }} >
-                  <Link to="/satisfacao" onClick={this.selecionouMenu}>Avaliação</Link>
-                  <Link to="/barato" onClick={this.selecionouMenu}>Preço Baixo</Link>
-                  <Link to="/trilha" onClick={this.selecionouMenu}>Trilha</Link>
-                  <Link to="/pesquisa" onClick={this.selecionouMenu}>Pesquisar</Link>
+
                   <Link to="/ferramentas" onClick={this.selecionouMenu}>Ferramentas</Link>
                   <Link to="/info" onClick={this.selecionouMenu}>Dúvidas</Link>
                 </div>
@@ -76,14 +73,11 @@ export default class Header extends Component {
           <div className="container">
             <ul>
               <div className="bhLeft">
-                <li><Link to="/satisfacao">AVALIAÇÃO</Link></li>
-                <li><Link to="/barato">PREÇO BAIXO</Link></li>
-                <li><Link to="/trilha">TRILHA</Link></li>
-                <li><Link to="/pesquisa">PESQUISAR</Link></li>
+                <li><Link to="/ferramentas">FERRAMENTAS</Link></li>
               </div>
 
               <div className="bhRight">
-                <li><Link to="/ferramentas">FERRAMENTAS</Link></li>
+
                 <li><Link to="/info">DÚVIDAS</Link></li>
 
               </div>
