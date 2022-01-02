@@ -1,0 +1,58 @@
+{
+  "ferramentas": [
+    {
+      "nome": "Gerador de Currículo",
+      "path": "geradorDeCV",
+      "img": "https://laboratoriodesabios.com/images/java_web.png",
+      "ativo": true
+    },
+    {
+      "nome": "Conversor Binário Decimal",
+      "path": "conversorBinarioDecimal",
+      "img": "https://laboratoriodesabios.com/images/java_web.png",
+      "ativo": true
+    },
+    {
+      "nome": "Gerador de Borda HTML",
+      "path": "geradorBorda",
+      "img": "https://laboratoriodesabios.com/images/java_web.png",
+      "ativo": true
+    },
+    {
+      "nome": "Sorteador",
+      "path": "sorteador",
+      "img": "https://laboratoriodesabios.com/images/java_web.png",
+      "ativo": false
+    },
+    {
+      "nome": "Código de Resistores",
+      "path": "codigoResistor",
+      "img": "https://laboratoriodesabios.com/images/java_web.png",
+      "ativo": false
+    },
+    {
+      "nome": "Código de Cores",
+      "path": "codigoCores",
+      "img": "https://laboratoriodesabios.com/images/java_web.png",
+      "ativo": true
+    },
+    {
+      "nome": "Inversor de Texto",
+      "path": "inversorTexto",
+      "img": "https://laboratoriodesabios.com/images/java_web.png",
+      "ativo": false
+    },
+    {
+      "nome": "Criptografador de Texto",
+      "path": "criptografadorTexto",
+      "img": "https://laboratoriodesabios.com/images/java_web.png",
+      "ativo": false
+    },
+    {
+      "nome": "Gerador GUID",
+      "path": "geradorGuid",
+      "img": "https://laboratoriodesabios.com/images/java_web.png",
+      "ativo": true
+    }
+  ]
+}

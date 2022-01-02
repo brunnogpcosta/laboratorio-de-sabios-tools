@@ -1,20 +1,34 @@
 #cursosContentFerramentas {
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .bt-cv {
-  margin-bottom: 10px;
+  width: 250px;
+  margin-bottom: 20px;
   color: black;
-  padding: 15px;
   cursor: pointer;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.bt-cv img {
+  width: 100%;
+  height: 150px;
+}
+
+.bt-cv p {
+  text-align: center;
+  background-color: rebeccapurple;
 }
 
 @media only screen and (max-width: 600px) {
   #cursosContentFerramentas {
     width: 100%;
+
     text-align: center;
   }
 }
