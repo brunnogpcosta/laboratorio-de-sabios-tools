@@ -167,114 +167,120 @@ export default class FerramentasGeraCV extends Component {
     const { nome, nacionalidade, estadoCivil, idade, endereco, telefone, email, objetivo, formacao, cursos, experiencia, sobreMim } = this.state
 
     return (
-
-      <div id="container">
-        <div className="spamViewCV"></div>
-
-
-        <div id="titleContent">
-        </div>
+      <div id="curriculoContent">
+        <h3>Gerador de Currículo</h3>
+        <div id="container">
 
 
-        <div id="cursosContentFerramentasCV">
-          <form onClick={() => this.formataEGeraPDF()}>
-            <div id="cabecalho">
-              <label>
-                <strong>Dados Pessoais</strong>
-                <input type="text" name="name" placeholder="Nome" />
-
-                <div className="tresInputs">
-                  <input type="text" name="nacionalidade" placeholder="Nacionalidade" required />
-                  <select id="estadoCivil" name="estadoCivil">
-                    <option value="solteiro">Solteiro(a)</option>
-                    <option value="casado">Casado(a)</option>
-                    <option value="divorciado">Divorciado(a)</option>
-                  </select>
-                  <input type="number" min="14" name="idade" placeholder="Idade" />
-
-                </div>
-
-                <input type="text" name="endereco" placeholder="Ex.: Rua Laboratório de Sábios, 777 - Meu Bairro - Minha Cidade - CEP: XXXXX-XXX" />
-                <div className="tresInputs">
-                  <input type="tel" required="required" maxlength="15" name="telefone" placeholder="(21) XXXXX-XXXX" />
-                  <input type="email" required="required" class="input-text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="email@email.com" />
-                </div>
-              </label>
-            </div>
-
-            <div id="objetivo">
-              <label>
-                <strong>Objetivo</strong>
-                <input type="text" name="objetivo" placeholder="Ex.: Fazer parte do quadro funcional da empresa, agregando conhecimentos, contribuindo para execução e desenvolvimento de suas atividades." />
-              </label>
-            </div>
-
-            <div id="formacao">
-              <label>
-                <strong>Formação</strong>
-                <input type="text" name="formacao" placeholder="Ex.: Ensino Médio completo no Colégio Laboratório de Sábios – Bairro – Cidade - UF , concluído em XXXX" />
-                <div className="botaoFormacao" onClick={() => this.insertFormation()}>+</div>
-              </label>
-            </div>
-
-            <div id="conhecimentos">
-              <label>
-                <strong>Cursos e Conhecimentos</strong>
-                <input type="text" name="conhecimentos" placeholder="Ex.: Curso de Programação FullStack - Allura" />
-                <div className="botaoConhecimento" onClick={() => this.insertCourses()}>+</div>
-
-              </label>
-            </div>
-
-            <div id="experiencia">
-              <label>
-                <strong>Experiência Profissional</strong>
-
-                <div className="experienciaContent">
-                  <input type="text" name="empresa" placeholder="Nome da Empresa" />
-                  <input type="number" name="anoInicio" placeholder="Ano de Início" />
-                  <input type="number" name="anoFim" placeholder="Ano de Saída" />
-                  <input type="text" name="cargo" placeholder="Cargo" />
-                  <input type="text" name="experiencia" placeholder="Ex.: Abertura e fechamento de caiza, nota fiscal..." />
-                </div>
-
-                <div className="botaoExperiencia" onClick={() => this.insertExperiencia()}>+</div>
-
-              </label>
-            </div>
+          <div className="spamViewCV"></div>
 
 
-            <div id="sobreMim">
-              <label>
-                <strong>Sobre Mim</strong>
-                <input type="text" name="sobreMim" placeholder="Ex.: Sou uma pessoa com facilidade em aprender, vontade de crescer, sempre visando a evolução como profissional." />
-              </label>
-            </div>
-            <br /> <Link to={{
-              pathname: `/visualizaCurriculo`,
-              state: {
-                nome: nome,
-                nacionalidade: nacionalidade,
-                estadoCivil: estadoCivil,
-                idade: idade,
-                endereco: endereco,
-                telefone: telefone,
-                email: email,
-                objetivo: objetivo,
-                formacao: formacao,
-                cursos: cursos,
-                experiencia: experiencia,
-                sobreMim: sobreMim
-              }
-            }} >
-              <input type="submit" value="Visualizar PDF" />
-            </Link>
+          <div id="titleContent">
+          </div>
 
-          </form>
 
-        </div>
+          <div id="cursosContentFerramentasCV">
+            <form onClick={() => this.formataEGeraPDF()}>
+              <div id="cabecalho">
+                <label>
+                  <strong>Dados Pessoais</strong>
+                  <input type="text" name="name" placeholder="Nome" />
 
-      </div >
+                  <div className="tresInputs">
+                    <input type="text" name="nacionalidade" placeholder="Nacionalidade" required />
+                    <select id="estadoCivil" name="estadoCivil">
+                      <option value="solteiro">Solteiro(a)</option>
+                      <option value="casado">Casado(a)</option>
+                      <option value="divorciado">Divorciado(a)</option>
+                    </select>
+                    <input type="number" min="14" name="idade" placeholder="Idade" />
+
+                  </div>
+
+                  <input type="text" name="endereco" placeholder="Ex.: Rua Laboratório de Sábios, 777 - Meu Bairro - Minha Cidade - CEP: XXXXX-XXX" />
+                  <div className="tresInputs">
+                    <input type="tel" required="required" maxlength="15" name="telefone" placeholder="(21) XXXXX-XXXX" />
+                    <input type="email" required="required" class="input-text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="email@email.com" />
+                  </div>
+                </label>
+              </div>
+
+              <div id="objetivo">
+                <label>
+                  <strong>Objetivo</strong>
+                  <input type="text" name="objetivo" placeholder="Ex.: Fazer parte do quadro funcional da empresa, agregando conhecimentos, contribuindo para execução e desenvolvimento de suas atividades." />
+                </label>
+              </div>
+
+              <div id="formacao">
+                <label>
+                  <strong>Formação</strong>
+                  <input type="text" name="formacao" placeholder="Ex.: Ensino Médio completo no Colégio Laboratório de Sábios – Bairro – Cidade - UF , concluído em XXXX" />
+                  <div className="botaoFormacao" onClick={() => this.insertFormation()}>+</div>
+                </label>
+              </div>
+
+              <div id="conhecimentos">
+                <label>
+                  <strong>Cursos e Conhecimentos</strong>
+                  <input type="text" name="conhecimentos" placeholder="Ex.: Curso de Programação FullStack - Allura" />
+                  <div className="botaoConhecimento" onClick={() => this.insertCourses()}>+</div>
+
+                </label>
+              </div>
+
+              <div id="experiencia">
+                <label>
+                  <strong>Experiência Profissional</strong>
+
+                  <div className="experienciaContent">
+                    <input type="text" name="empresa" placeholder="Nome da Empresa" />
+                    <input type="number" name="anoInicio" placeholder="Ano de Início" />
+                    <input type="number" name="anoFim" placeholder="Ano de Saída" />
+                    <input type="text" name="cargo" placeholder="Cargo" />
+                    <input type="text" name="experiencia" placeholder="Ex.: Abertura e fechamento de caiza, nota fiscal..." />
+                  </div>
+
+                  <div className="botaoExperiencia" onClick={() => this.insertExperiencia()}>+</div>
+
+                </label>
+              </div>
+
+
+              <div id="sobreMim">
+                <label>
+                  <strong>Sobre Mim</strong>
+                  <input type="text" name="sobreMim" placeholder="Ex.: Sou uma pessoa com facilidade em aprender, vontade de crescer, sempre visando a evolução como profissional." />
+                </label>
+              </div>
+              <br /> <Link to={{
+                pathname: `/visualizaCurriculo`,
+                state: {
+                  nome: nome,
+                  nacionalidade: nacionalidade,
+                  estadoCivil: estadoCivil,
+                  idade: idade,
+                  endereco: endereco,
+                  telefone: telefone,
+                  email: email,
+                  objetivo: objetivo,
+                  formacao: formacao,
+                  cursos: cursos,
+                  experiencia: experiencia,
+                  sobreMim: sobreMim
+                }
+              }} >
+                <input type="submit" value="Visualizar PDF" />
+              </Link>
+
+            </form>
+
+          </div>
+
+        </div >
+
+      </div>
+
 
     )
   }

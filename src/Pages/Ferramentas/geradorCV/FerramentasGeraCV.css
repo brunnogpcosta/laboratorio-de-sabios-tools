@@ -3,6 +3,12 @@
   width: 60%;
 }
 
+#curriculoContent h3 {
+  padding: 10px;
+  background-color: rgb(224, 223, 223);
+  text-align: center;
+}
+
 .tresInputs {
   display: flex;
   flex-wrap: wrap;

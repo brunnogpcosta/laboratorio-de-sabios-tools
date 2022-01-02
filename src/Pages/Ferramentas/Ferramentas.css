@@ -1,14 +1,12 @@
-button {
-  padding: 15px;
-  cursor: pointer;
-}
-
 #cursosContentFerramentas {
-  width: 60%;
+  width: 100%;
 }
 
 .bt-cv {
   color: black;
+  padding: 15px;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {

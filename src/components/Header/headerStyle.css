@@ -1,6 +1,5 @@
 .header {
   width: 100%;
-  box-shadow: 0px 0px 4px rgba(68, 68, 68, 0.6);
 }
 
 .header .topHeader {
@@ -55,6 +54,7 @@
 .bottomHeader {
   height: 30px;
   background-color: #fff;
+  border: 1px solid rgba(116, 116, 116, 0.226);
 }
 
 .bottomHeader ul {
@@ -78,7 +78,7 @@
 .bottomHeader ul li a {
   text-decoration: none;
   color: black;
-  padding-bottom: 4px;
+  padding-bottom: 3px;
 }
 
 .bottomHeader ul li a:hover {

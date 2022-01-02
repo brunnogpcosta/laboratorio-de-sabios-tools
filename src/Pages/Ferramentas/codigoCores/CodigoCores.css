@@ -1,0 +1,20 @@
+#coresContent {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#coresContent h3 {
+  padding: 10px;
+  background-color: rgb(224, 223, 223);
+  text-align: center;
+}
+
+#coresContent form {
+  margin: 0 auto;
+  width: 50%;
+}
+
+#coresContent input[type='color'] {
+  height: 50px;
+  cursor: pointer;
+}

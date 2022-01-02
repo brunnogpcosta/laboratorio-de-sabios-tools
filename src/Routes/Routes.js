@@ -1,23 +1,17 @@
 import React, { Component } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
-import HomePage from '../Pages/HomePage/HomePage';
-import Satisfacao from '../Pages/Satisfacao/Satisfacao';
-import Barato from '../Pages/Baratos/Baratos';
-import Pesquisa from '../Pages/Pesquisa/Pesquisa';
-import Trilha from '../Pages/Trilha/Trilha';
-import TrilhaChoice from '../Pages/Trilha/TrilhaChoice';
-import Ranking from '../Pages/Ranking/Ranking';
-import Detalhe from '../Pages/CursoDetalhe/CursoDetalhe';
-import Categoria from '../Pages/categoriaCurso/CategoriaCurso'
-import Formato from '../Pages/FormatoCurso/FormatoCurso'
+
 import Info from '../Pages/Info/Info'
 import NotFound from '../Pages/NotFound/NotFound'
 import Crud from '../Pages/Crud/Crud'
 import Login from '../Pages/login/login'
 import Ferramenta from '../Pages/Ferramentas/Ferramentas'
-import FerramentaGeraCV from '../Pages/Ferramentas/FerramentasGeraCV'
-import VisualizaCurriculo from '../Pages/Ferramentas/CVView'
+import FerramentaGeraCV from '../Pages/Ferramentas/geradorCV/FerramentasGeraCV'
+import FerramentasBinarioDecimal from '../Pages/Ferramentas/binarioDecimal/FerramentasBinarioDecimal'
+import GeradorBorda from '../Pages/Ferramentas/geradorBorda/GeradorBorda'
+import codigoCores from '../Pages/Ferramentas/codigoCores/CodigoCores'
+import VisualizaCurriculo from '../Pages/Ferramentas/geradorCV/CVView'
 
 import Spam from '../components/MelhorEmailSpam/MelhorEmailSpam'
 
@@ -30,18 +24,12 @@ export class Routes extends Component {
     return (
 
       <Switch>
-        <Route exact path='/' component={HomePage} />
-        <Route path='/satisfacao' component={Satisfacao} />
-        <Route path='/barato' component={Barato} />
-        <Route path='/pesquisa' component={Pesquisa} />
-        <Route path='/trilha' component={Trilha} />
-        <Route path='/cursos/trilha/:id' component={TrilhaChoice} />
-        <Route path='/ranking' component={Ranking} />
-        <Route path='/detalhe/:id' component={Detalhe} />
-        <Route path='/categoria' component={Categoria} />
-        <Route path='/formato' component={Formato} />
+        <Route exact path='/' component={Ferramenta} />
         <Route path='/ferramentas' component={Ferramenta} />
         <Route path='/geradorDeCV' component={FerramentaGeraCV} />
+        <Route path='/conversorBinarioDecimal' component={FerramentasBinarioDecimal} />
+        <Route path='/geradorBorda' component={GeradorBorda} />
+        <Route path='/codigoCores' component={codigoCores} />
         <Route path='/visualizaCurriculo' component={VisualizaCurriculo} />
         <Route path='/info' component={Info} />
         <Route path='/spam' component={Spam} />
