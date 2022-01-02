@@ -54,7 +54,7 @@
 .bottomHeader {
   height: 30px;
   background-color: #fff;
-  border: 1px solid rgba(116, 116, 116, 0.226);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.226);
 }
 
 .bottomHeader ul {

@@ -8,10 +8,11 @@ import Crud from '../Pages/Crud/Crud'
 import Login from '../Pages/login/login'
 import Ferramenta from '../Pages/Ferramentas/Ferramentas'
 import FerramentaGeraCV from '../Pages/Ferramentas/geradorCV/FerramentasGeraCV'
+import VisualizaCurriculo from '../Pages/Ferramentas/geradorCV/CVView'
 import FerramentasBinarioDecimal from '../Pages/Ferramentas/binarioDecimal/FerramentasBinarioDecimal'
 import GeradorBorda from '../Pages/Ferramentas/geradorBorda/GeradorBorda'
 import codigoCores from '../Pages/Ferramentas/codigoCores/CodigoCores'
-import VisualizaCurriculo from '../Pages/Ferramentas/geradorCV/CVView'
+import geradorGuid from '../Pages/Ferramentas/geradorGuid/GeradorGuid'
 
 import Spam from '../components/MelhorEmailSpam/MelhorEmailSpam'
 
@@ -30,6 +31,7 @@ export class Routes extends Component {
         <Route path='/conversorBinarioDecimal' component={FerramentasBinarioDecimal} />
         <Route path='/geradorBorda' component={GeradorBorda} />
         <Route path='/codigoCores' component={codigoCores} />
+        <Route path='/geradorGuid' component={geradorGuid} />
         <Route path='/visualizaCurriculo' component={VisualizaCurriculo} />
         <Route path='/info' component={Info} />
         <Route path='/spam' component={Spam} />

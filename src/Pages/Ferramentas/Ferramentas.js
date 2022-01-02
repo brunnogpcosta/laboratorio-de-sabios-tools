@@ -47,7 +47,7 @@ export default class Ferramentas extends Component {
               Critpografador de texto
             </button>
           </Link>
-          <Link to="/">
+          <Link to="/geradorGuid">
             <button className="bt-cv">
               Gerador GUID
             </button>
