@@ -7,21 +7,25 @@ import data from '../../mock/Mock.json'
 export default class Ferramentas extends Component {
   render() {
 
+
+
     const listItems = data.ferramentas.map((d) =>
+
       <Link to={"/" + d.path}>
-        <button className="bt-cv">
+        <figure className="bt-cv">
           <img src={d.img} alt="Logo" />
-          {d.nome}
-        </button>
-      </Link>);
+          <figcaption>{d.nome}</figcaption>
+
+        </figure>
+      </Link >
+    );
 
 
     return (
-      <div id="container">
+      <div id="container" >
         <div id="cursosContentFerramentas">
           {listItems}
         </div>
-
       </div>
     )
   }

@@ -43,11 +43,17 @@ p {
 
 figure {
   width: 220px;
-  height: 230px;
-  background-color: #fff;
+  height: 190px;
+  background-color: rgb(233, 233, 233);
   border: 1px solid rgb(1, 77, 102);
   margin-bottom: 27px;
   border-radius: 5px;
+}
+
+figure:hover {
+  background-color: rgb(252, 242, 158);
+  border: 1px solid rgb(1, 77, 102);
+  background-size: cover;
 }
 
 figcaption {
@@ -56,24 +62,20 @@ figcaption {
   text-overflow: ellipsis;
   white-space: nowrap;
   padding: 10px 10px 0px 10px;
-}
-
-.priceTag {
-  font-weight: bold;
-  text-align: center;
-  background-color: rgba(167, 255, 126, 0.507);
-  margin-top: 7px;
-  padding: 10px;
-  border-bottom-left-radius: 2%;
-  border-bottom-right-radius: 2%;
+  color: #000;
 }
 
 figure img {
   width: 218px;
   height: 130.5px;
-  object-fit: cover;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
+  transition-delay: 0.2s;
+}
+
+figure img:hover {
+  width: 100%;
+  height: 100%;
 }
 
 #cursosContent figcaption {
