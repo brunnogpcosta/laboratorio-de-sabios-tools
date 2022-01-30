@@ -27,7 +27,7 @@ export default class GeradorGuid extends Component {
           <form >
             <label for="guid">
               <input type="text" id="guid" name="guid" value={guid} />
-              <button type="button" onClick={() => this.geraGuid()}>Refresh</button>
+              <button type="button" onClick={() => this.geraGuid()}>Atualizar</button>
 
             </label>
 

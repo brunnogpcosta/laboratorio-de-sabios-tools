@@ -45,7 +45,7 @@ export default class FerramentasBinarioDecimal extends Component {
     //console.log("Valor de event:", event)
 
     if (event === '') {
-      this.setState({ resultadoFinal: 'Please, type a number', Style: 'MyResultNegativo' })
+      this.setState({ resultadoFinal: 'Por favor, digite um número', Style: 'MyResultNegativo' })
 
     } else {
 
@@ -58,21 +58,21 @@ export default class FerramentasBinarioDecimal extends Component {
       if (operation === 'decimal') {
         //MELHORAR LÓGICA OU CRIAR UMA FUNÇÃO
         if (event.indexOf(2) > -1) {
-          this.setState({ resultadoFinal: 'The number informed is not binary', Style: 'MyResultNegativo' })
+          this.setState({ resultadoFinal: 'O número informado não é binário', Style: 'MyResultNegativo' })
         } else if (event.indexOf(3) > -1) {
-          this.setState({ resultadoFinal: 'The number informed is not binary', Style: 'MyResultNegativo' })
+          this.setState({ resultadoFinal: 'O número informado não é binário', Style: 'MyResultNegativo' })
         } else if (event.indexOf(4) > -1) {
-          this.setState({ resultadoFinal: 'The number informed is not binary', Style: 'MyResultNegativo' })
+          this.setState({ resultadoFinal: 'O número informado não é binário', Style: 'MyResultNegativo' })
         } else if (event.indexOf(5) > -1) {
-          this.setState({ resultadoFinal: 'The number informed is not binary', Style: 'MyResultNegativo' })
+          this.setState({ resultadoFinal: 'O número informado não é binário', Style: 'MyResultNegativo' })
         } else if (event.indexOf(6) > -1) {
-          this.setState({ resultadoFinal: 'The number informed is not binary', Style: 'MyResultNegativo' })
+          this.setState({ resultadoFinal: 'O número informado não é binário', Style: 'MyResultNegativo' })
         } else if (event.indexOf(7) > -1) {
-          this.setState({ resultadoFinal: 'The number informed is not binary', Style: 'MyResultNegativo' })
+          this.setState({ resultadoFinal: 'O número informado não é binário', Style: 'MyResultNegativo' })
         } else if (event.indexOf(8) > -1) {
-          this.setState({ resultadoFinal: 'The number informed is not binary', Style: 'MyResultNegativo' })
+          this.setState({ resultadoFinal: 'O número informado não é binário', Style: 'MyResultNegativo' })
         } else if (event.indexOf(9) > -1) {
-          this.setState({ resultadoFinal: 'The number informed is not binary', Style: 'MyResultNegativo' })
+          this.setState({ resultadoFinal: 'O número informado não é binário', Style: 'MyResultNegativo' })
         } else {
           //console.log("é binario:", event)
 
@@ -95,9 +95,9 @@ export default class FerramentasBinarioDecimal extends Component {
 
         <div className="containerBinario">
           <form className="myform" onSubmit={this.handleSubmit}>
-            <h3>Decimal / Binary convertion</h3>
+            <h3>Conversor Decimal x Binário</h3>
 
-            <label>Type a Number
+            <label>Digite um número
                 <input type="text" id='inputtext' onChange={this.handleChange} />
             </label>
 
@@ -108,14 +108,14 @@ export default class FerramentasBinarioDecimal extends Component {
               </label>
 
               <label htmlFor="binary">
-                Binary
+                Binário
               <input type="radio" value="binary" name="operator" required />
               </label>
 
             </div>
 
             <div id="result">
-              <input type='submit' id='resultButton' value='Generate' />
+              <input type='submit' id='resultButton' value='Gerar' />
 
               <div id={this.state.Style}>
                 <h4>{this.state.resultadoFinal}</h4>
