@@ -32,13 +32,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 40px;
-  padding-bottom: 80px;
-}
-
-#cursosContent a {
-  text-decoration: none;
-  color: #000;
 }
 
 figure {
@@ -46,7 +39,6 @@ figure {
   height: 180px;
   background-color: rgba(167, 255, 126, 0.507);
   border: 2px solid rgb(1, 77, 102);
-  margin-bottom: 27px;
   margin-right: 20px;
   border-radius: 5px;
 }
@@ -66,7 +58,7 @@ figcaption {
 
 figure img {
   width: 218px;
-  height: 130.5px;
+  height: 130px;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
   transition-delay: 0.2s;

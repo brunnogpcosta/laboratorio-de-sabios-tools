@@ -11,13 +11,15 @@ export default class Ferramentas extends Component {
 
     const listItems = data.ferramentas.map((d) =>
 
-      <Link to={"/" + d.path}>
-        <figure className="bt-cv">
-          <img src={d.img} alt="Logo" />
-          <figcaption>{d.nome}</figcaption>
+      <div>
+        <Link to={"/" + d.path}>
+          <figure className="bt-cv">
+            <img src={d.img} alt="Logo" />
+            <figcaption>{d.nome}</figcaption>
 
-        </figure>
-      </Link >
+          </figure>
+        </Link >
+      </div>
     );
 
 

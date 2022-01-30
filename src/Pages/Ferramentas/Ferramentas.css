@@ -5,6 +5,15 @@
   justify-content: space-between;
 }
 
+#cursosContentFerramentas figure {
+  margin-bottom: 20px;
+}
+
+#cursosContentFerramentas a {
+  width: 222px;
+  height: 180px;
+}
+
 @media only screen and (max-width: 600px) {
   #cursosContentFerramentas {
     width: 100%;
