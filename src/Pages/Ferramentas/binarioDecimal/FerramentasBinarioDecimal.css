@@ -26,15 +26,15 @@
 
 #resultButton {
   width: 200px;
+  margin-top: 35px;
   height: 40px;
   margin-left: -15px;
-  background-color: rgba(126, 123, 123, 0.404);
+  background-color: rgba(126, 123, 123, 0.123);
   border: none;
   font-size: large;
 }
 
 #resultButton:hover {
-  background-color: rgb(74, 75, 75);
   font-weight: bold;
   cursor: pointer;
 }
@@ -47,7 +47,7 @@
   width: 200px;
   background-color: rgb(98, 184, 98);
   box-shadow: 0px 0px 5px #7c7c7cb6;
-  margin-top: -80px;
+  margin-top: 20px;
   margin-left: -15px;
   word-wrap: break-word;
   /*serve para quebrar linha de texto*/
@@ -63,7 +63,7 @@
   width: 200px;
   background-color: rgb(226, 87, 87);
   box-shadow: 0px 0px 5px #7c7c7cb6;
-  margin-top: -80px;
+  margin-top: 20px;
   margin-left: -15px;
 }
 

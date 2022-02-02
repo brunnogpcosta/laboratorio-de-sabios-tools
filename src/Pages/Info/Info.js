@@ -18,7 +18,7 @@ export default class Info extends Component {
         </p>
 
         <p><strong>Como posso retribuir o uso das ferramentas?</strong><br />
-        Caso uma de nossas ferramentas tenha te ajudado e queira contribuir, existem duas possibilidade: A primeira forma é sempre clicar nos anúncios da página, a segunda é fazer uma contrubuíção uma doação de qualquer valor. <a href="https://www.paypal.com/donate/?hosted_button_id=BV7T4X6543LTG" target="_blank">Clique aqui para doar.</a>
+        Caso uma de nossas ferramentas tenha te ajudado e queira contribuir, existem duas possibilidade: A primeira forma é sempre clicar nos anúncios da página, a segunda é fazer uma contrubuíção uma doação de qualquer valor. <a href="https://www.paypal.com/donate/?hosted_button_id=BV7T4X6543LTG" target="_blank" rel="noreferrer">Clique aqui para doar.</a>
         </p>
 
         <br />

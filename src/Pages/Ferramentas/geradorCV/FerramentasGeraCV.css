@@ -1,12 +1,7 @@
 #cursosContentFerramentasCV {
   margin: 0 auto;
+  height: 120vh;
   width: 60%;
-}
-
-#curriculoContent h3 {
-  padding: 10px;
-  background-color: rgb(224, 223, 223);
-  text-align: center;
 }
 
 .tresInputs {
@@ -15,15 +10,42 @@
   justify-content: space-between;
 }
 
+#cursosContentFerramentasCV input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
 #cabecalho {
   margin-bottom: 20px;
 }
 
-input[name^='name'] {
-  margin-top: 5px;
+input[name='name'] {
+  width: 100%;
 }
 
-input[name^='nacionalidade'] {
+input[name='formacao'] {
+  width: 100%;
+}
+
+input[name='conhecimentos'] {
+  width: 100%;
+}
+input[name='cargo'] {
+  width: 100%;
+}
+input[name='experiencia'] {
+  width: 100%;
+}
+
+input[name='sobreMim'] {
+  width: 100%;
+}
+
+input[name='endereco'] {
+  width: 100%;
+}
+
+input[name='nacionalidade'] {
   width: 33%;
 }
 
@@ -32,7 +54,7 @@ select[name='estadoCivil'] {
   height: 30px;
 }
 
-input[name^='idade'] {
+input[name='idade'] {
   width: 200px;
 }
 
@@ -44,8 +66,9 @@ input[name='email'] {
   width: 47%;
 }
 
-input[type='submit'] {
+#cursosContentFerramentasCV input[type='submit'] {
   padding: 10px;
+  width: 100%;
   cursor: pointer;
   margin-bottom: 100px;
 }
@@ -53,6 +76,7 @@ input[type='submit'] {
 #objetivo input {
   margin-top: 5px;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 #formacao input {

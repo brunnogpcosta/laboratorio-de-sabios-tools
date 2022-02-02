@@ -58,7 +58,7 @@ export default class Header extends Component {
                 <img src={menu} alt="Menu" onClick={this.selecionouMenu} />
                 <div className="dropdown-content" style={meuMenu ? { display: 'block' } : { display: 'none' }} >
 
-                  <Link to="/ferramentas" onClick={this.selecionouMenu}>Ferramentas</Link>
+                  <Link to="/" onClick={this.selecionouMenu}>Ferramentas</Link>
                   <Link to="/info" onClick={this.selecionouMenu}>Dúvidas</Link>
                 </div>
               </li>
@@ -73,7 +73,7 @@ export default class Header extends Component {
           <div className="container">
             <ul>
               <div className="bhLeft">
-                <li><Link to="/ferramentas">FERRAMENTAS</Link></li>
+                <li><Link to="/">FERRAMENTAS</Link></li>
               </div>
 
               <div className="bhRight">

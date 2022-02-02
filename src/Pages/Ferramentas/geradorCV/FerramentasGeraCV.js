@@ -168,16 +168,8 @@ export default class FerramentasGeraCV extends Component {
 
     return (
       <div id="curriculoContent">
-        <h3>Gerador de Currículo</h3>
+
         <div id="container">
-
-
-          <div className="spamViewCV"></div>
-
-
-          <div id="titleContent">
-          </div>
-
 
           <div id="cursosContentFerramentasCV">
             <form onClick={() => this.formataEGeraPDF()}>

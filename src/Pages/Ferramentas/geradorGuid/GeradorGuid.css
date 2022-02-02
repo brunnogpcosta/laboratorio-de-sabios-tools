@@ -26,4 +26,11 @@
 
 #meuForm input[type='text'] {
   font-size: 20px;
+  width: 100%;
+}
+
+#meuForm Button {
+  margin-top: 10px;
+  font-size: 20px;
+  width: 100%;
 }

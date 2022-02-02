@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 
 import Info from '../Pages/Info/Info'
@@ -23,7 +23,6 @@ export class Routes extends Component {
 
       <Switch>
         <Route exact path='/' component={Ferramenta} />
-        <Route path='/ferramentas' component={Ferramenta} />
         <Route path='/geradorDeCV' component={FerramentaGeraCV} />
         <Route path='/conversorBinarioDecimal' component={FerramentasBinarioDecimal} />
         <Route path='/geradorBorda' component={GeradorBorda} />
@@ -31,7 +30,6 @@ export class Routes extends Component {
         <Route path='/geradorGuid' component={geradorGuid} />
         <Route path='/visualizaCurriculo' component={VisualizaCurriculo} />
         <Route path='/info' component={Info} />
-
         <Route component={NotFound} />
       </Switch>
 
