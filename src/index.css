@@ -35,10 +35,10 @@ p {
 }
 
 figure {
-  width: 222px;
+  width: 218px;
   height: 180px;
-  background-color: rgba(236, 255, 126, 0.507);
-  border: 2px solid rgb(1, 77, 102);
+  background-color: #f7ee48b0;
+  border: 1px solid rgb(156, 156, 156);
   margin-right: 20px;
   border-radius: 5px;
 }
@@ -57,7 +57,7 @@ figcaption {
 }
 
 figure img {
-  width: 218px;
+  width: 216px;
   height: 130px;
   margin-top: -1px;
   border-top-left-radius: 2%;
