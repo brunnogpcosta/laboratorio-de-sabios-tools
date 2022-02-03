@@ -52,6 +52,7 @@ input[name='nacionalidade'] {
 select[name='estadoCivil'] {
   width: 33%;
   height: 30px;
+  margin-top: -1px;
 }
 
 input[name='idade'] {
