@@ -59,7 +59,7 @@ figcaption {
 figure img {
   width: 216px;
   height: 130px;
-  margin-top: -1px;
+
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
   transition-delay: 0.2s;

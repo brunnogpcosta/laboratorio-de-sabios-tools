@@ -22,7 +22,7 @@ export default class GeradorBorda extends Component {
       colorShadow: '#000',
       borderStyle: 'solid',
       espessuraBorda: '1px',
-      codigoHtml: '<div id="lbs_shape"></div>',
+      codigoHtml: '<div class="lbs_shape"></div>',
       codigoCss: '',
       showDiv: false,
       relatorio: ''
@@ -132,16 +132,19 @@ export default class GeradorBorda extends Component {
   }
 
   geraHtml(event) {
-    const corpo = `.lbs_shape{\n
-                   border-top-right-radius:  ${this.state.topRight}px;\n\n
+    const corpo = `.lbs_shape{\n  
+                   width: ${this.state.bodySizeWidth}px;\n     
+                   height:  ${this.state.bodySizHeight}px;\n   
+                   border-top-right-radius:  ${this.state.topRight}px;\n
                    border-top-left-radius:  ${this.state.topLeft}px;\n
                    border-bottom-right-radius:  ${this.state.bottomRight}px;\n
                    border-bottom-left-radius:  ${this.state.bottomLeft}px;\n
                    background-color:  ${this.state.colorBody};\n
-                   border-color:  ${this.state.corBorda};\n
+                   border-color:  ${this.state.colorBorder};\n
                    box-shadow:  ${this.state.offSetX}px ${this.state.offSetY}px ${this.state.blurRadius}px ${this.state.spreadRadius}px ${this.state.colorShadow};\n
                    border-style:  ${this.state.borderStyle};\n
-                   border-width:  ${this.state.espessuraBorda};
+                   border-width:  ${this.state.espessuraBorda}px;
+          
                 }`
 
 
