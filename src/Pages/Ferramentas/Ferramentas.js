@@ -4,6 +4,8 @@ import './Ferramentas.css'
 
 import data from '../../mock/Mock.json'
 
+
+
 export default class Ferramentas extends Component {
   render() {
 

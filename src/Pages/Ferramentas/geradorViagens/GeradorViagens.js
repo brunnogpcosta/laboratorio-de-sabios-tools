@@ -122,7 +122,7 @@ return(
 :
     <div>
 
-     <img src={travel} alt="Logo" />
+<a href='https://www.freepik.com/vectors/travel'><img src={travel} alt="Logo" /></a>
     </div>
     
    
