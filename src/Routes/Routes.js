@@ -11,6 +11,7 @@ import FerramentasBinarioDecimal from '../Pages/Ferramentas/binarioDecimal/Ferra
 import GeradorBorda from '../Pages/Ferramentas/geradorBorda/GeradorBorda'
 import codigoCores from '../Pages/Ferramentas/codigoCores/CodigoCores'
 import geradorGuid from '../Pages/Ferramentas/geradorGuid/GeradorGuid'
+import geradorViagens from '../Pages/Ferramentas/geradorViagens/GeradorViagens'
 
 
 
@@ -29,6 +30,7 @@ export class Routes extends Component {
         <Route path='/codigoCores' component={codigoCores} />
         <Route path='/geradorGuid' component={geradorGuid} />
         <Route path='/visualizaCurriculo' component={VisualizaCurriculo} />
+        <Route path='/geradorViagens' component={geradorViagens} />
         <Route path='/info' component={Info} />
         <Route component={NotFound} />
       </Switch>
