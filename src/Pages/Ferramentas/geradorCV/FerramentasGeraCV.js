@@ -118,7 +118,6 @@ export default class FerramentasGeraCV extends Component {
 
   formataEGeraPDF() {
 
-  event.preventDefault();
 
     const nome = document.querySelector('input[name="name"]').value.toUpperCase()
     localStorage.setItem("nome",nome)

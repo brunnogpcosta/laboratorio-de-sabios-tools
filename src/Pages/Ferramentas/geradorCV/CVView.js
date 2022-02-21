@@ -26,7 +26,7 @@ export default class CVView extends Component {
       <div id="containerCV">
 
         <div id="headerCV">
-          <h1>{cv.nome}</h1>
+          <h1>{cv.nome.toUpperCase()}</h1>
           <p>{cv.nacionalidade}, {cv.estadoCivil}, {cv.idade} anos</p>
           <p>{cv.endereco}</p>
           <p>CEL: {cv.telefone} || E-mail: {cv.email}</p>
@@ -68,7 +68,7 @@ export default class CVView extends Component {
 
             {cv.experiencia.map(exp =>
               <li>
-                <p><b>{exp.empresa} [{exp.anoInicio} - {exp.anoFim}]</b></p>
+                <p><b>{exp.empresa.toUpperCase()} [{exp.anoInicio} - {exp.anoFim == "" ? "Atualmente":exp.anoFim}]</b></p>
                 <p><b>Cargo: </b>{exp.cargo}</p>
                 <p><b>Principais Atividades: </b>{exp.expe}</p>
               </li>
