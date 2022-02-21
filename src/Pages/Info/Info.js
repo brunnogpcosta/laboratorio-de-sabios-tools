@@ -9,7 +9,7 @@ export default class Info extends Component {
 
         <p>O site <strong>Laboratório de Sábios</strong> disponibiliza ferramentas que facilitam atividades normais na vida dos nossos visitantes. Ser sábio é não reiventar a roda.</p>
 
-        <p>Todas as ferramentas são fáceis de ser manuseada e de uso intuitivo, cabendo o usuário tirar o melhor proveito de cada tools.</p>
+        <p>Todas as ferramentas são fáceis de ser manuseada e de uso intuitivo, cabendo o usuário tirar o melhor proveito de cada tool.</p>
         <br />
 
         <h2>Perguntas Frequentes</h2>
@@ -18,12 +18,12 @@ export default class Info extends Component {
         </p>
 
         <p><strong>Como posso retribuir o uso das ferramentas?</strong><br />
-        Caso uma de nossas ferramentas tenha te ajudado e queira contribuir, existem duas possibilidade: A primeira forma é sempre clicar nos anúncios da página, a segunda é fazer uma contrubuíção uma doação de qualquer valor. <a href="https://www.paypal.com/donate/?hosted_button_id=BV7T4X6543LTG" target="_blank" rel="noreferrer">Clique aqui para doar.</a>
+        Caso uma de nossas ferramentas tenha te ajudado e queira contribuir, existem duas possibilidade: A primeira forma é sempre clicar nos anúncios da página, a segunda é fazer uma doação de qualquer valor. <a href="https://www.paypal.com/donate/?hosted_button_id=BV7T4X6543LTG" target="_blank" rel="noreferrer">Clique aqui para doar.</a>
         </p>
 
         <br />
         <h2>Contato</h2>
-        <p>Qualquer dúvida em relação ao funcionamento ou sugestões ao site, pode ser esclarecida através do email <strong>contato@laboratoriodesabios.com.</strong></p>
+        <p>Qualquer dúvida em relação ao funcionamento ou sugestões ao site, pode ser esclarecida através do email <strong>contato@laboratoriodesabios.com</strong>.</p>
       </div>
     )
   }

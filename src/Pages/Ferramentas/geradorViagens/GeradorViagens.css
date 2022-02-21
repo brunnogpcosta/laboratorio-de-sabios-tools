@@ -22,6 +22,7 @@
     border: 1px solid rgb(204, 204, 204);
     padding: 10px;
     margin-right: 20px;
+    
 }
 
 #painel-viagens-esquerda select{
@@ -57,19 +58,9 @@ background-color: rgb(252, 217, 102);
 }
 
 
-#painel-viagens-direita table{
-  width: 100%;
-
-}
-
-
-#painel-viagens-direita td{
-  padding: 5px;
-
-}
 
 #painel-viagens-direita p{
-  margin-top: 20px;
+  
   padding: 5px;
   }
 
@@ -88,6 +79,19 @@ height: 80px;
   
   }
 
+  .painel-viagens-direita-detalhes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: first baseline;
+  
+  }
+
+
+  .painel-viagens-direita-detalhes p{
+   width: 33%;
+  
+  }
+
   @media only screen and (max-width: 600px) {
     #painel-viagens{
       width: 90%;
@@ -99,20 +103,21 @@ height: 80px;
   
 
     #painel-viagens-esquerda {
-     width: 80%;
+     width: 100%;
      height: 150px;
      margin-bottom: 30px;
-     margin-left: 20px;
+     margin-right: 0px;
  
    }
 
-#painel-viagens-direita {
-  width: 80%;
-  margin-bottom: 80px;
+
+  #painel-viagens-direita {
+    width: 100%;
+    margin-bottom: 80px;
+
+    }
+
  
-
-  }
-
 
 
   }

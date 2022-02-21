@@ -35,7 +35,7 @@ function sortearPais(){
 
     setSorteado(false)
 try{
-
+console.log(selectedContinente)
     if(selectedContinente == "Todos"){
         filtro = countries
     }else{
@@ -51,7 +51,7 @@ try{
         setCountry(sorteio)
 
         //console.log(sorteio)
-       //console.log(sorteio.hasOwnProperty('nome'))
+       sorteio.hasOwnProperty('nome')
 
     setSorteado(true)
 
@@ -79,7 +79,7 @@ return(
         <label>
             Escolha o Continente
         <select name="select"  value={selectedContinente} onChange={e => setSelectedContinente(e.target.value)}>
-        <option value="" selected>Todos</option>
+             <option value="Todos">Todos</option>
             <option value="América">América</option>
             <option value="Europa">Europa</option>
             <option value="África">África</option>
@@ -101,28 +101,25 @@ return(
             <h3>{country.nome.abreviado}</h3>
 
            
-            <table>
-                <tbody>
-                <tr>
-                    <td><b>Área: </b>{country.area.total} {country.area.unidade.símbolo}</td>    
-                    <td><b>Capital: </b>{country.governo.capital.nome}</td>    
-                    <td><b>Idioma Principal: </b>{country.linguas[0].nome}</td>    
-                </tr>    
-                <tr>
-                    <td><b>Continente: </b>{country.localizacao.regiao.nome}</td>    
-                    <td><b>Moeda: </b>{country["unidades-monetarias"][0].nome}</td>    
-                </tr>  
-                </tbody>
-            </table>
+            <div className='painel-viagens-direita-detalhes'>
+               
+                    <p><b>Área: </b>{country.area.total} {country.area.unidade.símbolo}</p>  
+                    <p><b>Capital: </b>{country.governo.capital.nome}</p>  
+                    <p><b>Idioma Principal: </b>{country.linguas[0].nome}</p>  
+        
+                    <p><b>Continente: </b>{country.localizacao.regiao.nome}</p>  
+                    <p><b>Moeda: </b>{country["unidades-monetarias"][0].nome}</p>  
+              
+            </div>
 
-            <p><b>Histórico:</b> {country.historico} </p>
+            <p><b>Histórico: </b>{country.historico} </p>
 
 
         </div>
 :
     <div>
 
-<a href='https://www.freepik.com/vectors/travel'><img src={travel} alt="Logo" /></a>
+        <a href='https://www.freepik.com/vectors/travel'><img src={travel} alt="Logo" /></a>
     </div>
     
    

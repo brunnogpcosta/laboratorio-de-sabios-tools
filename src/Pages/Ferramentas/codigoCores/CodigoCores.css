@@ -11,12 +11,13 @@
 
 #coresContent form {
   margin: 0 auto;
-  width: 50%;
+  width: 80%;
 }
 
 #cores {
   display: flex;
   justify-content: space-between;
+
 }
 
 .cor1 {

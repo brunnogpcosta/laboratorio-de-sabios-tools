@@ -119,6 +119,7 @@ export default class FerramentasGeraCV extends Component {
     const telefone = document.querySelector('input[name="telefone"]').value
     const email = document.querySelector('input[name="email"]').value
     const objetivo = document.querySelector('input[name="objetivo"]').value
+    const sobreMim = document.querySelector('input[name="sobreMim"]').value
 
     const formacao = document.querySelectorAll('input[name="formacao"]')
     let formacaoArray = []
@@ -150,7 +151,7 @@ export default class FerramentasGeraCV extends Component {
 
     });
 
-    const sobreMim = document.querySelector('input[name="sobreMim"]').value
+   
 
     this.setState({ nome: nome, nacionalidade: nacionalidade, estadoCivil: estadoCivil, idade: idade, endereco: endereco, telefone: telefone, email: email, objetivo: objetivo, formacao: formacaoArray, cursos: cursosArray, experiencia: experienciaArray, sobreMim: sobreMim })
 
@@ -245,6 +246,8 @@ export default class FerramentasGeraCV extends Component {
                   <input type="text" name="sobreMim" placeholder="Ex.: Sou uma pessoa com facilidade em aprender, vontade de crescer, sempre visando a evolução como profissional." />
                 </label>
               </div>
+
+              
               <br /> <Link to={{
                 pathname: `/visualizaCurriculo`,
                 state: {
