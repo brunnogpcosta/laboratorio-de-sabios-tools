@@ -26,6 +26,12 @@ export default class FerramentasGeraCV extends Component {
 
 
 
+  insertSobreMim(value){
+    this.setState({ sobreMim: value})
+  }
+
+
+
   insertFormation() {
     const formation = document.querySelector('#formacao label')
     const botaoFormacao = document.querySelector('.botaoFormacao')
@@ -111,7 +117,11 @@ export default class FerramentasGeraCV extends Component {
   }
 
   formataEGeraPDF() {
+
+  event.preventDefault();
+
     const nome = document.querySelector('input[name="name"]').value.toUpperCase()
+    localStorage.setItem("nome",nome)
     const nacionalidade = document.querySelector('input[name="nacionalidade"]').value
     const estadoCivil = document.querySelector('select[name="estadoCivil"]').value
     const idade = document.querySelector('input[name="idade"]').value
@@ -153,7 +163,7 @@ export default class FerramentasGeraCV extends Component {
 
    
 
-    this.setState({ nome: nome, nacionalidade: nacionalidade, estadoCivil: estadoCivil, idade: idade, endereco: endereco, telefone: telefone, email: email, objetivo: objetivo, formacao: formacaoArray, cursos: cursosArray, experiencia: experienciaArray, sobreMim: sobreMim })
+    this.setState({ nome: nome, naionalidade: nacionalidade, estadoCivil: estadoCivil, idade: idade, endereco: endereco, telefone: telefone, email: email, objetivo: objetivo, formacao: formacaoArray, cursos: cursosArray, experiencia: experienciaArray})
 
 
 
@@ -243,7 +253,7 @@ export default class FerramentasGeraCV extends Component {
               <div id="sobreMim">
                 <label>
                   <strong>Sobre Mim</strong>
-                  <input type="text" name="sobreMim" placeholder="Ex.: Sou uma pessoa com facilidade em aprender, vontade de crescer, sempre visando a evolução como profissional." />
+                  <input type="text" name="sobreMim" onChange={e => this.insertSobreMim(e.target.value)} placeholder="Ex.: Sou uma pessoa com facilidade em aprender, vontade de crescer, sempre visando a evolução como profissional." />
                 </label>
               </div>
 
