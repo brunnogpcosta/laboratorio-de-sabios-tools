@@ -35,6 +35,12 @@
       "path": "geradorViagens",
       "img": "https://laboratoriodesabios.com/images/tools/travel.png",
       "ativo": true
+    },
+    {
+      "nome": "Inverter Texto",
+      "path": "inverterTexto",
+      "img": "https://laboratoriodesabios.com/images/tools/inverte.png",
+      "ativo": true
     }
   ]
 }

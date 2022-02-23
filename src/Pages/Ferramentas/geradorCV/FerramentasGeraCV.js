@@ -162,7 +162,7 @@ export default class FerramentasGeraCV extends Component {
 
    
 
-    this.setState({ nome: nome, naionalidade: nacionalidade, estadoCivil: estadoCivil, idade: idade, endereco: endereco, telefone: telefone, email: email, objetivo: objetivo, formacao: formacaoArray, cursos: cursosArray, experiencia: experienciaArray})
+    this.setState({ nome: nome, nacionalidade: nacionalidade, estadoCivil: estadoCivil, idade: idade, endereco: endereco, telefone: telefone, email: email, objetivo: objetivo, formacao: formacaoArray, cursos: cursosArray, experiencia: experienciaArray})
 
 
 

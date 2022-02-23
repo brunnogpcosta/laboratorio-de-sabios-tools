@@ -12,6 +12,7 @@ import GeradorBorda from '../Pages/Ferramentas/geradorBorda/GeradorBorda'
 import codigoCores from '../Pages/Ferramentas/codigoCores/CodigoCores'
 import geradorGuid from '../Pages/Ferramentas/geradorGuid/GeradorGuid'
 import geradorViagens from '../Pages/Ferramentas/geradorViagens/GeradorViagens'
+import inverteTexto from '../Pages/Ferramentas/inverteTexto/InverteTexto'
 
 
 
@@ -31,6 +32,7 @@ export class Routes extends Component {
         <Route path='/geradorGuid' component={geradorGuid} />
         <Route path='/visualizaCurriculo' component={VisualizaCurriculo} />
         <Route path='/geradorViagens' component={geradorViagens} />
+        <Route path='/inverterTexto' component={inverteTexto} />
         <Route path='/info' component={Info} />
         <Route component={NotFound} />
       </Switch>
