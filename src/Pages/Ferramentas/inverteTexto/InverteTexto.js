@@ -6,16 +6,19 @@ export default function InverteTexto(){
 
     const [texto, setTexto] = useState("")
 
+    const [copiado, setCopiado] = useState("Copiar")
     
 
 
 function inverteTexto (){
-  
+  setCopiado("Copiar")
   setTexto(texto.split("").reverse().join(""))
 
 }
 
 function copiarTextoTinvertido () {
+
+  setCopiado("Copiado")
   navigator.clipboard.writeText(texto)
 
 }
@@ -31,7 +34,7 @@ function copiarTextoTinvertido () {
             <label>
               <input type="text" id="inverte" placeholder='Texto a ser invertido' name="inverte" onChange={e => setTexto(e.target.value)} value={texto}/>
               <button type="button" onClick={inverteTexto}>Inverter</button>
-              <button type="button" onClick={copiarTextoTinvertido}>Copiar</button>
+              <button type="button" onClick={copiarTextoTinvertido}>{copiado}</button>
 
             </label>
 
