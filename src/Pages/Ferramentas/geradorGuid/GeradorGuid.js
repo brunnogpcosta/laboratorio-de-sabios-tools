@@ -7,18 +7,20 @@ import './GeradorGuid.css';
 export default class GeradorGuid extends Component {
 
   state = {
-    guid: crypto.randomUUID()
+    guid: crypto.randomUUID(),
+    copiado: "Copiar"
   }
 
   geraGuid() {
     //console.log("clicou")
     const codigo = crypto.randomUUID()
-    this.setState({ guid: codigo })
+    this.setState({ guid: codigo, copiado: "Copiar" })
   }
 
 
   copiarCampo() {
     navigator.clipboard.writeText(this.state.guid)
+    this.setState({ copiado: "Copiado" })
  
   }
 
@@ -26,7 +28,7 @@ export default class GeradorGuid extends Component {
 
 
   render() {
-    const { guid } = this.state
+    const { guid, copiado } = this.state
 
     return (
       <div id="guidContent">
@@ -37,7 +39,7 @@ export default class GeradorGuid extends Component {
             <label for="guid">
               <input type="text" id="guid" name="guid" value={guid} />
               <button type="button" onClick={() => this.geraGuid()}>Atualizar</button>
-              <button type="button" onClick={() => this.copiarCampo()}>Copiar</button>
+              <button type="button" onClick={() => this.copiarCampo()}>{copiado}</button>
 
             </label>
 
