@@ -34,6 +34,7 @@
   font-size: 20px;
   width: 100%;
   padding: 5px;
+  height: 37px;
 
 }
 
@@ -42,7 +43,7 @@
   width: 100px;
   left: 91.3%;
   bottom: 114px;
-  
+    
 }
 
 @media only screen and (max-width: 600px) {
