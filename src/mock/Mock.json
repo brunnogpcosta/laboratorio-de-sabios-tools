@@ -13,6 +13,12 @@
       "ativo": true
     },
     {
+      "nome": "Cronômetro",
+      "path": "cronometro",
+      "img": "https://laboratoriodesabios.com/images/tools/cronometro.png",
+      "ativo": true
+    },
+    {
       "nome": "Gerador de Borda HTML",
       "path": "geradorBorda",
       "img": "https://laboratoriodesabios.com/images/tools/borda.png",
