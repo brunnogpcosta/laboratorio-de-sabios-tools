@@ -1,48 +1,56 @@
 {
   "ferramentas": [
     {
+      "id":"13837486-10ce-4f1f-8575-669ae380bf2c",
       "nome": "Código de Cores",
       "path": "codigoCores",
       "img": "https://laboratoriodesabios.com/images/tools/cores.png",
       "ativo": true
     },
     {
+      "id":"6ab49d46-5a52-411f-9b6b-4913568359d8",
       "nome": "Conversor Binário Decimal",
       "path": "conversorBinarioDecimal",
       "img": "https://laboratoriodesabios.com/images/tools/binario2.png",
       "ativo": true
     },
     {
+      "id":"ca074ffd-52b9-4b13-b353-7d0e67403e0b",
       "nome": "Cronômetro",
       "path": "cronometro",
       "img": "https://laboratoriodesabios.com/images/tools/cronometro.png",
       "ativo": true
     },
     {
+      "id":"d52fecdd-f7a8-4904-b599-103f97c9d7eb",
       "nome": "Gerador de Borda HTML",
       "path": "geradorBorda",
       "img": "https://laboratoriodesabios.com/images/tools/borda.png",
       "ativo": true
     },
     {
+      "id":"54dccf29-a6bb-4e83-b6a8-e1d1f891786c",
       "nome": "Gerador de Currículo",
       "path": "geradorDeCV",
       "img": "https://laboratoriodesabios.com/images/tools/cv.png",
       "ativo": true
     },
     {
+      "id":"3663a649-7197-4b37-983c-2548c4d2ab6f",
       "nome": "Gerador GUID",
       "path": "geradorGuid",
       "img": "https://laboratoriodesabios.com/images/tools/code.png",
       "ativo": true
     },
     {
+      "id":"255989f7-1ef2-494b-b071-1ec05ea443d2",
       "nome": "Gerador de Viagens",
       "path": "geradorViagens",
       "img": "https://laboratoriodesabios.com/images/tools/travel.png",
       "ativo": true
     },
     {
+      "id":"f5e51f0d-48fd-4fc0-a29f-4ee9f5ca6b93",
       "nome": "Inverter Texto",
       "path": "inverterTexto",
       "img": "https://laboratoriodesabios.com/images/tools/inverte.png",

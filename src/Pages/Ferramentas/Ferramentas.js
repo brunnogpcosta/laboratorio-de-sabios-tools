@@ -13,7 +13,7 @@ export default class Ferramentas extends Component {
 
     const listItems = data.ferramentas.map((d) =>
 
-      <div>
+      <div key={d.id}>
         <Link to={"/" + d.path}>
           <figure className="bt-cv">
             <img src={d.img} alt="Logo" />
