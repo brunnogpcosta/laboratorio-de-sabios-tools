@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 
 import './TamanhoImagem.css'
-
+import '../../../components/Descricao/Descricao'
 import imagemInicial from '../../../assets/img/travel.jpg'
+import Descricao from "../../../components/Descricao/Descricao";
 
 export default function TamanhoImagem() {
 
@@ -43,7 +44,8 @@ export default function TamanhoImagem() {
     return (
 
         <div id="tamanhoImagemContent">
-            <h3>Descubra o Tamanho da Imagem</h3>
+            <h3>Verifique o Tamanho da Imagem</h3>
+            <Descricao passaDescricao="d349b8ef-cbd2-4bcf-a0ce-f5d285d28756"></Descricao>
 
             <div id="painel-tamanho-imagem">
                 <div id="painel-tamanho-imagem-esquerda">
@@ -54,7 +56,7 @@ export default function TamanhoImagem() {
                     }
 
                     <label for="arquivo">Selecionar Imagem</label>
-                    <input type="file" name="arquivo" id="arquivo" onChange={(e) => selecionaImagem(e.target.files)} accept="image/png, image/jpeg" />
+                    <input type="file" name="arquivo" id="arquivo" onChange={(e) => selecionaImagem(e.target.files)} accept="image/*" />
 
 
                 </div>

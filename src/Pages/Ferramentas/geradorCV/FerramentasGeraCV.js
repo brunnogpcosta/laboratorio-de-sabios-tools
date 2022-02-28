@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 import './FerramentasGeraCV.css'
+import Descricao from "../../../components/Descricao/Descricao";
 
 
 export default class FerramentasGeraCV extends Component {
@@ -178,8 +179,12 @@ export default class FerramentasGeraCV extends Component {
 
     return (
       <div id="curriculoContent">
-
+        <h3>Gerador de Currículo</h3>
+        
+        <Descricao passaDescricao ="54dccf29-a6bb-4e83-b6a8-e1d1f891786c"></Descricao>
         <div id="container">
+
+        
 
           <div id="cursosContentFerramentasCV">
             <form onClick={() => this.formataEGeraPDF()}>

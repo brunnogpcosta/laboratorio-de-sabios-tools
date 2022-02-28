@@ -77,4 +77,11 @@
         font-size: 35px;
         width: 70px;
     }
+
+    #cronometroContent ul {
+    
+        margin-top: 0px;
+    
+    }
+
 }

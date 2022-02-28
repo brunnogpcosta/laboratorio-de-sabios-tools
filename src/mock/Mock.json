@@ -2,6 +2,7 @@
   "ferramentas": [
     {
       "id":"13837486-10ce-4f1f-8575-669ae380bf2c",
+      "descricao":"Descubra o código em hexadecimal e em RGB a cor selecionada. Além das cores que poderão ser escolhidas no painel, pode ser coletada a cor de determinada parte da tela.",
       "nome": "Código de Cores",
       "path": "codigoCores",
       "img": "https://laboratoriodesabios.com/images/tools/cores.png",
@@ -9,6 +10,7 @@
     },
     {
       "id":"6ab49d46-5a52-411f-9b6b-4913568359d8",
+      "descricao":"Ferramenta que converte números decimais para binários e binários para decimais.",
       "nome": "Conversor Binário Decimal",
       "path": "conversorBinarioDecimal",
       "img": "https://laboratoriodesabios.com/images/tools/binario2.png",
@@ -16,6 +18,7 @@
     },
     {
       "id":"ca074ffd-52b9-4b13-b353-7d0e67403e0b",
+       "descricao":"Ferramenta contadora de tempo. Nela é possível pausar a contagem e despausar sempre que necessário.",
       "nome": "Cronômetro",
       "path": "cronometro",
       "img": "https://laboratoriodesabios.com/images/tools/cronometro.png",
@@ -23,6 +26,7 @@
     },
     {
       "id":"d52fecdd-f7a8-4904-b599-103f97c9d7eb",
+       "descricao":"Ferramenta para geração de divs, cards e formas em HTML e CSS totalmente personalizável. Nela é possível colocar sombra, arredondar, colocar borda ma forma e muito mais. ",
       "nome": "Gerador de Borda HTML",
       "path": "geradorBorda",
       "img": "https://laboratoriodesabios.com/images/tools/borda.png",
@@ -30,6 +34,7 @@
     },
     {
       "id":"54dccf29-a6bb-4e83-b6a8-e1d1f891786c",
+       "descricao":"Coloque as informações e nós geramos um currículo no padrão de mercado para você.",
       "nome": "Gerador de Currículo",
       "path": "geradorDeCV",
       "img": "https://laboratoriodesabios.com/images/tools/cv.png",
@@ -37,6 +42,7 @@
     },
     {
       "id":"3663a649-7197-4b37-983c-2548c4d2ab6f",
+       "descricao":"Precisa de uma senha forte ou de um código para sua aplicação? Gere o seu GUID agora!",
       "nome": "Gerador GUID",
       "path": "geradorGuid",
       "img": "https://laboratoriodesabios.com/images/tools/code.png",
@@ -44,6 +50,7 @@
     },
     {
       "id":"255989f7-1ef2-494b-b071-1ec05ea443d2",
+       "descricao":"Está em dúvida para onde viajar? Nós te ajudamos nessa decisão! Sorteie um país e veja as informações dele.",
       "nome": "Gerador de Viagens",
       "path": "geradorViagens",
       "img": "https://laboratoriodesabios.com/images/tools/travel.png",
@@ -51,6 +58,7 @@
     },
     {
       "id":"f5e51f0d-48fd-4fc0-a29f-4ee9f5ca6b93",
+       "descricao":"Estava em um site com o link invertido? Quer trolar um amigo? Inverta o texto na ferramenta abaixo e seja feliz!",
       "nome": "Inverter Texto",
       "path": "inverterTexto",
       "img": "https://laboratoriodesabios.com/images/tools/inverte.png",
@@ -58,9 +66,10 @@
     },
     {
       "id":"d349b8ef-cbd2-4bcf-a0ce-f5d285d28756",
-      "nome": "Descubra o Tamanho da Imagem",
+       "descricao":"Precisa saber o tamanho exato de uma imagem? Nós te ajudamos! Faça o upload da imagem e descubra as dimensões em centímetro e em píxel.",
+      "nome": "Verifica Tamanho da Imagem",
       "path": "tamanhoImagem",
-      "img": "https://laboratoriodesabios.com/images/tools/inverte.png",
+      "img": "https://laboratoriodesabios.com/images/tools/tamanhoImagem.png",
       "ativo": true
     }
     

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import './GeradorGuid.css';
+import Descricao from "../../../components/Descricao/Descricao";
 
 
 
@@ -35,6 +36,7 @@ export default class GeradorGuid extends Component {
     return (
       <div id="guidContent">
         <h3>Gerador de GUID</h3>
+        <Descricao passaDescricao ="3663a649-7197-4b37-983c-2548c4d2ab6f"></Descricao>
 
         <div id="meuForm">
           <form >

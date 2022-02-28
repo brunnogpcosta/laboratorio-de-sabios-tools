@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 
 import './CodigoCores.css'
+import Descricao from "../../../components/Descricao/Descricao";
 
 
 export default function CodigoCores() {
 
   const [hex, setHex] = useState("#000")
   const [rgb, setRgb] = useState("rgb(0, 0, 0)")
-  const [hsl, setHsl] = useState("hsl(0, 0%, 0%);")
+
 
 
   function setarCor(infos) {
-    console.log(infos)
+    //console.log(infos)
 
     const r = parseInt(infos.substr(1, 2), 16)
     const g = parseInt(infos.substr(3, 2), 16)
@@ -29,6 +30,8 @@ export default function CodigoCores() {
   return (
     <div id="coresContent">
       <h3>Código de Cores</h3>
+      <Descricao passaDescricao = "13837486-10ce-4f1f-8575-669ae380bf2c"></Descricao>
+      
 
       <form >
         <label for="color">Escolha uma cor:

@@ -5,6 +5,7 @@ import api from '../../../services/api';
 import './GeradorViagens.css'
 
 import travel from '../../../assets/img/travel.jpg'
+import Descricao from '../../../components/Descricao/Descricao';
 
 export default function GeradorViagens(){
 
@@ -71,6 +72,7 @@ console.log("error: " + e.error)
 return(
     <div id="gerador-viagens-content">
        <h3>Gerador de Viagens</h3>
+       <Descricao passaDescricao="255989f7-1ef2-494b-b071-1ec05ea443d2"></Descricao>
     
     
     

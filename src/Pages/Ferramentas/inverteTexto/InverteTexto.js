@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import Descricao from '../../../components/Descricao/Descricao'
 
 import './InverteTexto.css'
 
@@ -34,6 +35,7 @@ function copiarTextoTinvertido () {
     return(
         <div id="inverteContent">
         <h3>Inversor de Texto</h3>
+        <Descricao passaDescricao="f5e51f0d-48fd-4fc0-a29f-4ee9f5ca6b93"></Descricao>
 
         <div id="meuFormInverte">
           <form >

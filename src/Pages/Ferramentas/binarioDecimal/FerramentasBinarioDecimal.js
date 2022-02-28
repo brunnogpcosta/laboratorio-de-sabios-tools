@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 
-
-
-
+import Descricao from "../../../components/Descricao/Descricao";
 import './FerramentasBinarioDecimal.css'
 
 
@@ -92,6 +90,7 @@ export default class FerramentasBinarioDecimal extends Component {
 
       <div id="binarioContent">
         <h3>Conversor Decimal x Binário</h3>
+        <Descricao passaDescricao = "6ab49d46-5a52-411f-9b6b-4913568359d8"></Descricao>
 
         <div className="containerBinario">
           <form className="myform" onSubmit={this.handleSubmit}>

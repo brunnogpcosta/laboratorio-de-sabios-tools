@@ -16,9 +16,8 @@ export default class Ferramentas extends Component {
       <div key={d.id}>
         <Link to={"/" + d.path}>
           <figure className="bt-cv">
-            <img src={d.img} alt="Logo" />
-            <figcaption>{d.nome}</figcaption>
-
+            <img src={d.img} alt={d.nome} title={d.nome} />
+            <figcaption title={d.nome}>{d.nome}</figcaption>
           </figure>
         </Link >
       </div>

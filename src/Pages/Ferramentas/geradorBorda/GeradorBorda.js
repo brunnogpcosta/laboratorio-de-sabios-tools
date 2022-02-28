@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import '../geradorBorda/GeradorBorda.css'
+import Descricao from "../../../components/Descricao/Descricao";
 
 export default class GeradorBorda extends Component {
   constructor(props) {
@@ -164,6 +165,7 @@ export default class GeradorBorda extends Component {
     return (
       <div id="bordaContent">
         <h3>Gerador de Borda</h3>
+        <Descricao passaDescricao ="d52fecdd-f7a8-4904-b599-103f97c9d7eb"></Descricao>
 
         <div id="container">
 

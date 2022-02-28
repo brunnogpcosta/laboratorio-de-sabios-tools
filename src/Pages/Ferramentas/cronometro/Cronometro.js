@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import './Cronometro.css'
+import Descricao from "../../../components/Descricao/Descricao";
 
 
 export default function Cronometro() {
@@ -85,6 +86,7 @@ export default function Cronometro() {
     return (
         <div id="cronometroContent">
         <h3> Cronômetro </h3>
+        <Descricao passaDescricao ="ca074ffd-52b9-4b13-b353-7d0e67403e0b"></Descricao>
 
 {terminar&&
             <div className='ultimoTempo' > Último Tempo: {ultimoTempo} </div> 

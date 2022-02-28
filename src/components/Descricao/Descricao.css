@@ -1,0 +1,15 @@
+#descricao-component{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #f3f3f3;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+
+#descricao-component h4{
+    margin: auto;
+    width: 80%;
+    font-weight: 100;
+    text-align: justify;
+}
