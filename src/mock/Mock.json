@@ -55,6 +55,13 @@
       "path": "inverterTexto",
       "img": "https://laboratoriodesabios.com/images/tools/inverte.png",
       "ativo": true
+    },
+    {
+      "id":"d349b8ef-cbd2-4bcf-a0ce-f5d285d28756",
+      "nome": "Descubra o Tamanho da Imagem",
+      "path": "tamanhoImagem",
+      "img": "https://laboratoriodesabios.com/images/tools/inverte.png",
+      "ativo": true
     }
     
   ]
