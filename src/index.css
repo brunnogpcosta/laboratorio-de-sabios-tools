@@ -72,16 +72,15 @@ figure img {
 
 
 @media only screen and (max-width: 600px) {
-  #container {
-    text-align: center;
-  }
 
   figure {
-    width: 100%;
+  width: 250px;
   }
 
+  
   figure img {
-    padding-top: 10px;
+    width: 248px;
+  
   }
 }
 

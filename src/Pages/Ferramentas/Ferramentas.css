@@ -7,6 +7,7 @@
 
 #cursosContentFerramentas figure {
   margin-bottom: 20px;
+  
 }
 
 #cursosContentFerramentas a {
@@ -21,9 +22,10 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 80px;
+    margin-left: 20px;
   }
 
-  #container {
-    text-align: center;
-  }
+
+  
+
 }
