@@ -72,12 +72,13 @@
 
     #cronometroContent #botoes .meusBotoes {
       padding: 0 30px;
+      margin-bottom: 80px;
     }
 
     #cronometroContent ul li {
         font-family: 'Orbitron', sans-serif;
-        font-size: 30px;
-        width: 60px;
+        font-size: 25px;
+        width: 50px;
         
     }
 

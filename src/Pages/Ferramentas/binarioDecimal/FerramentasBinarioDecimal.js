@@ -90,25 +90,25 @@ export default class FerramentasBinarioDecimal extends Component {
 
       <div id="binarioContent">
         <h3>Conversor Decimal x Binário</h3>
-        <Descricao passaDescricao = "6ab49d46-5a52-411f-9b6b-4913568359d8"></Descricao>
+        <Descricao passaDescricao="6ab49d46-5a52-411f-9b6b-4913568359d8"></Descricao>
 
         <div className="containerBinario">
           <form className="myform" onSubmit={this.handleSubmit}>
             <h3>Conversor Decimal x Binário</h3>
 
             <label>Digite um número
-                <input type="text" id='inputtext' onChange={this.handleChange} />
+              <input type="text" id='inputtext' onChange={this.handleChange} />
             </label>
 
             <div onChange={this.setMyOperator} className="options">
               <label htmlFor="decimal">
                 Decimal
-            <input type="radio" value="decimal" name="operator" required />
+                <input type="radio" value="decimal" name="operator" required />
               </label>
 
               <label htmlFor="binary">
                 Binário
-              <input type="radio" value="binary" name="operator" required />
+                <input type="radio" value="binary" name="operator" required />
               </label>
 
             </div>
@@ -119,6 +119,9 @@ export default class FerramentasBinarioDecimal extends Component {
               <div id={this.state.Style}>
                 <h4>{this.state.resultadoFinal}</h4>
               </div>
+            </div>
+
+            <div className='espaco'>
             </div>
 
           </form>
