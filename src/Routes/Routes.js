@@ -15,6 +15,7 @@ import geradorViagens from '../Pages/Ferramentas/geradorViagens/GeradorViagens'
 import inverteTexto from '../Pages/Ferramentas/inverteTexto/InverteTexto'
 import cronometro from '../Pages/Ferramentas/cronometro/Cronometro';
 import tamanhoImagem from '../Pages/Ferramentas/tamanhoImagem/TamanhoImagem'
+import FotoPorQuatro from '../Pages/Ferramentas/fotoTresPorQuatro/FotoPorQuatro';
 
 
 
@@ -36,6 +37,7 @@ export class Routes extends Component {
         <Route path='/inverterTexto' component={inverteTexto} />
         <Route path='/cronometro' component={cronometro} />
         <Route path='/tamanhoImagem' component={tamanhoImagem} />
+        <Route path='/fotoTresPorQuatro' component={FotoPorQuatro} />
         <Route path='/info' component={Info} />
         <Route component={NotFound} />
       </Switch>

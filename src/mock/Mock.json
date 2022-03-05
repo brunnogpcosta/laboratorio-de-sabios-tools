@@ -43,7 +43,7 @@
     {
       "id":"3663a649-7197-4b37-983c-2548c4d2ab6f",
        "descricao":"Precisa de uma senha forte ou de um código para sua aplicação? Gere o seu GUID agora!",
-      "nome": "Gerador GUID",
+      "nome": "Gerador de Código",
       "path": "geradorGuid",
       "img": "https://laboratoriodesabios.com/images/tools/code.png",
       "ativo": true
@@ -69,6 +69,14 @@
        "descricao":"Precisa saber o tamanho exato de uma imagem? Nós te ajudamos! Faça o upload da imagem e descubra as dimensões em centímetro e em píxel.",
       "nome": "Verifica Tamanho da Imagem",
       "path": "tamanhoImagem",
+      "img": "https://laboratoriodesabios.com/images/tools/tamanhoImagem.png",
+      "ativo": true
+    },   
+    {
+      "id":"34217f7c-7826-42e6-a814-369598419908",
+       "descricao":"Precisa imprimir foto 3x4? Tire a foto que nos geramos o arquivo para você!",
+      "nome": "Foto 3 x 4",
+      "path": "fotoTresPorQuatro",
       "img": "https://laboratoriodesabios.com/images/tools/tamanhoImagem.png",
       "ativo": true
     }
