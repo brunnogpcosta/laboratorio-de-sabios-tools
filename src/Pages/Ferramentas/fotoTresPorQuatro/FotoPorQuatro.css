@@ -9,6 +9,27 @@
     background-color: rgb(224, 223, 223);
 }
 
+
+#fotoContent label{
+
+    margin: 0 auto;
+    width: 420px;
+    display: flex;   
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#fotoContent select{
+    padding: 5px;
+    margin: 0 auto;
+    width: 420px;
+    display: flex;   
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
 #foto-painel{
     margin: 0 auto;
     width: 420px;
