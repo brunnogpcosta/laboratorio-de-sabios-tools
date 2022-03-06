@@ -137,7 +137,7 @@ export default function FotoPorQuatro() {
             <Descricao passaDescricao="34217f7c-7826-42e6-a814-369598419908"></Descricao>
 
 
-            <label for="cars">Quantidade de Fotos em Página</label>
+            <label for="cars">Quantidade de fotos para impressão</label>
 
             <select name="cars" id="cars" onChange={e => qtdFotos(e.target.value)}>
                 <option value="um">Uma</option>

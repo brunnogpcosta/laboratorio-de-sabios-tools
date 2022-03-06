@@ -75,9 +75,9 @@
     {
       "id":"34217f7c-7826-42e6-a814-369598419908",
        "descricao":"Precisa imprimir foto 3x4? Tire a foto que nos geramos o arquivo para você!",
-      "nome": "Foto 3 x 4",
+      "nome": "Imprimir Foto 3 x 4",
       "path": "fotoTresPorQuatro",
-      "img": "https://laboratoriodesabios.com/images/tools/tamanhoImagem.png",
+      "img": "https://laboratoriodesabios.com/images/tools/foto34.png",
       "ativo": true
     }
     
