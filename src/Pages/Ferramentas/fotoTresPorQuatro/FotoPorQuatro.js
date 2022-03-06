@@ -136,39 +136,40 @@ export default function FotoPorQuatro() {
             <h3>Imprimir Foto 3 x 4</h3>
             <Descricao passaDescricao="34217f7c-7826-42e6-a814-369598419908"></Descricao>
 
+            <div id="foto-content-centro">
 
-            <label for="cars">Quantidade de fotos para impressão</label>
+                <label for="cars">Quantidade de fotos para impressão</label>
 
-            <select name="cars" id="cars" onChange={e => qtdFotos(e.target.value)}>
-                <option value="um">Uma</option>
-                <option value="cinco">Cinco</option>
-                <option value="dez">Dez</option>
-                <option value="quinze">Quinze</option>
-            </select>
+                <select name="cars" id="cars" onChange={e => qtdFotos(e.target.value)}>
+                    <option value="um">Uma</option>
+                    <option value="cinco">Cinco</option>
+                    <option value="dez">Dez</option>
+                    <option value="quinze">Quinze</option>
+                </select>
 
-            <div id="foto-painel">
-
-
+                <div id="foto-painel">
 
 
-                <div id="foto-painel-capturar">
 
-                    <video id="foto-painel-capturar-video"></video>
-                    <div>
-                        <button onClick={capturar}>Capturar</button>
+
+                    <div id="foto-painel-capturar">
+
+                        <video id="foto-painel-capturar-video"></video>
+                        <div>
+                            <button onClick={capturar}>Capturar</button>
+                        </div>
                     </div>
-                </div>
 
 
-                <div id="foto-painel-capturado">
-                    <canvas id='canvas' src={camera}></canvas>
-        
-                    <div>
-                        <button onClick={download}>Baixar</button>
+                    <div id="foto-painel-capturado">
+                        <canvas id='canvas' src={camera}></canvas>
+
+                        <div>
+                            <button onClick={download}>Baixar</button>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     )
 
