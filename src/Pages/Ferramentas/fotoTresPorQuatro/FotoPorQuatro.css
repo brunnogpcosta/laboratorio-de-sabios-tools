@@ -48,15 +48,17 @@
         
 }
 #foto-painel-capturado canvas{
-    background-color: #fff;
-    max-width: 200px;
+    width: 200px;
     height: 150px;
     border: 1px solid rgb(44, 44, 44);
     background-color: rgb(218, 218, 218);
+    object-fit: cover
+    
 }
 
+
 #foto-painel-capturado img{
-    background-color: #fff;
+    background-color: rgb(145, 39, 39);
     width: 200px;
     height: 150px;
     border: 1px solid rgb(44, 44, 44);

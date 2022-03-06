@@ -30,12 +30,15 @@ export default function FotoPorQuatro() {
 
         canvas.height = video.videoHeight;
         canvas.width = video.videoWidth;
+
         var context = canvas.getContext('2d');
 
-        var x = 0
-        var y = 0
-        var w = 113.385826771
-        var h = 151.18
+        var x = 26
+        var y = 10
+        var w = video.videoWidth - 526.614173229
+        var h = video.videoHeight - 328.82
+
+
 
         //console.log(qtd)
 
@@ -43,7 +46,7 @@ export default function FotoPorQuatro() {
             for (var i = 1; i <= qtd; i++) {
                 context.drawImage(video, x, y, w, h)
                 x = x + w + 5
-              
+
             }
         }
 
@@ -53,9 +56,9 @@ export default function FotoPorQuatro() {
                     context.drawImage(video, x, y, w, h)
                     x = x + w + 5
                 } else {
-                    if(i === 6){
+                    if (i === 6) {
                         y = y + h + 5
-                        x = 0
+                        x = 26
                     }
                     context.drawImage(video, x, y, w, h)
                     x = x + w + 5
@@ -70,18 +73,18 @@ export default function FotoPorQuatro() {
                 if (i <= 5) {
                     context.drawImage(video, x, y, w, h)
                     x = x + w + 5
-                } else if (i <=10) {
-                    if(i === 6){
+                } else if (i <= 10) {
+                    if (i === 6) {
                         y = y + h + 5
-                        x = 0
+                        x = 26
                     }
                     context.drawImage(video, x, y, w, h)
                     x = x + w + 5
 
-                }else{
-                    if(i === 11){
+                } else {
+                    if (i === 11) {
                         y = y + h + 5
-                        x = 0
+                        x = 26
                     }
                     context.drawImage(video, x, y, w, h)
                     x = x + w + 5
@@ -95,7 +98,7 @@ export default function FotoPorQuatro() {
     }
 
     function qtdFotos(value) {
-        console.log("valor: " + value)
+        //console.log("valor: " + value)
         switch (value) {
             case 'uma':
                 setQtd(1)
@@ -117,7 +120,6 @@ export default function FotoPorQuatro() {
 
 
     function download() {
-
         var canvas = document.getElementById("canvas");
         var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
         var link = document.createElement('a');
@@ -160,9 +162,8 @@ export default function FotoPorQuatro() {
 
                 <div id="foto-painel-capturado">
                     <canvas id='canvas' src={camera}></canvas>
-
+        
                     <div>
-
                         <button onClick={download}>Baixar</button>
                     </div>
                 </div>
